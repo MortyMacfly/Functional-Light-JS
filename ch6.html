@@ -1,0 +1,714 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Chapter 6: Value Immutability · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ch7.html" />
+    
+    
+    <link rel="prev" href="ch5.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Foreword (TBA)
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="preface.html">
+            
+                <a href="preface.html">
+            
+                    
+                    Preface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="ch1.html">
+            
+                <a href="ch1.html">
+            
+                    
+                    Chapter 1: Why Functional Programming?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="ch2.html">
+            
+                <a href="ch2.html">
+            
+                    
+                    Chapter 2: Foundations of Functional Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="ch3.html">
+            
+                <a href="ch3.html">
+            
+                    
+                    Chapter 3: Managing Function Inputs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="ch4.html">
+            
+                <a href="ch4.html">
+            
+                    
+                    Chapter 4: Composing Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="ch5.html">
+            
+                <a href="ch5.html">
+            
+                    
+                    Chapter 5: Reducing Side Effects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.9" data-path="ch6.html">
+            
+                <a href="ch6.html">
+            
+                    
+                    Chapter 6: Value Immutability
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="ch7.html">
+            
+                <a href="ch7.html">
+            
+                    
+                    Chapter 7: Closure vs Object
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="ch8.html">
+            
+                <a href="ch8.html">
+            
+                    
+                    Chapter 8: List Operations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="ch9.html">
+            
+                <a href="ch9.html">
+            
+                    
+                    Chapter 9: Recursion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="ch10.html">
+            
+                <a href="ch10.html">
+            
+                    
+                    Chapter 10: Functional Async
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="ch11.html">
+            
+                <a href="ch11.html">
+            
+                    
+                    Chapter 11: Putting It All together
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="apA.html">
+            
+                <a href="apA.html">
+            
+                    
+                    Appendix A: Transducing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="apB.html">
+            
+                <a href="apB.html">
+            
+                    
+                    Appendix B: The Humble Monad
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="apC.html">
+            
+                <a href="apC.html">
+            
+                    
+                    Appendix C: FP Libraries
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Chapter 6: Value Immutability</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="functional-light-javascript">Functional-Light JavaScript</h1>
+<h1 id="chapter-6-value-immutability">Chapter 6: Value Immutability</h1>
+<p>In Chapter 5, we talked about the importance of reducing side causes/effects: the ways that your application&apos;s state can change unexpectedly and cause surprises (bugs). The fewer places we have with such landmines, the more confidence we have over our code, and the more readable it will be. Our topic for this chapter follows directly from that same effort.</p>
+<p>If programming-style idempotence is about defining a value change operation so that it can only affect state once, we now turn our attention to the goal of reducing the number of change occurrences from one to zero.</p>
+<p>Let&apos;s now explore value immutability, the notion that we use only values in our programs that cannot be changed.</p>
+<h2 id="primitive-immutability">Primitive Immutability</h2>
+<p>Values of the primitive types (<code>number</code>, <code>string</code>, <code>boolean</code>, <code>null</code>, and <code>undefined</code>) are already immutable; there&apos;s nothing you can do to change them.</p>
+<pre><code class="lang-js"><span class="hljs-comment">// invalid, and also makes no sense</span>
+<span class="hljs-number">2</span> = <span class="hljs-number">2.5</span>;
+</code></pre>
+<p>However, JS does have an peculiar behavior which seems like it allows mutating such primitive type values: &quot;boxing&quot;. When you access a property on certain primitive type values -- specifically <code>number</code>, <code>string</code>, and <code>boolean</code> -- under the covers JS automatically wraps (aka &quot;boxes&quot;) the value in its object counterpart (<code>Number</code>, <code>String</code>, and <code>Boolean</code>, respectively).</p>
+<p>Consider:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> x = <span class="hljs-number">2</span>;
+
+x.length = <span class="hljs-number">4</span>;
+
+x;                <span class="hljs-comment">// 2</span>
+x.length;        <span class="hljs-comment">// undefined</span>
+</code></pre>
+<p>Numbers do not normally have a <code>length</code> property available, so the <code>x.length = 4</code> setting is trying to add a new property, and it silently fails (or is ignored/discarded, depending on your point-of-view); <code>x</code> continues to hold the simple primitive <code>2</code> number.</p>
+<p>But the fact that JS allows the <code>x.length = 4</code> statement to run at all can seem troubling, if for no other reason than its potential confusion to readers. The good news is, if you use strict mode (<code>&quot;use strict&quot;;</code>), such a statement will throw an error.</p>
+<p>What if you try to mutate the explicitly-boxed object representation of such a value?</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> x = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Number</span>( <span class="hljs-number">2</span> );
+
+<span class="hljs-comment">// works fine</span>
+x.length = <span class="hljs-number">4</span>;
+</code></pre>
+<p><code>x</code> in this snippet is holding a reference to an object, so custom properties can be added and changed without issue.</p>
+<p>The immutability of simple primitives like <code>number</code>s probably seems fairly obvious. But what about <code>string</code> values? JS developers have a very common misconception that strings are like arrays and can thus be changed. JS syntax even hints at them being &quot;array like&quot; with the <code>[ ]</code> access operator. However, strings are also immutable.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> s = <span class="hljs-string">&quot;hello&quot;</span>;
+
+s[<span class="hljs-number">1</span>];                <span class="hljs-comment">// &quot;e&quot;</span>
+
+s[<span class="hljs-number">1</span>] = <span class="hljs-string">&quot;E&quot;</span>;
+s.length = <span class="hljs-number">10</span>;
+
+s;                    <span class="hljs-comment">// &quot;hello&quot;</span>
+</code></pre>
+<p>Despite being able to access <code>s[1]</code> like it&apos;s an array, JS strings are not real arrays. Setting <code>s[1] = &quot;E&quot;</code> and <code>s.length = 10</code> both silently fail, just as <code>x.length = 4</code> did above. In strict mode, these assignments will fail, because both the <code>1</code> property and the <code>length</code> property are read-only on this primitive <code>string</code> value.</p>
+<p>Interestingly, even the boxed <code>String</code> object value will act (mostly) immutable as it will throw errors in strict mode if you change existing properties:</p>
+<pre><code class="lang-js"><span class="hljs-meta">&quot;use strict&quot;</span>;
+
+<span class="hljs-keyword">var</span> s = <span class="hljs-keyword">new</span> <span class="hljs-built_in">String</span>( <span class="hljs-string">&quot;hello&quot;</span> );
+
+s[<span class="hljs-number">1</span>] = <span class="hljs-string">&quot;E&quot;</span>;            <span class="hljs-comment">// error</span>
+s.length = <span class="hljs-number">10</span>;        <span class="hljs-comment">// error</span>
+
+s[<span class="hljs-number">42</span>] = <span class="hljs-string">&quot;?&quot;</span>;        <span class="hljs-comment">// OK</span>
+
+s;                    <span class="hljs-comment">// &quot;hello&quot;</span>
+</code></pre>
+<h2 id="value-to-value">Value To Value</h2>
+<p>We&apos;ll unpack this idea more throughout the chapter, but just to start with a clear understanding in mind: value immutability does not mean we can&apos;t have values change over the course of our program. A program without changing state is not a very interesting one! It also doesn&apos;t mean that our variables can&apos;t hold different values. These are all common misconceptions about value immutability.</p>
+<p>Value immutability means that <em>when</em> we need to change the state in our program, we must create and track a new value rather than mutate an existing value.</p>
+<p>For example:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">addValue</span>(<span class="hljs-params">arr</span>) </span>{
+    <span class="hljs-keyword">var</span> newArr = [ ...arr, <span class="hljs-number">4</span> ];
+    <span class="hljs-keyword">return</span> newArr;
+}
+
+addValue( [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>] );    <span class="hljs-comment">// [1,2,3,4]</span>
+</code></pre>
+<p>Notice that we did not change the array that <code>arr</code> references, but rather created a new array (<code>newArr</code>) that contains the existing values plus the new <code>4</code> value.</p>
+<p>Analyze <code>addValue(..)</code> based on what we discussed in Chapter 5 about side causes/effects. Is it pure? Does it have referential transparency? Given the same array, will it always produce the same output? Is it free of both side causes and side effects? <strong>Yes.</strong></p>
+<p>Imagine the <code>[1,2,3]</code> array represents a sequence of data from some previous operations and we stored in some variable. It is our current state. If we want to compute what the next state of our application is, we call <code>addValue(..)</code>. But we want that act of next-state computation to be direct and explicit. So the <code>addValue(..)</code> operation takes a direct input, returns a direct output, and avoids creating a side effect by mutating the original array that <code>arr</code> references.</p>
+<p>This means we can calculate the new state of <code>[1,2,3,4]</code> and be fully in control of that transition of states. No other part of our program can unexpectedly transition us to that state early, or to another state entirely, like <code>[1,2,3,5]</code>. By being disciplined about our values and treating them as immutable, we drastically reduce the surface area of surprise, making our programs easier to read, reason about, and ultimately trust.</p>
+<p>The array that <code>arr</code> references is actually mutable. We just chose not to mutate it, so we practiced the spirit of value immutability.</p>
+<p>We can use the copy-instead-of-mutate strategy for objects, too. Consider:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">updateLastLogin</span>(<span class="hljs-params">user</span>) </span>{
+    <span class="hljs-keyword">var</span> newUserRecord = <span class="hljs-built_in">Object</span>.assign( {}, user );
+    newUserRecord.lastLogin = <span class="hljs-built_in">Date</span>.now();
+    <span class="hljs-keyword">return</span> newUserRecord;
+}
+
+<span class="hljs-keyword">var</span> user = {
+    <span class="hljs-comment">// ..</span>
+};
+
+user = updateLastLogin( user );
+</code></pre>
+<h3 id="non-local">Non-Local</h3>
+<p>The importance of an immutable value can be seen if you do something like this:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> arr = [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>];
+
+foo( arr );
+
+<span class="hljs-built_in">console</span>.log( arr[<span class="hljs-number">0</span>] );
+</code></pre>
+<p>Ostensibly, you&apos;re expecting <code>arr[0]</code> to still be the value <code>1</code>. But is it? You don&apos;t know, because <code>foo(..)</code> <em>might</em> mutate the array using the reference you pass to it.</p>
+<p>We already saw a cheat in the previous chapter to avoid such a surprise:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> arr = [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>];
+
+foo( arr.slice() );            <span class="hljs-comment">// ha! a copy!</span>
+
+<span class="hljs-built_in">console</span>.log( arr[<span class="hljs-number">0</span>] );        <span class="hljs-comment">// 1</span>
+</code></pre>
+<p>Of course, that assertion holds true only if <code>foo</code> doesn&apos;t skip its parameter and reference our same <code>arr</code> via free variable lexical reference!</p>
+<p>In a little bit, we&apos;ll see another strategy for protecting ourselves from a value being mutated out from underneath us unexpectedly.</p>
+<h2 id="reassignment">Reassignment</h2>
+<p>How would you describe what a &quot;constant&quot; is? Think about that for a moment before you move onto the next paragraph.</p>
+<p>...</p>
+<p>Some of you may have conjured descriptions like, &quot;a value that can&apos;t change&quot;, &quot;a variable that can&apos;t be changed&quot;, etc. These are all approximately in the neighborhood, but not quite at the right house. The precise definition we should use for a constant is: a variable that cannot be reassigned.</p>
+<p>This nitpicking is really important, because it clarifies that a constant actually has nothing to do with the value, except to say that whatever value a constant holds, that variable cannot be reassigned to any other value. But it says nothing about the nature of the value itself.</p>
+<p>Consider:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> x = <span class="hljs-number">2</span>;
+</code></pre>
+<p>Like we discussed earlier, the value <code>2</code> is an unchangeable (immutable) primitive. If I change that code to:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> x = <span class="hljs-number">2</span>;
+</code></pre>
+<p>The presence of the <code>const</code> keyword, known familiarly as a &quot;constant declaration&quot;, actually does nothing at all to change the nature of <code>2</code>; it&apos;s already unchangeable, and it always will be.</p>
+<p>It&apos;s true that this later line will fail with an error:</p>
+<pre><code class="lang-js"><span class="hljs-comment">// try to change `x`, fingers crossed!</span>
+x = <span class="hljs-number">3</span>;        <span class="hljs-comment">// Error!</span>
+</code></pre>
+<p>But again, we&apos;re not changing anything about the value. We&apos;re attempting to reassign the variable <code>x</code>. The values involved are almost incidental.</p>
+<p>To prove that <code>const</code> has nothing to do with the nature of the value, consider:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> x = [ <span class="hljs-number">2</span> ];
+</code></pre>
+<p>Is the array a constant? <strong>No.</strong> <code>x</code> is a constant because it cannot be reassigned. But this later line is totally OK:</p>
+<pre><code class="lang-js">x[<span class="hljs-number">0</span>] = <span class="hljs-number">3</span>;
+</code></pre>
+<p>Why? Because the array is still totally mutable, even though <code>x</code> is a constant.</p>
+<p>The confusion around <code>const</code> and &quot;constant&quot; only dealing with assignments and not value semantics is a long and dirty story. It seems a high degree of developers in just about every language that has a <code>const</code> stumble over the same sorts of confusions. Java in fact deprecated <code>const</code> and introduced a new keyword <code>final</code> at least in part to separate itself from the confusion over &quot;constant&quot; semantics.</p>
+<p>Setting aside the confusion detractions, what importance does <code>const</code> hold for the FPer, if not to have anything to do with creating an immutable value?</p>
+<h3 id="intent">Intent</h3>
+<p>The use of <code>const</code> tells the reader of your code that <em>that</em> variable will not be reassigned. As a signal of intent, <code>const</code> is often highly lauded as a welcome addition to JavaScript and universal improvement in code readability.</p>
+<p>In my opinion, this is mostly hype; there&apos;s not much substance to these claims. I see only the mildest of faint benefit in signaling your intent in this way. And when you match that up against decades of precedent around confusion about it implying value immutability, I don&apos;t think <code>const</code> comes even close to carrying its own weight.</p>
+<p>To back up my assertion, let&apos;s take a reality check. <code>const</code> creates a block scoped variable, meaning that variable only exists in that one localized block:</p>
+<pre><code class="lang-js"><span class="hljs-comment">// lots of code</span>
+
+{
+    <span class="hljs-keyword">const</span> x = <span class="hljs-number">2</span>;
+
+    <span class="hljs-comment">// a few lines of code</span>
+}
+
+<span class="hljs-comment">// lots of code</span>
+</code></pre>
+<p>Typically, blocks are considered best designed to be only a few lines long. If you have blocks of more than say 10 lines, most developers will advise you to refactor. So <code>const x = 2</code> only applies to those next 9 lines of code at most.</p>
+<p>No other part of the program can ever affect the assignment of <code>x</code>. <strong>Period.</strong></p>
+<p>My claims is: that program has basically the same magnitude of readability as this one:</p>
+<pre><code class="lang-js"><span class="hljs-comment">// lots of code</span>
+
+{
+    <span class="hljs-keyword">let</span> x = <span class="hljs-number">2</span>;
+
+    <span class="hljs-comment">// a few lines of code</span>
+}
+
+<span class="hljs-comment">// lots of code</span>
+</code></pre>
+<p>If you look at the next few lines of code after <code>let x = 2;</code>, you&apos;ll be able to easily tell that <code>x</code> is not in fact reassigned. That to me is a <strong>much stronger signal</strong> -- actually not reassigning it -- than the use of some confusable <code>const</code> declaration to say &quot;won&apos;t reassign it&quot;.</p>
+<p>Moreover, let&apos;s consider what this code is likely to communicate to a reader at first glance:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> magicNums = [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>];
+
+<span class="hljs-comment">// ..</span>
+</code></pre>
+<p>Isn&apos;t it at least possible (probable?) that the reader of your code will assume (wrongly) that your intent is to never mutate the array? That seems like a reasonable inference to me. Imagine their confusion if you do in fact allow the array value referenced by <code>magicNums</code> to be mutated. That will create quite a surprise, won&apos;t it!?</p>
+<p>Worse, what if you intentionally mutate <code>magicNums</code> in some way that turns out to not be obvious to the reader? Later in the code, they see a usage of <code>magicNums</code> and assume (again, wrongly) that it&apos;s still <code>[1,2,3,4]</code> because they read your intent as, &quot;not gonna change this&quot;.</p>
+<p>I think you should use <code>var</code> or <code>let</code> for declaring variables to hold values that you intend to mutate. I think that actually is a <strong>much clearer signal</strong> than using <code>const</code>.</p>
+<p>But the troubles with <code>const</code> don&apos;t stop there. Remember we asserted at the top of the chapter that to treat values as immutable means that when our state needs to change, we have to create a new value instead of mutating it? What are you going to do with that new array once you&apos;ve created it? If you declared your reference to it using <code>const</code>, you can&apos;t reassign it. So... what next?</p>
+<p>In this light, I see <code>const</code> as actually making our efforts to adhere to FP harder, not easier. My conclusion: <code>const</code> is not all that useful. It creates unnecessary confusion and restricts us in inconvenient ways. I only use <code>const</code> for simple constants like:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> PI = <span class="hljs-number">3.141592</span>;
+</code></pre>
+<p>The value <code>3.141592</code> is already immutable, and I&apos;m clearly signaling, &quot;this <code>PI</code> will always be used as stand-in placeholder for this literal value.&quot; To me, that&apos;s what <code>const</code> is good for. And to be frank, I don&apos;t use many of those kinds of declarations in my typical coding.</p>
+<p>I&apos;ve written and seen a lot of JavaScript, and I just think it&apos;s an imagined problem that very many of our bugs come from accidental reassignment.</p>
+<p>The thing we need to worry about is not whether our variables get reassigned, but <strong>whether our values get mutated</strong>. Why? Because values are portable; lexical assignments are not. You can pass an array to a function, and it can be changed without you realizing it. But you cannot have a reassignment happen unexpectedly caused by some other part of your program.</p>
+<h3 id="its-freezing-in-here">It&apos;s Freezing In Here</h3>
+<p>There&apos;s a cheap and simple way to turn a mutable object/array/function into an &quot;immutable value&quot; (of sorts):</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> x = <span class="hljs-built_in">Object</span>.freeze( [<span class="hljs-number">2</span>] );
+</code></pre>
+<p>The <code>Object.freeze(..)</code> utility goes through all the properties/indices of an object/array and marks them as read-only, so they cannot be reassigned. It&apos;s sorta like declaring properties with a <code>const</code>, actually! <code>Object.freeze(..)</code> also marks the properties as non-reconfigurable, and it marks the object/array itself as non-extensible (no new properties can be added). In effect, it makes the top level of the object immutable.</p>
+<p>Top level only, though. Be careful!</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> x = <span class="hljs-built_in">Object</span>.freeze( [ <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, [<span class="hljs-number">4</span>, <span class="hljs-number">5</span>] ] );
+
+<span class="hljs-comment">// not allowed:</span>
+x[<span class="hljs-number">0</span>] = <span class="hljs-number">42</span>;
+
+<span class="hljs-comment">// oops, still allowed:</span>
+x[<span class="hljs-number">2</span>][<span class="hljs-number">0</span>] = <span class="hljs-number">42</span>;
+</code></pre>
+<p><code>Object.freeze(..)</code> provides shallow, naive immutability. You&apos;ll have to walk the entire object/array structure manually and apply <code>Object.freeze(..)</code> to each sub-object/array if you want a deeply immutable value.</p>
+<p>But contrasted with <code>const</code> which can confuse you into thinking you&apos;re getting an immutable value when you aren&apos;t, <code>Object.freeze(..)</code> <em>actually</em> gives you an immutable value.</p>
+<p>Recall the protection example from earlier:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> arr = <span class="hljs-built_in">Object</span>.freeze( [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>] );
+
+foo( arr );
+
+<span class="hljs-built_in">console</span>.log( arr[<span class="hljs-number">0</span>] );            <span class="hljs-comment">// 1</span>
+</code></pre>
+<p>Now <code>arr[0]</code> is quite reliably <code>1</code>.</p>
+<p>This is so important because it makes reasoning about our code much easier when we know we can trust that a value doesn&apos;t change when passed somewhere that we do not see or control.</p>
+<h2 id="performance">Performance</h2>
+<p>Whenever we start creating new values (arrays, objects, etc) instead of mutating existing ones, the obvious next question is: what does that mean for performance?</p>
+<p>If we have to reallocate a new array each time we need to add to it, that&apos;s not only churning CPU time and consuming extra memory, the old values (if no longer referenced) are being garbage collected; That&apos;s even more CPU burn.</p>
+<p>Is that an acceptable trade-off? It depends. No discussion or optimization of code performance should happen <strong>without context.</strong></p>
+<p>If you have a single state change that happens once (or even a couple of times) in the whole life of the program, throwing away an old array/object for a new one is almost certainly not a concern. The churn we&apos;re talking about will be so small -- probably mere microseconds at most -- as to have no practical effect on the performance of your application. Compared to the minutes or hours you will save not having to track down and fix a bug related to unexpected value mutation, there&apos;s not even a contest here.</p>
+<p>Then again, if such an operation is going to occur frequently, or specifically happen in a <em>critical path</em> of your application, then performance -- consider both performance and memory! -- is a totally valid concern.</p>
+<p>Think about a specialized data structure that&apos;s like an array, but that you want to be able to make changes to and have each change behave implicitly as if the result was a new array. How could you accomplish this without actually creating a new array each time? Such a special array data structure could store the original value and then track each change made as a delta from the previous version.</p>
+<p>Internally, it might be like a linked-list tree of object references where each node in the tree represents a mutation of the original value. Actually, this is conceptually similar to how <strong>git</strong> version control works.</p>
+<p align="center">
+    <img src="fig18.png" width="490">
+</p>
+
+<p>Imagine using this hypothetical specialized array data structure like this:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> state = specialArray( <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span> );
+
+<span class="hljs-keyword">var</span> newState = state.set( <span class="hljs-number">42</span>, <span class="hljs-string">&quot;meaning of life&quot;</span> );
+
+state === newState;                    <span class="hljs-comment">// false</span>
+
+state.get( <span class="hljs-number">2</span> );                        <span class="hljs-comment">// 3</span>
+state.get( <span class="hljs-number">42</span> );                    <span class="hljs-comment">// undefined</span>
+
+newState.get( <span class="hljs-number">2</span> );                    <span class="hljs-comment">// 3</span>
+newState.get( <span class="hljs-number">42</span> );                    <span class="hljs-comment">// &quot;meaning of life&quot;</span>
+
+newState.slice( <span class="hljs-number">1</span>, <span class="hljs-number">3</span> );                <span class="hljs-comment">// [2,3]</span>
+</code></pre>
+<p>The <code>specialArray(..)</code> data structure would internally keep track of each mutation operation (like <code>set(..)</code>) as a <em>diff</em>, so it won&apos;t have to reallocate memory for the original values (<code>1</code>, <code>2</code>, <code>3</code>, and <code>4</code>) just to add the <code>&quot;meaning of life&quot;</code> value to the list. But importantly, <code>state</code> and <code>newState</code> point at different versions of the array value, so <strong>the value immutability semantic is preserved.</strong></p>
+<p>Inventing your own performance-optimized data structures is an interesting challenge. But pragmatically, you should probably use a library that already does this well. One great option is <strong>Immutable.js</strong> (<a href="http://facebook.github.io/immutable-js" target="_blank">http://facebook.github.io/immutable-js</a>), which provides a variety of data structures, including <code>List</code> (like array) and <code>Map</code> (like object).</p>
+<p>Consider the above <code>specialArray</code> example but using <code>Immutable.List</code>:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> state = Immutable.List.of( <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span> );
+
+<span class="hljs-keyword">var</span> newState = state.set( <span class="hljs-number">42</span>, <span class="hljs-string">&quot;meaning of life&quot;</span> );
+
+state === newState;                    <span class="hljs-comment">// false</span>
+
+state.get( <span class="hljs-number">2</span> );                        <span class="hljs-comment">// 3</span>
+state.get( <span class="hljs-number">42</span> );                    <span class="hljs-comment">// undefined</span>
+
+newState.get( <span class="hljs-number">2</span> );                    <span class="hljs-comment">// 3</span>
+newState.get( <span class="hljs-number">42</span> );                    <span class="hljs-comment">// &quot;meaning of life&quot;</span>
+
+newState.toArray().slice( <span class="hljs-number">1</span>, <span class="hljs-number">3</span> );    <span class="hljs-comment">// [2,3]</span>
+</code></pre>
+<p>A powerful library like Immutable.js employs very sophisticated performance optimizations. Handling all the details and corner-cases manually without such a library would be quite difficult.</p>
+<p>When changes to a value are few or infrequent and performance is less of a concern, I&apos;d recommend the lighter-weight solution, sticking with built-in <code>Object.freeze(..)</code> as discussed earlier.</p>
+<h2 id="treatment">Treatment</h2>
+<p>What if we receive a value to our function and we&apos;re not sure if it&apos;s mutable or immutable? Is it ever OK to just go ahead and try to mutate it? <strong>No.</strong> As we asserted at the beginning of this chapter, we should treat all received values as immutable -- to avoid side effects and remain pure -- regardless of whether they are or not.</p>
+<p>Recall this example from earlier:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">updateLastLogin</span>(<span class="hljs-params">user</span>) </span>{
+    <span class="hljs-keyword">var</span> newUserRecord = <span class="hljs-built_in">Object</span>.assign( {}, user );
+    newUserRecord.lastLogin = <span class="hljs-built_in">Date</span>.now();
+    <span class="hljs-keyword">return</span> newUserRecord;
+}
+</code></pre>
+<p>This implementation treats <code>user</code> as a value that should not be mutated; whether it <em>is</em> immutable or not is irrelevant to reading this part of the code. Contrast that with this implementation:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">updateLastLogin</span>(<span class="hljs-params">user</span>) </span>{
+    user.lastLogin = <span class="hljs-built_in">Date</span>.now();
+    <span class="hljs-keyword">return</span> user;
+}
+</code></pre>
+<p>That version is a lot easier to write, and even performs better. But not only does this approach make <code>updateLastLogin(..)</code> impure, it also mutates a value in a way that makes both the reading of this code, as well as the places it&apos;s used, more complicated.</p>
+<p><strong>We should treat <code>user</code> as immutable</strong>, always, because at this point of reading the code we do not know where the value comes from, or what potential issues we may cause if we mutate it.</p>
+<p>Nice examples of this approach can be seen in various built-in methods of the JS array, such as <code>concat(..)</code> and <code>slice(..)</code>:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> arr = [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>];
+
+<span class="hljs-keyword">var</span> arr2 = arr.concat( <span class="hljs-number">6</span> );
+
+arr;                    <span class="hljs-comment">// [1,2,3,4,5]</span>
+arr2;                    <span class="hljs-comment">// [1,2,3,4,5,6]</span>
+
+<span class="hljs-keyword">var</span> arr3 = arr2.slice( <span class="hljs-number">1</span> );
+
+arr2;                    <span class="hljs-comment">// [1,2,3,4,5,6]</span>
+arr3;                    <span class="hljs-comment">// [2,3,4,5,6]</span>
+</code></pre>
+<p>Other array prototype methods that treat the value instance as immutable and return a new array instead of mutating: <code>map(..)</code> and <code>filter(..)</code>. The <code>reduce(..)</code> / <code>reduceRight(..)</code> utilities also avoid mutating the instance, though they also don&apos;t by default return a new array.</p>
+<p>Unfortunately, for historical reasons, quite a few other array methods are impure mutators of their instance: <code>splice(..)</code>, <code>pop(..)</code>, <code>push(..)</code>, <code>shift(..)</code>, <code>unshift(..)</code>, <code>reverse(..)</code>, <code>sort(..)</code>, and <code>fill(..)</code>.</p>
+<p>It should not be seen as <em>forbidden</em> to use these kinds utilities, as some claim. For reasons such as performance optimization, sometimes you will want to use them. But you should never use such a method on an array value that is not already local to the function you&apos;re working in, to avoid creating a side effect on some other remote part of the code.</p>
+<p>Be disciplined and always treat <em>received values</em> as immutable, whether they are or not. That effort will improve the readability and trustability of your code.</p>
+<h2 id="summary">Summary</h2>
+<p>Value immutability is not about unchanging values. It&apos;s about creating and tracking new values as the state of the program changes, rather than mutating existing values. This approach leads to more confidence in reading the code, because we limit the places where our state can change in ways we don&apos;t readily see or expect.</p>
+<p><code>const</code> declarations (constants) are commonly mistaken for their ability to signal intent and enforce immutability. In reality, <code>const</code> has basically nothing to do with value immutability, and its usage will likely create more confusion than it solves. Instead, <code>Object.freeze(..)</code> provides a nice built-in way of setting shallow value immutability on an array or object. In many cases, this will be sufficient.</p>
+<p>For performance sensitive parts of the program, or in cases where changes happen frequently, creating a new array or object (especially if it contains lots of data) is undesirable, for both processsing and memory concerns. In these cases, using immutable data structures from a library like <strong>Immutable.js</strong> is probably the best idea.</p>
+<p>The importance of value immutability on code readability is less in the inability to change a value, and more in the discipline to treat a value as immutable.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ch5.html" class="navigation navigation-prev " aria-label="Previous page: Chapter 5: Reducing Side Effects">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="ch7.html" class="navigation navigation-next " aria-label="Next page: Chapter 7: Closure vs Object">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Chapter 6: Value Immutability","level":"1.9","depth":1,"next":{"title":"Chapter 7: Closure vs Object","level":"1.10","depth":1,"path":"ch7.md","ref":"ch7.md","articles":[]},"previous":{"title":"Chapter 5: Reducing Side Effects","level":"1.8","depth":1,"path":"ch5.md","ref":"ch5.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ch6.md","mtime":"2017-03-13T18:38:58.762Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-13T19:03:34.902Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

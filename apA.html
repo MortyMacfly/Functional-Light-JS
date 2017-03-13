@@ -1,0 +1,892 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Appendix A: Transducing · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="apB.html" />
+    
+    
+    <link rel="prev" href="ch11.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Foreword (TBA)
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="preface.html">
+            
+                <a href="preface.html">
+            
+                    
+                    Preface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="ch1.html">
+            
+                <a href="ch1.html">
+            
+                    
+                    Chapter 1: Why Functional Programming?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="ch2.html">
+            
+                <a href="ch2.html">
+            
+                    
+                    Chapter 2: Foundations of Functional Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="ch3.html">
+            
+                <a href="ch3.html">
+            
+                    
+                    Chapter 3: Managing Function Inputs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="ch4.html">
+            
+                <a href="ch4.html">
+            
+                    
+                    Chapter 4: Composing Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="ch5.html">
+            
+                <a href="ch5.html">
+            
+                    
+                    Chapter 5: Reducing Side Effects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="ch6.html">
+            
+                <a href="ch6.html">
+            
+                    
+                    Chapter 6: Value Immutability
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="ch7.html">
+            
+                <a href="ch7.html">
+            
+                    
+                    Chapter 7: Closure vs Object
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="ch8.html">
+            
+                <a href="ch8.html">
+            
+                    
+                    Chapter 8: List Operations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="ch9.html">
+            
+                <a href="ch9.html">
+            
+                    
+                    Chapter 9: Recursion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="ch10.html">
+            
+                <a href="ch10.html">
+            
+                    
+                    Chapter 10: Functional Async
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="ch11.html">
+            
+                <a href="ch11.html">
+            
+                    
+                    Chapter 11: Putting It All together
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.15" data-path="apA.html">
+            
+                <a href="apA.html">
+            
+                    
+                    Appendix A: Transducing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="apB.html">
+            
+                <a href="apB.html">
+            
+                    
+                    Appendix B: The Humble Monad
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="apC.html">
+            
+                <a href="apC.html">
+            
+                    
+                    Appendix C: FP Libraries
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Appendix A: Transducing</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="functional-light-javascript">Functional-Light JavaScript</h1>
+<h1 id="appendix-a-transducing">Appendix A: Transducing</h1>
+<p>Transducing is a more advanced technique than we&apos;ve covered in this book. It extends many of the concepts from Chapter 8 on list operations.</p>
+<p>I wouldn&apos;t necessarily call this topic strictly &quot;Functional-Light&quot;, but more like a bonus on top. I&apos;ve left this to an appendix because you might very well need to skip the discussion for now and come back to it once you feel fairly comfortable with -- and make sure you&apos;ve practiced! -- the main book concepts.</p>
+<p>To be honest, even after teaching transducing many times, and writing this chapter, I am still trying to fully wrap my brain around this technique. So don&apos;t feel bad if it twists you up. Bookmark this appendix and come back when you&apos;re ready.</p>
+<p>Transducing means transforming with reduction.</p>
+<p>I know that may sound like a jumble of words that confuses more than it clarifies. But let&apos;s take a look at how powerful it can be. I actually think it&apos;s one of the best illustrations of what you can do once you grasp the principles of Functional-Light Programming.</p>
+<p>As with the rest of this book, my approach is to first explain <em>why</em>, then <em>how</em>, then finally boil it down to a simplified, repeatable <em>what</em>. That&apos;s often backwards of how many teach, but I think you&apos;ll learn the topic more deeply this way.</p>
+<h2 id="why-first">Why, First</h2>
+<p>Let&apos;s start by extending a scenario we covered back in Chapter 3, testing words to see if they&apos;re short enough and/or long enough:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isLongEnough</span>(<span class="hljs-params">str</span>) </span>{
+    <span class="hljs-keyword">return</span> str.length &gt;= <span class="hljs-number">5</span>;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isShortEnough</span>(<span class="hljs-params">str</span>) </span>{
+    <span class="hljs-keyword">return</span> str.length &lt;= <span class="hljs-number">10</span>;
+}
+</code></pre>
+<p>In Chapter 3, we used these predicate functions to test a single word. Then in Chapter 8, we learned how to repeat such tests using list operations like <code>filter(..)</code>. For example:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> words = [ <span class="hljs-string">&quot;You&quot;</span>, <span class="hljs-string">&quot;have&quot;</span>, <span class="hljs-string">&quot;written&quot;</span>, <span class="hljs-string">&quot;something&quot;</span>, <span class="hljs-string">&quot;very&quot;</span>, <span class="hljs-string">&quot;interesting&quot;</span> ];
+
+words
+.filter( isLongEnough )
+.filter( isShortEnough );
+<span class="hljs-comment">// [&quot;written&quot;,&quot;something&quot;]</span>
+</code></pre>
+<p>It may not be obvious, but this pattern of separate adjacent list operations has some non-ideal characteristics. When we&apos;re dealing with only a single array of a small number of values, everything is fine. But if there were lots of values in the array, each <code>filter(..)</code> processing the list separately can slow down a bit more than we&apos;d like.</p>
+<p>A similar performance problem arises when our arrays are async/lazy (aka observables), processing values over time in response to events (see Chapter 10). In this scenario, only a single value comes down the event stream at a time, so processing that discrete value with two separate <code>filter(..)</code>s function calls isn&apos;t really such a big deal.</p>
+<p>But, what&apos;s not obvious is that each <code>filter(..)</code> method produces a separate observable. The overhead of pumping a value out of one observable into another can really add up. That&apos;s especially true since in these cases, it&apos;s not uncommon for thousands or millions of values to be processed; even such small overhead costs add up quickly.</p>
+<p>The other downside is readability, especially when we need to repeat the same series of operations against multiple lists (or observables). For example:</p>
+<pre><code class="lang-js">zip(
+    list1.filter( isLongEnough ).filter( isShortEnough ),
+    list2.filter( isLongEnough ).filter( isShortEnough ),
+    list3.filter( isLongEnough ).filter( isShortEnough )
+)
+</code></pre>
+<p>Repetitive, right?</p>
+<p>Wouldn&apos;t it be better (both for readability and performacne) if we could combine the <code>isLongEnough(..)</code> predicate with the <code>isShortEnough(..)</code> predicate? You could do so manually:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isCorrectLength</span>(<span class="hljs-params">str</span>) </span>{
+    <span class="hljs-keyword">return</span> isLongEnough( str ) &amp;&amp; isShortEnough( str );
+}
+</code></pre>
+<p>But that&apos;s not the FP way!</p>
+<p>In Chapter 8, we talked about fusion -- composing adjacent mapping functions. Recall:</p>
+<pre><code class="lang-js">words
+.map(
+    pipe( removeInvalidChars, upper, elide )
+);
+</code></pre>
+<p>Unfortunately, combining adjacent predicate functions doesn&apos;t work as easily as combining adjacent mapping functions. To understand why, think about the &quot;shape&quot; of the predicate function -- a sort of academic way of describing the signature of inputs and output. It takes a single value in, and it returns a <code>true</code> or a <code>false</code>.</p>
+<p>If you tried <code>isShortEnough(isLongEnough(str))</code>, it wouldn&apos;t work properly. <code>isLongEnough(..)</code> will return <code>true</code> / <code>false</code>, not the string value that <code>isShortEnough(..)</code> is expecting. Bummer.</p>
+<p>A similar frustration exists trying to compose two adjacent reducer functions. The &quot;shape&quot; of a reducer is a function that receives two values as input, and returns a single combined value. The output of a reducer as a single value is not suitable for input to another reducer expecting two inputs.</p>
+<p>Moreover, the <code>reduce(..)</code> helper takes an optional <code>initialValue</code> input. Sometimes this can be omitted, but sometimes it has to be passed in. That even further complicates composition, since one reduction might need one <code>initialValue</code> and the other reduction might seem like it needs a different <code>initialValue</code>. How can we possibly do that if we only make one <code>reduce(..)</code> call with some sort of composed reducer?</p>
+<p>Consider a chain like this:</p>
+<pre><code class="lang-js">words
+.map( strUppercase )
+.filter( isLongEnough )
+.filter( isShortEnough )
+.reduce( strConcat, <span class="hljs-string">&quot;&quot;</span> );
+<span class="hljs-comment">// &quot;WRITTENSOMETHING&quot;</span>
+</code></pre>
+<p>Can you envision a composition that includes all of these steps: <code>map(strUppercase)</code>, <code>filter(isLongEnough)</code>, <code>filter(isShortEnough)</code>, <code>reduce(strConcat)</code>? The shape of each operator is different, so they won&apos;t directly compose together. We need to bend their shapes a little bit to fit them together.</p>
+<p>Hopefully these observations have illustrated why simple fusion-style composition isn&apos;t up to the task. We need a more powerful technique, and transducing is that tool.</p>
+<h2 id="how-next">How, Next</h2>
+<p>Let&apos;s talk about how we might derive a composition of mappers, predicates and/or reducers.</p>
+<p>Don&apos;t get too overwhelmed: you won&apos;t have to go through all these mental steps we&apos;re about to explore in your own programming. Once you understand and can recognize the problem transducing solves, you&apos;ll be able just jump straight to using a <code>transduce(..)</code> utility from a FP library and move on with the rest of your application!</p>
+<p>Let&apos;s jump in.</p>
+<h3 id="expressing-mapfilter-as-reduce">Expressing Map/Filter As Reduce</h3>
+<p>The first trick we need to perform is expressing our <code>filter(..)</code> and <code>map(..)</code> calls as <code>reduce(..)</code> calls. Recall how we did that in Chapter 8:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">strUppercase</span>(<span class="hljs-params">str</span>) </span>{ <span class="hljs-keyword">return</span> str.toUpperCase(); }
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">strConcat</span>(<span class="hljs-params">str1,str2</span>) </span>{ <span class="hljs-keyword">return</span> str1 + str2; }
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">strUppercaseReducer</span>(<span class="hljs-params">list,str</span>) </span>{
+    list.push( strUppercase( str ) );
+    <span class="hljs-keyword">return</span> list;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isLongEnoughReducer</span>(<span class="hljs-params">list,str</span>) </span>{
+    <span class="hljs-keyword">if</span> (isLongEnough( str )) list.push( str );
+    <span class="hljs-keyword">return</span> list;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isShortEnoughReducer</span>(<span class="hljs-params">list,str</span>) </span>{
+    <span class="hljs-keyword">if</span> (isShortEnough( str )) list.push( str );
+    <span class="hljs-keyword">return</span> list;
+}
+
+words
+.reduce( strUppercaseReducer, [] )
+.reduce( isLongEnoughReducer, [] )
+.reduce( isShortEnough, [] )
+.reduce( strConcat, <span class="hljs-string">&quot;&quot;</span> );
+<span class="hljs-comment">// &quot;WRITTENSOMETHING&quot;</span>
+</code></pre>
+<p>That&apos;s a decent improvement. We now have four adjacent <code>reduce(..)</code> calls instead of a mixture of three different methods all with different shapes. We still can&apos;t just <code>compose(..)</code> those four reducers, however, because they accept two arguments instead of one.</p>
+<p>In Chapter 8, we sort of cheated and used <code>list.push(..)</code> to mutate as a side effect rather than calling <code>list.concat(..)</code> to return a whole new array. Let&apos;s be a bit more formal for now:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">strUppercaseReducer</span>(<span class="hljs-params">list,str</span>) </span>{
+    <span class="hljs-keyword">return</span> list.concat( [strUppercase( str )] );
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isLongEnoughReducer</span>(<span class="hljs-params">list,str</span>) </span>{
+    <span class="hljs-keyword">if</span> (isLongEnough( str )) <span class="hljs-keyword">return</span> list.concat( [str] );
+    <span class="hljs-keyword">return</span> list;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isShortEnoughReducer</span>(<span class="hljs-params">list,str</span>) </span>{
+    <span class="hljs-keyword">if</span> (isShortEnough( str )) <span class="hljs-keyword">return</span> list.concat( [str] );
+    <span class="hljs-keyword">return</span> list;
+}
+</code></pre>
+<p>Later, we&apos;ll look at whether <code>concat(..)</code> is necessary here or not.</p>
+<h3 id="parameterizing-the-reducers">Parameterizing The Reducers</h3>
+<p>Both filter reducers are almost identical, except they use a different predicate function. Let&apos;s parameterize that so we get one utility that can define any filter-reducer:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">filterReducer</span>(<span class="hljs-params">predicateFn</span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">reducer</span>(<span class="hljs-params">list,val</span>)</span>{
+        <span class="hljs-keyword">if</span> (predicateFn( val )) <span class="hljs-keyword">return</span> list.concat( [val] );
+        <span class="hljs-keyword">return</span> list;
+    };
+}
+
+<span class="hljs-keyword">var</span> isLongEnoughReducer = filterReducer( isLongEnough );
+<span class="hljs-keyword">var</span> isShortEnoughReducer = filterReducer( isShortEnough );
+</code></pre>
+<p>Let&apos;s do the same parameterization of the <code>mapperFn(..)</code> for a utility to produce any map-reducer:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">mapReducer</span>(<span class="hljs-params">mapperFn</span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">reducer</span>(<span class="hljs-params">list,val</span>)</span>{
+        <span class="hljs-keyword">return</span> list.concat( [mapperFn( val )] );
+    };
+}
+
+<span class="hljs-keyword">var</span> strToUppercaseReducer = mapReducer( strUppercase );
+</code></pre>
+<p>Our chain still looks the same:</p>
+<pre><code class="lang-js">words
+.reduce( strUppercaseReducer, [] )
+.reduce( isLongEnoughReducer, [] )
+.reduce( isShortEnough, [] )
+.reduce( strConcat, <span class="hljs-string">&quot;&quot;</span> );
+</code></pre>
+<h3 id="extracting-common-combination-logic">Extracting Common Combination Logic</h3>
+<p>Look very closely at the above <code>mapReducer(..)</code> and <code>filterReducer(..)</code> functions. Do you spot the common functionality shared in each?</p>
+<p>This part:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">return</span> list.concat( .. );
+
+<span class="hljs-comment">// or</span>
+<span class="hljs-keyword">return</span> list;
+</code></pre>
+<p>Let&apos;s define a helper for that common logic. But what shall we call it?</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">WHATSITCALLED</span>(<span class="hljs-params">list,val</span>) </span>{
+    <span class="hljs-keyword">return</span> list.concat( [val] );
+}
+</code></pre>
+<p>If you examine what that <code>WHATSITCALLED(..)</code> function does, it takes two values (an array and another value) and it &quot;combines&quot; them by concatenating the value onto the end of the array, returning a new array. Very uncreatively, we could name this <code>listCombination(..)</code>:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">listCombination</span>(<span class="hljs-params">list,val</span>) </span>{
+    <span class="hljs-keyword">return</span> list.concat( [val] );
+}
+</code></pre>
+<p>Let&apos;s now re-define our reducer helpers to use <code>listCombination(..)</code>:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">mapReducer</span>(<span class="hljs-params">mapperFn</span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">reducer</span>(<span class="hljs-params">list,val</span>)</span>{
+        <span class="hljs-keyword">return</span> listCombination( list, mapperFn( val ) );
+    };
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">filterReducer</span>(<span class="hljs-params">predicateFn</span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">reducer</span>(<span class="hljs-params">list,val</span>)</span>{
+        <span class="hljs-keyword">if</span> (predicateFn( val )) <span class="hljs-keyword">return</span> listCombination( list, val );
+        <span class="hljs-keyword">return</span> list;
+    };
+}
+</code></pre>
+<p>Our chain still looks the same (so we won&apos;t repeat it).</p>
+<h3 id="parameterizing-the-combination">Parameterizing The Combination</h3>
+<p>Our simple <code>listCombination(..)</code> utility is only one possible way that we might combine two values. Let&apos;s parameterize the use of it to make our reducers more generalized:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">mapReducer</span>(<span class="hljs-params">mapperFn,combinationFn</span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">reducer</span>(<span class="hljs-params">list,val</span>)</span>{
+        <span class="hljs-keyword">return</span> combinationFn( list, mapperFn( val ) );
+    };
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">filterReducer</span>(<span class="hljs-params">predicateFn,combinationFn</span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">reducer</span>(<span class="hljs-params">list,val</span>)</span>{
+        <span class="hljs-keyword">if</span> (predicateFn( val )) <span class="hljs-keyword">return</span> combinationFn( list, val );
+        <span class="hljs-keyword">return</span> list;
+    };
+}
+</code></pre>
+<p>To use this form of our helpers:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> strToUppercaseReducer = mapReducer( strUppercase, listCombination );
+<span class="hljs-keyword">var</span> isLongEnoughReducer = filterReducer( isLongEnough, listCombination );
+<span class="hljs-keyword">var</span> isShortEnoughReducer = filterReducer( isShortEnough, listCombination );
+</code></pre>
+<p>Defining these utilities to take two arguments instead of one is less convenient for composition, so let&apos;s use our <code>curry(..)</code> approach:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> curriedMapReducer = curry( <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">mapReducer</span>(<span class="hljs-params">mapperFn,combinationFn</span>)</span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">reducer</span>(<span class="hljs-params">list,val</span>)</span>{
+        <span class="hljs-keyword">return</span> combinationFn( list, mapperFn( val ) );
+    };
+} );
+
+<span class="hljs-keyword">var</span> curriedFilterReducer = curry( <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">filterReducer</span>(<span class="hljs-params">predicateFn,combinationFn</span>)</span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">reducer</span>(<span class="hljs-params">list,val</span>)</span>{
+        <span class="hljs-keyword">if</span> (predicateFn( val )) <span class="hljs-keyword">return</span> combinationFn( list, val );
+        <span class="hljs-keyword">return</span> list;
+    };
+} );
+
+<span class="hljs-keyword">var</span> strToUppercaseReducer =
+    curriedMapReducer( strUppercase )( listCombination );
+<span class="hljs-keyword">var</span> isLongEnoughReducer =
+    curriedFilterReducer( isLongEnough )( listCombination );
+<span class="hljs-keyword">var</span> isShortEnoughReducer =
+    curriedFilterReducer( isShortEnough )( listCombination );
+</code></pre>
+<p>That looks a bit more verbose, and probably doesn&apos;t seem very useful.</p>
+<p>But this is actually necessary to get to the next step of our derivation. Remember, our ultimate goal here is to be able to <code>compose(..)</code> these reducers. We&apos;re almost there.</p>
+<h3 id="composing-curried">Composing Curried</h3>
+<p>This step is the trickiest of all to visualize. So read slowly and pay close attention here.</p>
+<p>Let&apos;s consider the curried functions from above, but without the <code>listCombination(..)</code> function having been passed in to each:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> x = curriedMapReducer( strUppercase );
+<span class="hljs-keyword">var</span> y = curriedFilterReducer( isLongEnough );
+<span class="hljs-keyword">var</span> z = curriedFilterReducer( isShortEnough );
+</code></pre>
+<p>Think about the shape of all three of these intermediate functions, <code>x(..)</code>, <code>y(..)</code>, and <code>z(..)</code>. Each one expects a single combination function, and produces a reducer function with it.</p>
+<p>Remember, if we wanted the independent reducers from all these, we could do:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> upperReducer = x( listCombination );
+<span class="hljs-keyword">var</span> longEnoughReducer = y( listCombination );
+<span class="hljs-keyword">var</span> shortEnoughReducer = z( listCombination );
+</code></pre>
+<p>But what would you get back if you called <code>y(z)</code>? Basically, what happens when passing <code>z</code> in as the <code>combinationFn(..)</code> for the <code>y(..)</code> call? That returned reducer function internally looks kinda like this:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">reducer</span>(<span class="hljs-params">list,val</span>) </span>{
+    <span class="hljs-keyword">if</span> (isLongEnough( val )) <span class="hljs-keyword">return</span> z( list, val );
+    <span class="hljs-keyword">return</span> list;
+}
+</code></pre>
+<p>See the <code>z(..)</code> call inside? That should look wrong to you, because the <code>z(..)</code> function is supposed to receive only a single argument (a <code>combinationFn(..)</code>), not two arguments (<code>list</code> and <code>val</code>). The shapes don&apos;t match. That won&apos;t work.</p>
+<p>Let&apos;s instead look at the composition <code>y(z(listCombination))</code>. We&apos;ll break that down into two separate steps:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> shortEnoughReducer = z( listCombination );
+<span class="hljs-keyword">var</span> longAndShortEnoughReducer = y( shortEnoughReducer );
+</code></pre>
+<p>We create <code>shortEnoughReducer(..)</code>, then we pass <em>it</em> in as the <code>combinationFn(..)</code> to <code>y(..)</code>, producing <code>longAndShortEnoughReducer(..)</code>. Re-read that a few times until it clicks.</p>
+<p>Now consider: what do <code>shortEnoughReducer(..)</code> and <code>longAndShortEnoughReducer(..)</code> look like internally? Can you see them in your mind?</p>
+<pre><code class="lang-js"><span class="hljs-comment">// shortEnoughReducer, from z(..):</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">reducer</span>(<span class="hljs-params">list,val</span>) </span>{
+    <span class="hljs-keyword">if</span> (isShortEnough( val )) <span class="hljs-keyword">return</span> listCombination( list, val );
+    <span class="hljs-keyword">return</span> list;
+}
+
+<span class="hljs-comment">// longAndShortEnoughReducer, from y(..):</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">reducer</span>(<span class="hljs-params">list,val</span>) </span>{
+    <span class="hljs-keyword">if</span> (isLongEnough( val )) <span class="hljs-keyword">return</span> shortEnoughReducer( list, val );
+    <span class="hljs-keyword">return</span> list;
+}
+</code></pre>
+<p>Do you see how <code>shortEnoughReducer(..)</code> has taken the place of <code>listCombination(..)</code> inside <code>longAndShortEnoughReducer(..)</code>? Why does that work?</p>
+<p>Because <strong>the shape of a <code>reducer(..)</code> and the shape of <code>listCombination(..)</code> are the same.</strong> In other words, a reducer can be used as a combination function for another reducer; that&apos;s how they compose! The <code>listCombination(..)</code> function makes the first reducer, then <em>that reducer</em> can be as the combination function to make the next reducer, and so on.</p>
+<p>Let&apos;s test out our <code>longAndShortEnoughReducer(..)</code> with a few different values:</p>
+<pre><code class="lang-js">longAndShortEnoughReducer( [], <span class="hljs-string">&quot;nope&quot;</span> );
+<span class="hljs-comment">// []</span>
+
+longAndShortEnoughReducer( [], <span class="hljs-string">&quot;hello&quot;</span> );
+<span class="hljs-comment">// [&quot;hello&quot;]</span>
+
+longAndShortEnoughReducer( [], <span class="hljs-string">&quot;hello world&quot;</span> );
+<span class="hljs-comment">// []</span>
+</code></pre>
+<p>The <code>longAndShortEnoughReducer(..)</code> utility is filtering out both values that are not long enough and values that are not short enough, and it&apos;s doing both these filterings in the same step. It&apos;s a composed reducer!</p>
+<p>Take another moment to let that sink in. It still kinda blows my mind.</p>
+<p>Now, to bring <code>x(..)</code> (the uppercase reducer producer) into the composition:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> longAndShortEnoughReducer = y( z( listCombination) );
+<span class="hljs-keyword">var</span> upperLongAndShortEnoughReducer = x( longAndShortEnoughReducer );
+</code></pre>
+<p>As the name <code>upperLongAndShortEnoughReducer(..)</code> implies, it does all three steps at once -- a mapping and two filters! What it kinda look likes internally:</p>
+<pre><code class="lang-js"><span class="hljs-comment">// upperLongAndShortEnoughReducer:</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">reducer</span>(<span class="hljs-params">list,val</span>) </span>{
+    <span class="hljs-keyword">return</span> longAndShortEnoughReducer( list, strUppercase( val ) );
+}
+</code></pre>
+<p>A string <code>val</code> is passed in, uppercased by <code>strUppercase(..)</code> and then passed along to <code>longAndShortEnoughReducer(..)</code>. <em>That</em> function only conditionally adds this uppercased string to the <code>list</code> if it&apos;s both long enough and short enough. Otherwise, <code>list</code> will remain unchanged.</p>
+<p>It took my brain weeks to fully understand the implications of that juggling. So don&apos;t worry if you need to stop here and re-read a few (dozen!) times to get it. Take your time.</p>
+<p>Now let&apos;s verify:</p>
+<pre><code class="lang-js">upperLongAndShortEnoughReducer( [], <span class="hljs-string">&quot;nope&quot;</span> );
+<span class="hljs-comment">// []</span>
+
+upperLongAndShortEnoughReducer( [], <span class="hljs-string">&quot;hello&quot;</span> );
+<span class="hljs-comment">// [&quot;HELLO&quot;]</span>
+
+upperLongAndShortEnoughReducer( [], <span class="hljs-string">&quot;hello world&quot;</span> );
+<span class="hljs-comment">// []</span>
+</code></pre>
+<p>This reducer is the composition of the map and both filters! That&apos;s amazing!</p>
+<p>Let&apos;s recap where we&apos;re at so far:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> x = curriedMapReducer( strUppercase );
+<span class="hljs-keyword">var</span> y = curriedFilterReducer( isLongEnough );
+<span class="hljs-keyword">var</span> z = curriedFilterReducer( isShortEnough );
+
+<span class="hljs-keyword">var</span> upperLongAndShortEnoughReducer = x( y( z( listCombination ) ) );
+
+words.reduce( upperLongAndShortEnoughReducer, [] );
+<span class="hljs-comment">// [&quot;WRITTEN&quot;,&quot;SOMETHING&quot;]</span>
+</code></pre>
+<p>That&apos;s pretty cool. But let&apos;s make it even better.</p>
+<p><code>x(y(z( .. )))</code> is a composition. Let&apos;s skip the intermediate <code>x</code> / <code>y</code> / <code>z</code> variable names, and just express that composition directly:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> composition = compose(
+    curriedMapReducer( strUppercase ),
+    curriedFilterReducer( isLongEnough ),
+    curriedFilterReducer( isShortEnough )
+);
+
+<span class="hljs-keyword">var</span> upperLongAndShortEnoughReducer = composition( listCombination );
+
+words.reduce( upperLongAndShortEnoughReducer, [] );
+<span class="hljs-comment">// [&quot;WRITTEN&quot;,&quot;SOMETHING&quot;]</span>
+</code></pre>
+<p>Think about the flow of &quot;data&quot; in that composed function:</p>
+<ol>
+<li><code>listCombination(..)</code> flows in as the combination function to make the filter-reducer for <code>isShortEnough(..)</code>.</li>
+<li><em>That</em> resulting reducer function then flows in as the combination function to make the filter-reducer for <code>isLongEnough(..)</code>.</li>
+<li>Finally, <em>that</em> resulting reducer function flows in as the combination function to make the map-reducer for <code>strUppercase(..)</code>.</li>
+</ol>
+<p>In the previous snippet, <code>composition(..)</code> is a composed function expecting a combination function to make a reducer; <code>composition(..)</code> has a special label: transducer. Providing the combination function to a transducer produces the composed reducer:</p>
+<p>// TODO: fact-check if the transducer <em>produces</em> the reducer or <em>is</em> the reducer</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> transducer = compose(
+    curriedMapReducer( strUppercase ),
+    curriedFilterReducer( isLongEnough ),
+    curriedFilterReducer( isShortEnough )
+);
+
+words
+.reduce( transducer( listCombination ), [] );
+<span class="hljs-comment">// [&quot;WRITTEN&quot;,&quot;SOMETHING&quot;]</span>
+</code></pre>
+<p><strong>Note:</strong> We should make an observation about the <code>compose(..)</code> order in the previous two snippets, which may be confusing. Recall that in our original example chain, we <code>map(strUppercase)</code> and then <code>filter(isLongEnough)</code> and finally <code>filter(isShortEnough)</code>; those operations indeed happen in that order. But in Chapter 4, we learned that <code>compose(..)</code> typically has the effect of running its functions in reverse order of listing. So why don&apos;t we need to reverse the order <em>here</em> to get the same desired outcome? The abstraction of the <code>combinationFn(..)</code> from each reducer reverses the effective applied order of operations under the hood. So counter-intuitively, when composing a tranducer, you actually want to list them in desired order of execution!</p>
+<h4 id="list-combination-pure-vs-impure">List Combination: Pure vs Impure</h4>
+<p>As a quick aside, let&apos;s revisit our <code>listCombination(..)</code> combination function implementation:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">listCombination</span>(<span class="hljs-params">list,val</span>) </span>{
+    <span class="hljs-keyword">return</span> list.concat( [val] );
+}
+</code></pre>
+<p>While this approach is pure, it has negative consequences for performance. First, it creates the <code>[..]</code> temporary array wrapped around <code>val</code>. Then, <code>concat(..)</code> creates a whole new array to append this temporary array onto. For each step in our composed reduction, that&apos;s a lot of arrays being created and thrown away, which is not only bad for CPU but also GC memory churn.</p>
+<p>The better-performing, impure version:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">listCombination</span>(<span class="hljs-params">list,val</span>) </span>{
+    list.push( val );
+    <span class="hljs-keyword">return</span> list;
+}
+</code></pre>
+<p>Thinking about <code>listCombination(..)</code> in isolation, there&apos;s no question it&apos;s impure and that&apos;s usually something we&apos;d want to avoid. However, there&apos;s a bigger context we should consider.</p>
+<p><code>listCombination(..)</code> is not a function we interact with at all. We don&apos;t directly use it anywhere in the program, instead we let the transducing process use it.</p>
+<p>Back in Chapter 5, we asserted that our goal with reducing side effects and defining pure functions was only that we expose pure functions to the API level of functions we&apos;ll use throughout our program. We observed that under the covers, inside a pure function, it can cheat for performance sake all it wants, as long as it doesn&apos;t violate the external contract of purity.</p>
+<p><code>listCombination(..)</code> is more an internal implementation detail of the transducing -- in fact, it&apos;ll often be provided by the transducing library for you! -- rather than a top-level method you&apos;d interact with on a normal basis throughout your program.</p>
+<p>Bottom line: I think it&apos;s perfectly acceptable, and advisable even, to use the performance-optimal impure version of <code>listCombination(..)</code>. Just make sure you document that it&apos;s impure with a code comment!</p>
+<h3 id="alternate-combination">Alternate Combination</h3>
+<p>So far, this is what we&apos;ve derived with transducing:</p>
+<pre><code class="lang-js">words
+.reduce( transducer( listCombination ), [] )
+.reduce( strConcat, <span class="hljs-string">&quot;&quot;</span> );
+<span class="hljs-comment">// WRITTENSOMETHING</span>
+</code></pre>
+<p>That&apos;s pretty good, but we have one final trick up our sleeve with transducing. And frankly, I think this part is what makes all this mental effort you&apos;ve expended thus far, actually worth it.</p>
+<p>Can we somehow &quot;compose&quot; these two <code>reduce(..)</code> calls to get it down to just one <code>reduce(..)</code>? Unfortunately, we can&apos;t just add <code>strConcat(..)</code> into the <code>compose(..)</code> call; its shape is not correct for that kind of composition.</p>
+<p>But let&apos;s look at these two functions side-by-side:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">strConcat</span>(<span class="hljs-params">str1,str2</span>) </span>{ <span class="hljs-keyword">return</span> str1 + str2; }
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">listCombination</span>(<span class="hljs-params">list,val</span>) </span>{ list.push( val ); <span class="hljs-keyword">return</span> list; }
+</code></pre>
+<p>If you squint your eyes, you can almost see how these two functions are interchangable. They operate with different data types, but conceptually they do the same thing: combine two values into one.</p>
+<p>In other words, <code>strConcat(..)</code> is a combination function!</p>
+<p>That means that we can use <em>it</em> instead of <code>listCombination(..)</code> if our end goal is to get a string concatenation rather than a list:</p>
+<pre><code class="lang-js">words.reduce( transducer( strConcat ), <span class="hljs-string">&quot;&quot;</span> );
+<span class="hljs-comment">// WRITTENSOMETHING</span>
+</code></pre>
+<p>Boom! That&apos;s transducing for you. I won&apos;t actually drop the mic here, but just gently set it down...</p>
+<h2 id="what-finally">What, Finally</h2>
+<p>Take a deep breath. That was a lot to digest.</p>
+<p>Clearing our brains for a minute, let&apos;s turn our attention back to just using transducing in our applications without jumping through all those mental hoops to derive how it works.</p>
+<p>Recall the helpers we defined earlier; let&apos;s rename them for clarity:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> transduceMap = curry( <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">mapReducer</span>(<span class="hljs-params">mapperFn,combinationFn</span>)</span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">reducer</span>(<span class="hljs-params">list,v</span>)</span>{
+        <span class="hljs-keyword">return</span> combinationFn( list, mapperFn( v ) );
+    };
+} );
+
+<span class="hljs-keyword">var</span> transduceFilter = curry( <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">filterReducer</span>(<span class="hljs-params">predicateFn,combinationFn</span>)</span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">reducer</span>(<span class="hljs-params">list,v</span>)</span>{
+        <span class="hljs-keyword">if</span> (predicateFn( v )) <span class="hljs-keyword">return</span> combinationFn( list, v );
+        <span class="hljs-keyword">return</span> list;
+    };
+} );
+</code></pre>
+<p>Also recall that we use them like this:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> transducer = compose(
+    transduceMap( strUppercase ),
+    transduceFilter( isLongEnough ),
+    transduceFilter( isShortEnough )
+);
+</code></pre>
+<p><code>transducer(..)</code> still needs a combination function (like <code>listCombination(..)</code> or <code>strConcat(..)</code>) passed to it to produce a transduce-reducer function, which then can then be used (along with an initial value) in <code>reduce(..)</code>.</p>
+<p>But to express all these transducing steps more declaratively, let&apos;s make a <code>transduce(..)</code> utility that does these steps for us:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">transduce</span>(<span class="hljs-params">transducer,combinationFn,initialValue,list</span>) </span>{
+    <span class="hljs-keyword">var</span> reducer = transducer( combinationFn );
+    <span class="hljs-keyword">return</span> list.reduce( reducer, initialValue );
+}
+</code></pre>
+<p>Here&apos;s our running example, cleaned up:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> transducer = compose(
+    transduceMap( strUppercase ),
+    transduceFilter( isLongEnough ),
+    transduceFilter( isShortEnough )
+);
+
+transduce( transducer, listCombination, [], words );
+<span class="hljs-comment">// [&quot;WRITTEN&quot;,&quot;SOMETHING&quot;]</span>
+
+transduce( transducer, strConcat, <span class="hljs-string">&quot;&quot;</span>, words );
+<span class="hljs-comment">// WRITTENSOMETHING</span>
+</code></pre>
+<p>Not bad, huh!? See the <code>listCombination(..)</code> and <code>strConcat(..)</code> functions used interchangably as combination functions?</p>
+<h3 id="transducersjs">Transducers.js</h3>
+<p>Finally, let&apos;s illustrate our running example using the <code>transducers-js</code> library (<a href="https://github.com/cognitect-labs/transducers-js" target="_blank">https://github.com/cognitect-labs/transducers-js</a>):</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> transformer = transducers.comp(
+    transducers.map( strUppercase ),
+    transducers.filter( isLongEnough ),
+    transducers.filter( isShortEnough )
+);
+
+transducers.transduce( transformer, listCombination, [], words );
+<span class="hljs-comment">// [&quot;WRITTEN&quot;,&quot;SOMETHING&quot;]</span>
+
+transducers.transduce( transformer, strConcat, <span class="hljs-string">&quot;&quot;</span>, words );
+<span class="hljs-comment">// WRITTENSOMETHING</span>
+</code></pre>
+<p>Looks almost identical to above.</p>
+<p><strong>Note:</strong> The above snippet uses <code>transformers.comp(..)</code> since the library provides it, but in this case our <code>compose(..)</code> from Chapter 4 would produce the same outcome. In other words, composition itself isn&apos;t a transducing-sensitive operation.</p>
+<p>The composed function in this snippet is named <code>transformer</code> instead of <code>transducer</code>. That&apos;s because if we call <code>transformer(listCombination)</code> (or <code>transformer(strConcat)</code>), we won&apos;t get a straight up transduce-reducer function as earlier.</p>
+<p><code>transducers.map(..)</code> and <code>transducers.filter(..)</code> are special helpers that adapt regular predicate or mapper functions into functions that produce a special transform object (with the transducer function wrapped underneath); the library uses these transform objects for transducing. The extra capabilities of this transform object abstraction are beyond what we&apos;ll explore, so consult the library&apos;s documentation for more information.</p>
+<p>Since calling <code>transformer(..)</code> produces a transform object and not a typical two-arity transduce-reducer function, the library also provides <code>toFn(..)</code> to adapt the transform object to be useable by native array <code>reduce(..)</code>:</p>
+<pre><code class="lang-js">words.reduce(
+    transducers.toFn( transformer, strConcat ),
+    <span class="hljs-string">&quot;&quot;</span>
+);
+<span class="hljs-comment">// WRITTENSOMETHING</span>
+</code></pre>
+<p><code>into(..)</code> is another provided helper that automatically selects a default combination function based on the type of empty/initial value specified:</p>
+<pre><code class="lang-js">transducers.into( [], transformer, words );
+<span class="hljs-comment">// [&quot;WRITTEN&quot;,&quot;SOMETHING&quot;]</span>
+
+transducers.into( <span class="hljs-string">&quot;&quot;</span>, transformer, words );
+<span class="hljs-comment">// WRITTENSOMETHING</span>
+</code></pre>
+<p>When specifying an empty <code>[]</code> array, the <code>transduce(..)</code> called under the covers uses a default implementation of a function like our <code>listCombination(..)</code> helper. But when specifying an empty <code>&quot;&quot;</code> string, something like our <code>strConcat(..)</code> is used. Cool!</p>
+<p>As you can see, the <code>transducers-js</code> library makes transducing pretty straightforward. We can very effectively leverage the power of this technique without getting into the weeds of defining all those intermediate transducer-producing utilities ourselves.</p>
+<h2 id="summary">Summary</h2>
+<p>To transduce means to transform with a reduce. More specifically, a transducer is a composable reducer.</p>
+<p>We use transducing to compose adjacent <code>map(..)</code>, <code>filter(..)</code>, and <code>reduce(..)</code> operations together. We accomplish this by first expressing <code>map(..)</code>s and <code>filter(..)</code>s as <code>reduce(..)</code>s, and then abstracting out the common combination operation to create unary reducer-producing functions that are easily composed.</p>
+<p>Transducing primarily improves performance, which is especially obvious if used on a lazy sequence (async observable).</p>
+<p>But more broadly, transducing is how we express a more declarative composition of functions that would otherwise not be directly composable. The result, if used appropriately as with all other techniques in this book, is clearer, more readable code! A single <code>reduce(..)</code> call with a transducer is easier to reason about than tracking multiple <code>reduce(..)</code> calls.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ch11.html" class="navigation navigation-prev " aria-label="Previous page: Chapter 11: Putting It All together">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="apB.html" class="navigation navigation-next " aria-label="Next page: Appendix B: The Humble Monad">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Appendix A: Transducing","level":"1.15","depth":1,"next":{"title":"Appendix B: The Humble Monad","level":"1.16","depth":1,"path":"apB.md","ref":"apB.md","articles":[]},"previous":{"title":"Chapter 11: Putting It All together","level":"1.14","depth":1,"path":"ch11.md","ref":"ch11.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"apA.md","mtime":"2017-03-13T18:38:58.762Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-13T19:03:34.902Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

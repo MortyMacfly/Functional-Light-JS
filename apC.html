@@ -1,0 +1,547 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Appendix C: FP Libraries · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="apB.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Foreword (TBA)
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="preface.html">
+            
+                <a href="preface.html">
+            
+                    
+                    Preface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="ch1.html">
+            
+                <a href="ch1.html">
+            
+                    
+                    Chapter 1: Why Functional Programming?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="ch2.html">
+            
+                <a href="ch2.html">
+            
+                    
+                    Chapter 2: Foundations of Functional Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="ch3.html">
+            
+                <a href="ch3.html">
+            
+                    
+                    Chapter 3: Managing Function Inputs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="ch4.html">
+            
+                <a href="ch4.html">
+            
+                    
+                    Chapter 4: Composing Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="ch5.html">
+            
+                <a href="ch5.html">
+            
+                    
+                    Chapter 5: Reducing Side Effects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="ch6.html">
+            
+                <a href="ch6.html">
+            
+                    
+                    Chapter 6: Value Immutability
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="ch7.html">
+            
+                <a href="ch7.html">
+            
+                    
+                    Chapter 7: Closure vs Object
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="ch8.html">
+            
+                <a href="ch8.html">
+            
+                    
+                    Chapter 8: List Operations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="ch9.html">
+            
+                <a href="ch9.html">
+            
+                    
+                    Chapter 9: Recursion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="ch10.html">
+            
+                <a href="ch10.html">
+            
+                    
+                    Chapter 10: Functional Async
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="ch11.html">
+            
+                <a href="ch11.html">
+            
+                    
+                    Chapter 11: Putting It All together
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="apA.html">
+            
+                <a href="apA.html">
+            
+                    
+                    Appendix A: Transducing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="apB.html">
+            
+                <a href="apB.html">
+            
+                    
+                    Appendix B: The Humble Monad
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.17" data-path="apC.html">
+            
+                <a href="apC.html">
+            
+                    
+                    Appendix C: FP Libraries
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Appendix C: FP Libraries</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="functional-light-javascript">Functional-Light JavaScript</h1>
+<h1 id="appendix-c-fp-libraries">Appendix C: FP Libraries</h1>
+<p>If you&apos;ve been reading this book from start to finish, take a minute to stop and look back how far you&apos;ve come since Chapter 1. It&apos;s been quite a journey. I hope you&apos;ve learned a lot and gained insight into thinking functionally for your own programs.</p>
+<p>I want to close this book leaving you with some quick pointers of working with official FP libraries. This is not an exhaustive documentation on each, but a quick glance at the things you should be aware of as you venture beyond &quot;functional-light&quot; into true FP.</p>
+<p>Wherever possible, I recommend you <em>not</em> reinvent any wheels. If you find an FP library that suits your needs, use it. Only use the ad hoc helper utilities from this book -- or invent ones of your own! -- if you can&apos;t find a suitable library method for your circumstance.</p>
+<h2 id="stuff-to-investigate">Stuff To Investigate</h2>
+<p>Let&apos;s expand the list of FP libraries to be aware of, from Chapter 1. We won&apos;t cover all of these (as there&apos;s a lot of overlap), but here are the ones that should probably be on your radar screen:</p>
+<ul>
+<li><a href="http://ramdajs.com" target="_blank">Ramda</a>: General FP Utilities</li>
+<li><a href="https://github.com/sanctuary-js/sanctuary" target="_blank">Sanctuary</a>: Ramda Companion For FP Types</li>
+<li><a href="https://github.com/lodash/lodash/wiki/FP-Guide" target="_blank">lodash/fp</a>: General FP Utilities</li>
+<li><a href="http://functionaljs.com/" target="_blank">functional.js</a>: General FP Utilities</li>
+<li><a href="https://github.com/facebook/immutable-js" target="_blank">Immutable</a>: Immutable Data Structures</li>
+<li><a href="https://github.com/swannodette/mori" target="_blank">Mori</a>: (ClojureScript Inspired) Immutable Data Structures</li>
+<li><a href="https://github.com/rtfeldman/seamless-immutable" target="_blank">Seamless-Immutable</a>: Immutable Data Helpers</li>
+<li><a href="https://github.com/cognitect-labs/transducers-js" target="_blank">tranducers-js</a>: Transducers</li>
+<li><a href="https://github.com/cwmyers/monet.js" target="_blank">monet.js</a>: Monadic Types</li>
+</ul>
+<p>There are dozens of other fine libraries not on this list. Just because it&apos;s not on my list here doesn&apos;t mean it&apos;s not good, nor is this list a particular endorsement. It&apos;s just a quick glance at the landscape of FP-in-JavaScript. A much longer list of FP resources can be <a href="https://github.com/stoeffel/awesome-fp-js" target="_blank">found here</a>.</p>
+<p>One resource that&apos;s extremely important to the FP world -- it&apos;s not a library but more an encyclopedia! -- is <a href="https://github.com/fantasyland/fantasy-land" target="_blank">Fantasy Land</a> (aka FL).</p>
+<p>This is definitely not light reading for the faint of heart. It&apos;s a complete detailed roadmap of all of FP as it&apos;s interpreted in JavaScript. FL has become a de facto standard for JavaScript FP libraries to adhere to, to ensure maximum interoperability.</p>
+<p>Fantasy Land is pretty much the exact opposite of &quot;functional-light&quot;. It&apos;s the full-on no holds barred approach to FP in JavaScript. That said, as you venture beyond this book, it&apos;s undeniable that FL will be down that road for you. I&apos;d recommend you bookmark it, and go back to it after you&apos;ve had at least 6 months of real world practice with this book&apos;s concepts.</p>
+<h2 id="ramda-0230">Ramda (0.23.0)</h2>
+<p>From the <a href="http://ramdajs.com/" target="_blank">Ramda documentation</a>:</p>
+<blockquote>
+<p>Ramda functions are automatically curried.</p>
+<p>The parameters to Ramda functions are arranged to make it convenient for currying. The data to be operated on is generally supplied last.</p>
+</blockquote>
+<p>I find that design decision to be one of Ramda&apos;s strengths. It&apos;s also important to note that Ramda&apos;s form of currying (as with most libraries, it seems) is the &quot;loose currying&quot; we talked about in Chapter 3.</p>
+<p>The final example of Chapter 3 -- recall defining a point-free <code>printIf(..)</code> utility -- can be done with Ramda like this:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">output</span>(<span class="hljs-params">msg</span>) </span>{
+    <span class="hljs-built_in">console</span>.log( msg );
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isShortEnough</span>(<span class="hljs-params">str</span>) </span>{
+    <span class="hljs-keyword">return</span> str.length &lt;= <span class="hljs-number">5</span>;
+}
+
+<span class="hljs-keyword">var</span> isLongEnough = R.complement( isShortEnough );
+
+<span class="hljs-keyword">var</span> printIf = R.partial( R.flip( R.when ), [output] );
+
+<span class="hljs-keyword">var</span> msg1 = <span class="hljs-string">&quot;Hello&quot;</span>;
+<span class="hljs-keyword">var</span> msg2 = msg1 + <span class="hljs-string">&quot; World&quot;</span>;
+
+printIf( isShortEnough, msg1 );            <span class="hljs-comment">// Hello</span>
+printIf( isShortEnough, msg2 );
+
+printIf( isLongEnough, msg1 );
+printIf( isLongEnough, msg2 );            <span class="hljs-comment">// Hello World</span>
+</code></pre>
+<p>A few differences to point out compared to Chapter 3&apos;s approach:</p>
+<ul>
+<li><p>We use <code>R.complement(..)</code> instead of <code>not(..)</code> to create a negating function <code>isLongEnough(..)</code> around <code>isShortEnough(..)</code>.</p>
+</li>
+<li><p>We use <code>R.flip(..)</code> instead of <code>reverseArgs(..)</code>. It&apos;s important to note that <code>R.flip(..)</code> only swaps the first two arguments, whereas <code>reverseArgs(..)</code> reverses all of them. In this case, <code>flip(..)</code> is more convenient for us, so we don&apos;t need to do <code>partialRight(..)</code> or any of that kind of juggling.</p>
+</li>
+<li><p><code>R.partial(..)</code> takes all of its subsequent arguments (beyond the function) as a single array.</p>
+</li>
+<li><p>Because Ramda is using loose currying, we don&apos;t need to use <code>R.uncurryN(..)</code> to get a <code>printIf(..)</code> that takes both its arguments. If we did, it would look like <code>R.uncurryN( 2, .. )</code> wrapped around the <code>R.partial(..)</code> call; but, that&apos;s not necessary.</p>
+</li>
+</ul>
+<p>Ramda is a very popular and powerful library. It&apos;s a really good place to start if you&apos;re practicing adding FP to your code base.</p>
+<h2 id="lodashfp-4174">Lodash/fp (4.17.4)</h2>
+<p>Lodash is one of the most popular libraries in the entire JS ecosystem. They publish an &quot;FP friendly&quot; version of their API as <a href="https://github.com/lodash/lodash/wiki/FP-Guide" target="_blank">&quot;lodash/fp&quot;</a>.</p>
+<p>In Chapter 8, we looked at composing standalone list operations (<code>map(..)</code>, <code>filter(..)</code>, and <code>reduce(..)</code>). Here&apos;s how we could do it with &quot;lodash/fp&quot;:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> sum = (x,y) =&gt; x + y;
+<span class="hljs-keyword">var</span> double = x =&gt; x * <span class="hljs-number">2</span>;
+<span class="hljs-keyword">var</span> isOdd = x =&gt; x % <span class="hljs-number">2</span> == <span class="hljs-number">1</span>;
+
+fp.compose( [
+    fp.reduce( sum )( <span class="hljs-number">0</span> ),
+    fp.map( double ),
+    fp.filter( isOdd )
+] )
+( [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>] );                    <span class="hljs-comment">// 18</span>
+</code></pre>
+<p>Instead of the more familiar <code>_.</code> namespace prefix, &quot;lodash/fp&quot; defines its methods with <code>fp.</code> as the namespace prefix. I find that a helpful distinguisher, and also generally more easy on my eyes than <code>_.</code> anyway!</p>
+<p>Notice that <code>fp.compose(..)</code> (also known as <code>_.flowRight(..)</code> in lodash proper) takes an array of functions instead of individual arguments.</p>
+<p>You cannot beat the stability, widespread community support, and performance of lodash. It&apos;s a solid bet for your FP explorations.</p>
+<h2 id="mori-032">Mori (0.3.2)</h2>
+<p>In Chapter 6, we already briefly glanced at the Immutable.js library, probably the most well-known for immutable data structures.</p>
+<p>Let&apos;s instead look at another popular library: <a href="https://github.com/swannodette/mori" target="_blank">Mori</a>. Mori is designed with a different (ostensibly more FP-like) take on API: it uses standalone functions instead of methods directly on the values.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> state = mori.vector( <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span> );
+
+<span class="hljs-keyword">var</span> newState = mori.assoc(
+    mori.into( state, <span class="hljs-built_in">Array</span>.from( {length: <span class="hljs-number">39</span>} ) ),
+    <span class="hljs-number">42</span>,
+    <span class="hljs-string">&quot;meaning of life&quot;</span>
+);
+
+state === newState;                        <span class="hljs-comment">// false</span>
+
+mori.get( state, <span class="hljs-number">2</span> );                    <span class="hljs-comment">// 3</span>
+mori.get( state, <span class="hljs-number">42</span> );                    <span class="hljs-comment">// undefined</span>
+
+mori.get( newState, <span class="hljs-number">2</span> );                <span class="hljs-comment">// 3</span>
+mori.get( newState, <span class="hljs-number">42</span> );                <span class="hljs-comment">// &quot;meaning of life&quot;</span>
+
+mori.toJs( newState ).slice( <span class="hljs-number">1</span>, <span class="hljs-number">3</span> );    <span class="hljs-comment">// [2,3]</span>
+</code></pre>
+<p>Some interesting things to point out about Mori for this example:</p>
+<ul>
+<li><p>We&apos;re using a <code>vector</code> instead of a <code>list</code> (as one might assume), mostly because the documentation says it behaves more like we expect JS arrays to be.</p>
+</li>
+<li><p>We cannot just randomly set a position past the end of the vector like we can with JS arrays; that throws an exception. So we have to first &quot;grow&quot; the vector using <code>mori.into(..)</code> with an array of the appropriate size of extra slots we want. Once we have a vector with 43 slots (4 + 39), we can set the final slot (position <code>42</code>) to the <code>&quot;meaning of life&quot;</code> value using the <code>mori.assoc(..)</code> method.</p>
+</li>
+<li><p>The intermediate step of creating a larger vector with <code>mori.into(..)</code> and then creating another from it with <code>mori.assoc(..)</code> might sound inefficient. But the beauty of immutable data structures is that no cloning is going on here. Each time a &quot;change&quot; is made, the new data structure is just tracking the difference from the previous state.</p>
+</li>
+</ul>
+<p>Mori is heavily inspired by ClojureScript. Its API will be very familiar if you have experience (or currently work in!) that language. Since I don&apos;t have that experience, I find the method names a little strange to get used to.</p>
+<p>But I really like the standalone function design instead of methods on values. Mori also has some functions that automatically return regular JS arrays, which is a nice convenience.</p>
+<h2 id="summary">Summary</h2>
+<p>JavaScript is not particularly designed as an FP language. However, it does have enough of the basics (like function values, closures, etc) for us to make it FP-friendly. And the libraries we&apos;ve examined here will help you do that.</p>
+<p>Armed with the concepts from this book, you&apos;re ready to start tackling real world code. Find a good FP library and jump in. Practice, practice, practice!</p>
+<p>So... that&apos;s it. I&apos;ve shared what I have for you, for now. I hereby officially certify you as a &quot;Functional-Light JavaScript&quot; programmer! It&apos;s time to close out this &quot;chapter&quot; of our story of learning FP together. But my learning journey continues; I hope your&apos;s does, too!</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="apB.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Appendix B: The Humble Monad">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Appendix C: FP Libraries","level":"1.17","depth":1,"previous":{"title":"Appendix B: The Humble Monad","level":"1.16","depth":1,"path":"apB.md","ref":"apB.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"apC.md","mtime":"2017-03-13T18:38:58.762Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-13T19:03:34.902Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,1532 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Chapter 8: List Operations · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ch9.html" />
+    
+    
+    <link rel="prev" href="ch7.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Foreword (TBA)
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="preface.html">
+            
+                <a href="preface.html">
+            
+                    
+                    Preface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="ch1.html">
+            
+                <a href="ch1.html">
+            
+                    
+                    Chapter 1: Why Functional Programming?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="ch2.html">
+            
+                <a href="ch2.html">
+            
+                    
+                    Chapter 2: Foundations of Functional Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="ch3.html">
+            
+                <a href="ch3.html">
+            
+                    
+                    Chapter 3: Managing Function Inputs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="ch4.html">
+            
+                <a href="ch4.html">
+            
+                    
+                    Chapter 4: Composing Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="ch5.html">
+            
+                <a href="ch5.html">
+            
+                    
+                    Chapter 5: Reducing Side Effects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="ch6.html">
+            
+                <a href="ch6.html">
+            
+                    
+                    Chapter 6: Value Immutability
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="ch7.html">
+            
+                <a href="ch7.html">
+            
+                    
+                    Chapter 7: Closure vs Object
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.11" data-path="ch8.html">
+            
+                <a href="ch8.html">
+            
+                    
+                    Chapter 8: List Operations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="ch9.html">
+            
+                <a href="ch9.html">
+            
+                    
+                    Chapter 9: Recursion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="ch10.html">
+            
+                <a href="ch10.html">
+            
+                    
+                    Chapter 10: Functional Async
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="ch11.html">
+            
+                <a href="ch11.html">
+            
+                    
+                    Chapter 11: Putting It All together
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="apA.html">
+            
+                <a href="apA.html">
+            
+                    
+                    Appendix A: Transducing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="apB.html">
+            
+                <a href="apB.html">
+            
+                    
+                    Appendix B: The Humble Monad
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="apC.html">
+            
+                <a href="apC.html">
+            
+                    
+                    Appendix C: FP Libraries
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Chapter 8: List Operations</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="functional-light-javascript">Functional-Light JavaScript</h1>
+<h1 id="chapter-8-list-operations">Chapter 8: List Operations</h1>
+<p>Did you have fun down our little closures/objects rabbit hole in the previous chapter? Welcome back!</p>
+<blockquote>
+<p>If you can do something awesome, keep doing it repeatedly.</p>
+</blockquote>
+<p>We&apos;ve already seen several brief references earlier in the text to some utilities that we now want to take a very close look at, namely <code>map(..)</code>, <code>filter(..)</code>, and <code>reduce(..)</code>. In JavaScript, these utilities are typically used as methods on the array (aka, &quot;list&quot;) prototype, so we would naturally refer to them as array or list operations.</p>
+<p>Before we talk about the specific array methods, we want to examine conceptually what these operations are used for. It&apos;s equally important in this chapter that you understand <em>why</em> list operations are important as it is to understand <em>how</em> list operations work. Make sure you approach this chapter with that detail in mind.</p>
+<p>The vast majority of common illustrations of these operations, both outside of this book and here in this chapter, depict trivial tasks performed on lists of values (like doubling each number in an array); it&apos;s a cheap and easy way to get the point across.</p>
+<p>But don&apos;t just gloss over these simple examples and miss the deeper point. Some of the most important FP value in understanding list operations comes from being able to model a sequence of tasks -- a series of statements that wouldn&apos;t otherwise <em>look</em> like a list -- as a list operation instead of performing them individually.</p>
+<p>This isn&apos;t just a trick to write more terse code. What we&apos;re after is to move from imperative to declarative style, to make the code patterns more readily recognizable and thus more readable.</p>
+<p>But there&apos;s something <strong>even more important to grasp</strong>. With imperative code, each intermediate result in a set of calculations is stored in variable(s) through assignment. The more of these imperative patterns your code relies on, the harder it is to verify that there aren&apos;t mistakes -- in the logic, accidental mutation of values, or hidden side causes/effects lurking.</p>
+<p>By chaining and/or composing list operations together, the intermediate results are tracked implicitly and largely protected from these hazards.</p>
+<p><strong>Note:</strong> More than previous chapters, to keep the many following code snippets as brief as possible, we&apos;ll rely heavily on the ES6 <code>=&gt;</code> form. However, my advice on <code>=&gt;</code> from Chapter 2 still applies for general coding.</p>
+<h2 id="non-fp-list-processing">Non-FP List Processing</h2>
+<p>As a quick preamble to our discussion in this chapter, I want to call out a few operations which may seem related to JavaScript arrays and FP list operations, but which aren&apos;t. These operations will not be covered here, because they are not consistent with general FP best practices:</p>
+<ul>
+<li><code>forEach(..)</code></li>
+<li><code>some(..)</code></li>
+<li><code>every(..)</code></li>
+</ul>
+<p><code>forEach(..)</code> is an iteration helper, but it&apos;s designed for each function call to operate with side effects; you can probably guess why that&apos;s not an endorsed FP list operation for our discussion!</p>
+<p><code>some(..)</code> and <code>every(..)</code> do encourage the use of pure functions (specifically, predicate functions like <code>filter(..)</code> does), but they inevitably reduce a list to a <code>true</code> / <code>false</code> result, essentially like a search or matching. These two utilities don&apos;t really fit the mold of how we want to model our code with FP, so we&apos;re going to skip covering them here.</p>
+<h2 id="map">Map</h2>
+<p>We&apos;ll start our exploration of FP list operations with one of the most basic and fundamental: <code>map(..)</code>.</p>
+<p>A mapping is a transformation from one value to another value. For example, if you start with the number <code>2</code> and you multiply it by <code>3</code>, you have mapped it to <code>6</code>. It&apos;s important to note that we&apos;re not talking about mapping transformation as implying <em>in-place</em> mutation or reassignment; rather mapping transformation projects a new value from one location to the other.</p>
+<p>In other words:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> x = <span class="hljs-number">2</span>, y;
+
+<span class="hljs-comment">// transformation / projection</span>
+y = x * <span class="hljs-number">3</span>;
+
+<span class="hljs-comment">// mutation / reassignment</span>
+x = x * <span class="hljs-number">3</span>;
+</code></pre>
+<p>If we define a function for this multiplying by <code>3</code>, that function acts as a mapping (transformer) function:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> multipleBy3 = v =&gt; v * <span class="hljs-number">3</span>;
+
+<span class="hljs-keyword">var</span> x = <span class="hljs-number">2</span>, y;
+
+<span class="hljs-comment">// transformation / projection</span>
+y = multiplyBy3( x );
+</code></pre>
+<p>We can naturally extend mapping from a single value transformation to a collection of values. <code>map(..)</code> is an operation that transforms all the values of a list as it projects them to a new list:</p>
+<p align="center">
+    <img src="fig9.png" width="400">
+</p>
+
+<p>To implement <code>map(..)</code>:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">map</span>(<span class="hljs-params">mapperFn,arr</span>) </span>{
+    <span class="hljs-keyword">var</span> newList = [];
+
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> idx = <span class="hljs-number">0</span>; i &lt; arr.length; i++) {
+        newList.push(
+            mapperFn( arr[i], idx, arr )
+        );
+    }
+
+    <span class="hljs-keyword">return</span> newList;
+}
+</code></pre>
+<p><strong>Note:</strong> The parameter order <code>mapperFn, arr</code> may feel backwards at first, but this convention is much more common in FP libraries because it makes these utilities easier to compose (with currying).</p>
+<p>The <code>mapperFn(..)</code> is naturally passed the list item to map/transform, but also an <code>idx</code> and <code>arr</code>. We&apos;re doing that to keep consistency with the built-in array <code>map(..)</code>. These extra pieces of information can be very useful in some cases.</p>
+<p>But in other cases, you may want to use a <code>mapperFn(..)</code> that only the list item should be passed to, because the extra arguments might change its behavior. In &quot;All For One&quot; in Chapter 3, we introduced <code>unary(..)</code>, which limits a function to only accept a single argument (no matter how many are passed).</p>
+<p>Recall the example from Chapter 3 about limiting <code>parseInt(..)</code> to a single argument to be used safely as a <code>mapperFn(..)</code>:</p>
+<pre><code class="lang-js">map( [<span class="hljs-string">&quot;1&quot;</span>,<span class="hljs-string">&quot;2&quot;</span>,<span class="hljs-string">&quot;3&quot;</span>], unary( <span class="hljs-built_in">parseInt</span> ) );
+<span class="hljs-comment">// [1,2,3]</span>
+</code></pre>
+<p>JavaScript provides the <code>map(..)</code> utility built-in on arrays, making it very convenient to use as part of a chain of operations on a list.</p>
+<p><strong>Note:</strong> The JavaScript array prototype operations (<code>map(..)</code>, <code>filter(..)</code>, and <code>reduce(..)</code>) all accept an optional last argument to use for <code>this</code> binding of the function. As we discussed in &quot;What&apos;s This?&quot; in Chapter 2, <code>this</code>-based coding should generally be avoided wherever possible in terms of being consistent with the best practices of FP. As such, our example implementations in this chapter do not support such a <code>this</code>-binding feature.</p>
+<p>Beyond the obvious numeric or string operations you could perform against a list of those respective value types, here&apos;s some other examples of mapping operations. We can use <code>map(..)</code> to transform a list of functions into a list of their return values:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> one = () =&gt; <span class="hljs-number">1</span>;
+<span class="hljs-keyword">var</span> two = () =&gt; <span class="hljs-number">2</span>;
+<span class="hljs-keyword">var</span> three = () =&gt; <span class="hljs-number">3</span>;
+
+[one,two,three].map( fn =&gt; fn() );
+<span class="hljs-comment">// [1,2,3]</span>
+</code></pre>
+<p>Or we can first transform a list of functions by composing each of them with another function, and then execute them:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> increment = v =&gt; ++v;
+<span class="hljs-keyword">var</span> decrement = v =&gt; --v;
+<span class="hljs-keyword">var</span> square = v =&gt; v * v;
+
+<span class="hljs-keyword">var</span> double = v =&gt; v * <span class="hljs-number">2</span>;
+
+[increment,decrement,square]
+.map( fn =&gt; compose( fn, double ) )
+.map( fn =&gt; fn( <span class="hljs-number">3</span> ) );
+<span class="hljs-comment">// [7,5,36]</span>
+</code></pre>
+<p>Something interesting to observe about <code>map(..)</code>: we typically would assume that the list is processed left-to-right, but there&apos;s nothing about the concept of <code>map(..)</code> that really requires that. Each transformation is supposed to be independent of every other transformation.</p>
+<p>Mapping in a general sense could even been parallelized in an environment that supports that, which for a large list could drastically improve performance. We don&apos;t see JavaScript actually doing that because there&apos;s nothing that requires you to pass a pure function as <code>mapperFn(..)</code>, even though you <strong>really ought to</strong>. If you were to pass an impure function and JS were to run different calls in different orders, it would quickly cause havoc.</p>
+<p>Even though theoretically, individual mapping operations are independent, JS has to assume that they&apos;re not. That&apos;s a bummer.</p>
+<h3 id="sync-vs-async">Sync vs Async</h3>
+<p>The list operations we&apos;re discussing in this chapter all operate synchronously on a list of values that are all already present; <code>map(..)</code> as conceived here is an eager operation. But another way of thinking about the mapper function is as an event handler which is invoked for each new value encountered in the list.</p>
+<p>Imagine something fictional like this:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> newArr = arr.map();
+
+arr.addEventListener( <span class="hljs-string">&quot;value&quot;</span>, multiplyBy3 );
+</code></pre>
+<p>Now, any time a value is added to <code>arr</code>, the <code>multiplyBy3(..)</code> event handler -- mapper function -- is called with the value, and its transformation is added to <code>newArr</code>.</p>
+<p>What we&apos;re hinting at is that arrays, and the array operations we perform on them, are the eager synchronous versions, whereas these same operations can also be modeled on a &quot;lazy list&quot; (aka, stream) that receives its values over time. We&apos;ll dive into this topic in Chapter 10.</p>
+<h3 id="mapping-vs-eaching">Mapping vs Eaching</h3>
+<p>Some advocate using <code>map(..)</code> as a general form of <code>forEach(..)</code>-iteration, where essentially the value received is passed through untouched, but then some side-effect can be performed:</p>
+<pre><code class="lang-js">[<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>]
+.map( <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">mapperFn</span>(<span class="hljs-params">v</span>)</span>{
+    <span class="hljs-built_in">console</span>.log( v );            <span class="hljs-comment">// side effect!</span>
+    <span class="hljs-keyword">return</span> v;
+} )
+..
+</code></pre>
+<p>The reason this technique can seem useful is that the <code>map(..)</code> returns the array so you can keep chaining more operations after it; the return value of <code>forEach(..)</code> is <code>undefined</code>. However, I think you should avoid using <code>map(..)</code> in this way, because it&apos;s a net confusion to use a core FP operation in a decidedly un-FP way.</p>
+<p>You&apos;ve heard the old addage about using the right tool for the right job, right? Hammer for a nail, screwdriver for a screw, etc. This is slightly different: it&apos;s use the right tool <em>in the right way</em>.</p>
+<p>A hammer is meant to be swung in your hand; if you instead hold it in your mouth and try to hammer the nail, you&apos;re not gonna be very effective. <code>map(..)</code> is intended to map values, not create side effects.</p>
+<h3 id="a-word-functors">A Word: Functors</h3>
+<p>We&apos;ve mostly tried to stay away from artificial invented terminology in FP as much as possible in this book. We have used official terms at times, but mostly when we can derive some sense of meaning from them in regular everyday conversation.</p>
+<p>I&apos;m going to very briefly break that pattern and use a word that might be a little intimidating: functor. The reason I want to talk about functors here is because we now already understand what they do, and because that term is used heavily throughout the rest of FP literature; you being at least familiar with  and not scared by it will be beneficial.</p>
+<p>A functor is a value that has a utility for using an operator function on that value.</p>
+<p>If the value in question is compound, meaning it&apos;s comprised of individual values -- as is the case with arrays, for example! -- a functor uses the operator function on each individual value. Moreover, the functor utility creates a new compound value holding the results of all the individual operator function calls.</p>
+<p>This is all a fancy way of describing what we just looked at with <code>map(..)</code>. The <code>map(..)</code> function takes its associated value (an array) and a mapping function (the operator function), and executes the mapping function for each individual value in the array. Finally, it returns a new array with all the newly mapped values in it.</p>
+<p>Another example: a string functor would be a string plus a utility that executes some operator function across all the characters in the string, returning a new string with the processed letters. Consider this highly-contrived example:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">uppercaseLetter</span>(<span class="hljs-params">c</span>) </span>{
+    <span class="hljs-keyword">var</span> code = c.charCodeAt( <span class="hljs-number">0</span> );
+
+    <span class="hljs-comment">// lowercase letter?</span>
+    <span class="hljs-keyword">if</span> (code &gt;= <span class="hljs-number">97</span> &amp;&amp; code &lt;= <span class="hljs-number">122</span>) {
+        <span class="hljs-comment">// uppercase it!</span>
+        code = code - <span class="hljs-number">32</span>;
+    }
+
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">String</span>.fromCharCode( code );
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">stringMap</span>(<span class="hljs-params">mapperFn,str</span>) </span>{
+    <span class="hljs-keyword">return</span> [...str].map( mapperFn ).join( <span class="hljs-string">&quot;&quot;</span> );
+}
+
+stringMap( uppercaseLetter, <span class="hljs-string">&quot;Hello World!&quot;</span> );
+<span class="hljs-comment">// HELLO WORLD!</span>
+</code></pre>
+<p><code>stringMap(..)</code> allows a string to be a functor. You can define a mapping function for any data structure; as long as the utility follows these rules, the data structure is a functor.</p>
+<h2 id="filter">Filter</h2>
+<p>Imagine I bring an empty basket with me to the grocery store to visit the fruit section; there&apos;s a big display of fruit (apples, oranges, and bananas). I&apos;m really hungry so I want to get as much fruit as they have available, but I really only prefer the round fruits (apples and oranges). So I sift through each fruit one-by-one, and I walk away with a basket full of just the apples and oranges.</p>
+<p>Let&apos;s say we call this process <em>filtering</em>. Would you more naturally describe my shopping as starting with an empty basket and <strong>filtering in</strong> (selecting, including) only the apples and oranges, or starting with the full display of fruits and <strong>filtering out</strong> (skipping, excluding) the bananas as my basket is filled with fruit?</p>
+<p>If you cook spaghetti in a pot of water, and then pour it into a strainer (aka filter) over the sink, are you filtering in the spaghetti or filtering out the water? If you put coffee grounds into a filter and make a cup of coffee, did you filter in the coffee into your cup, or filter out the coffee grounds?</p>
+<p>Does your view of filtering depend on whether the stuff you want is &quot;kept&quot; in the filter or passes through the filter?</p>
+<p>What about on airline / hotel websites, when you specify options to &quot;filter your results&quot;? Are you filtering in the results that match your criteria, or are you filtering out everything that doesn&apos;t match? Think carefully: this example might have a different semantic than the previous ones.</p>
+<p>Depending on your perspective, filter is either exclusionary or inclusionary. This conceptual conflation is unfortunate.</p>
+<p>I think the most common interpretation of filtering -- outside of programming, anyway -- is that you filter out unwanted stuff. Unfortunately, in programming, we have essentially flipped this semantic to be more like filtering in wanted stuff.</p>
+<p>The <code>filter(..)</code> list operation takes a function to decide if each value in the original array should be in the new array or not. This function needs to return <code>true</code> if a value should make it, and <code>false</code> if it should be skipped. A function that returns <code>true</code> / <code>false</code> for this kind of decision making goes by the special name: predicate function.</p>
+<p>If you think of <code>true</code> as being as a positive signal, the definition of <code>filter(..)</code> is that you are saying &quot;keep&quot; (to filter in) a value rather than saying &quot;discard&quot; (to filter out) a value.</p>
+<p>To use <code>filter(..)</code> as an exclusionary action, you have to twist your brain to think of positively signaling an exclusion by returning <code>false</code>, and passively letting a value pass through by returning <code>true</code>.</p>
+<p>The reason this semantic mismatch matters is because of how you will likely name the function used as <code>predicateFn(..)</code>, and what that means for the readability of code. We&apos;ll come back to this point shortly.</p>
+<p>Here&apos;s how to visualize a <code>filter(..)</code> operation across a list of values:</p>
+<p align="center">
+    <img src="fig10.png" width="400">
+</p>
+
+<p>To implement <code>filter(..)</code>:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">filter</span>(<span class="hljs-params">predicateFn,arr</span>) </span>{
+    <span class="hljs-keyword">var</span> newList = [];
+
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> idx = <span class="hljs-number">0</span>; idx &lt; arr.length; idx++) {
+        <span class="hljs-keyword">if</span> (predicateFn( arr[idx], idx, arr )) {
+            newList.push( arr[idx] );
+        }
+    }
+
+    <span class="hljs-keyword">return</span> newList;
+}
+</code></pre>
+<p>Notice that just like <code>mapperFn(..)</code> before, <code>predicateFn(..)</code> is passed not only the value but also the <code>idx</code> and <code>arr</code>. Use <code>unary(..)</code> to limit its arguments as necessary.</p>
+<p>Just as with <code>map(..)</code>, <code>filter(..)</code> is provided as a built-in utility on JS arrays.</p>
+<p>Let&apos;s consider a predicate function like this:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> whatToCallIt = v =&gt; v % <span class="hljs-number">2</span> == <span class="hljs-number">1</span>;
+</code></pre>
+<p>This function uses <code>v % 2 == 1</code> to return <code>true</code> or <code>false</code>. The effect here is that an odd number will return <code>true</code>, and an even number will return <code>false</code>. So, what should we call this function? A natural name might be:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> isOdd = v =&gt; v % <span class="hljs-number">2</span> == <span class="hljs-number">1</span>;
+</code></pre>
+<p>Consider how you might use <code>isOdd(..)</code> with a simple value check somewhere in your code:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> midIdx;
+
+<span class="hljs-keyword">if</span> (isOdd( list.length )) {
+    midIdx = (list.length + <span class="hljs-number">1</span>) / <span class="hljs-number">2</span>;
+}
+<span class="hljs-keyword">else</span> {
+    midIdx = list.length / <span class="hljs-number">2</span>;
+}
+</code></pre>
+<p>Makes sense, right? But, let&apos;s consider using it with the built-in array <code>filter(..)</code> to filter a list of values:</p>
+<pre><code class="lang-js">[<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>].filter( isOdd );
+<span class="hljs-comment">// [1,3,5]</span>
+</code></pre>
+<p>If you described the <code>[1,3,5]</code> result, would you say, &quot;I filtered out the even numbers&quot;, or would you say &quot;I filtered in the odd numbers&quot;? I think the former is a more natural way of describing it. But the code reads the opposite. The code reads, almost literally, that we &quot;filtered (in) each number that is odd&quot;.</p>
+<p>I personally find this semantic confusing. There&apos;s no question there&apos;s plenty of precedent for experienced developers. But if you just start with a fresh slate, this expression of the logic seems kinda like not speaking without a double negative -- aka, speaking with a double negative.</p>
+<p>We could make this easier by renaming the function from <code>isOdd(..)</code> to <code>isEven(..)</code>:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> isEven = v =&gt; v % <span class="hljs-number">2</span> == <span class="hljs-number">1</span>;
+
+[<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>].filter( isEven );
+<span class="hljs-comment">// [1,3,5]</span>
+</code></pre>
+<p>Yay! But that function makes no sense with its name, in that it returns <code>false</code> when it&apos;s even:</p>
+<pre><code class="lang-js">isEven( <span class="hljs-number">2</span> );        <span class="hljs-comment">// false</span>
+</code></pre>
+<p>Yuck.</p>
+<p>Recall that in &quot;No Points&quot; in Chapter 3, we defined a <code>not(..)</code> operator that negates a predicate function. Consider:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> isEven = not( isOdd );
+
+isEven( <span class="hljs-number">2</span> );        <span class="hljs-comment">// true</span>
+</code></pre>
+<p>But we can&apos;t use <em>this</em> <code>isEven(..)</code> with <code>filter(..)</code> the way it&apos;s currently defined, because our logic will be reversed; we&apos;ll end up with evens, not odds. We&apos;d need to do:</p>
+<pre><code class="lang-js">[<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>].filter( not( isEven ) );
+<span class="hljs-comment">// [1,3,5]</span>
+</code></pre>
+<p>That defeats the whole purpose, though, so let&apos;s not do that. We&apos;re just going in circles.</p>
+<h3 id="filtering-out--filtering-in">Filtering-Out &amp; Filtering-In</h3>
+<p>To clear up all this confusion, let&apos;s define a <code>filterOut(..)</code> that actually <strong>filters out</strong> values by internally negating the predicate check. While we&apos;re at it, we&apos;ll alias <code>filterIn(..)</code> to the existing <code>filter(..)</code>:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> filterIn = filter;
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">filterOut</span>(<span class="hljs-params">predicateFn,arr</span>) </span>{
+    <span class="hljs-keyword">return</span> filterIn( not( predicateFn ), arr );
+}
+</code></pre>
+<p>Now we can use whichever filtering makes most sense at any point in our code:</p>
+<pre><code class="lang-js">isOdd( <span class="hljs-number">3</span> );                                <span class="hljs-comment">// true</span>
+isEven( <span class="hljs-number">2</span> );                            <span class="hljs-comment">// true</span>
+
+filterIn( isOdd, [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>] );            <span class="hljs-comment">// [1,3,5]</span>
+filterOut( isEven, [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>] );        <span class="hljs-comment">// [1,3,5]</span>
+</code></pre>
+<p>I think using <code>filterIn(..)</code> and <code>filterOut(..)</code> (known as <code>reject(..)</code> in Ramda) will make your code a lot more readable than just using <code>filter(..)</code> and leaving the semantics conflated and confusing for the reader.</p>
+<h2 id="reduce">Reduce</h2>
+<p>While <code>map(..)</code> and <code>filter(..)</code> produce new lists, typically this third operator (<code>reduce(..)</code>) combines (aka &quot;reduces&quot;) the values of a list down to a single finite (non-list) value, like a number or string. However, later in this chapter, we&apos;ll look at how you can push <code>reduce(..)</code> to use it in more advanced ways. <code>reduce(..)</code> is one of the most important FP tools; it&apos;s like a swiss army all-in-one knife with all its usefulness.</p>
+<p>A combination/reduction is abstractly defined as taking two values and making them into one value. Some FP contexts refer to this as &quot;folding&quot;, as if you&apos;re folding two values together into on value. That&apos;s a helpful visualization, I think.</p>
+<p>Just like with mapping and filtering, the manner of the combination is entirely up to you, and generally dependent on the types of values in the list. For example, numbers will typically be combined through arithmetic, strings through concatenation, and functions through composition.</p>
+<p>Sometimes a reduction will specify an <code>initialValue</code> and start its work by combining it with the first value in the list, cascading down through each of the rest of the values in the list. That looks like this:</p>
+<p align="center">
+    <img src="fig11.png" width="400">
+</p>
+
+<p>Alternately, you can omit the <code>initialValue</code> in which case the first value of the list will act in place of the <code>initialValue</code> and the combining will start with the second value in the list, like this:</p>
+<p align="center">
+    <img src="fig12.png" width="400">
+</p>
+
+<p><strong>Warning:</strong> In JavaScript, if there&apos;s not at least one value in the reduction (either in the array or specified as <code>initialValue</code>), an error is thrown. Be careful not to omit the <code>initialValue</code> if the list for the reduction could possibly be empty under any circumstance.</p>
+<p>The function you pass to <code>reduce(..)</code> to perform the reduction is typically called a reducer. A reducer has a different signature from the mapper and predicate functions we looked at earlier. Reducers primarily receive the current reduction result as well as the next value to reduce it with. The current result at each step of the reduction is often referred to as the accumulator.</p>
+<p>For example, consider the steps involved in multiply-reducing the numbers <code>5</code>, <code>10</code>, and <code>15</code>, with an <code>initialValue</code> of <code>3</code>:</p>
+<ol>
+<li><code>3</code> * <code>5</code> = <code>15</code></li>
+<li><code>15</code> * <code>10</code> = <code>150</code></li>
+<li><code>150</code> * <code>15</code> = <code>2250</code></li>
+</ol>
+<p>Expressed in JavaScript using the built-in <code>reduce(..)</code> method on arrays:</p>
+<pre><code class="lang-js">[<span class="hljs-number">5</span>,<span class="hljs-number">10</span>,<span class="hljs-number">15</span>].reduce( (product,v) =&gt; product * v, <span class="hljs-number">3</span> );
+<span class="hljs-comment">// 2250</span>
+</code></pre>
+<p>But a standalone implementation of <code>reduce(..)</code> might look like this:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">reduce</span>(<span class="hljs-params">reducerFn,initialValue,arr</span>) </span>{
+    <span class="hljs-keyword">var</span> acc, startIdx;
+
+    <span class="hljs-keyword">if</span> (<span class="hljs-built_in">arguments</span>.length == <span class="hljs-number">3</span>) {
+        acc = initialValue;
+        startIdx = <span class="hljs-number">0</span>;
+    }
+    <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (arr.length &gt; <span class="hljs-number">0</span>) {
+        acc = arr[<span class="hljs-number">0</span>];
+        startIdx = <span class="hljs-number">1</span>;
+    }
+    <span class="hljs-keyword">else</span> {
+        <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>( <span class="hljs-string">&quot;Must provide at least one value.&quot;</span> );
+    }
+
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> idx = startIdx; idx &lt; arr.length; idx++) {
+        acc = reducerFn( acc, arr[idx], idx, arr );
+    }
+
+    <span class="hljs-keyword">return</span> acc;
+}
+</code></pre>
+<p>Just as with <code>map(..)</code> and <code>filter(..)</code>, the reducer function is also passed the lesser-common <code>idx</code> and <code>arr</code> arguments in case that&apos;s useful to the reduction. I would say I don&apos;t typically use these, but I guess it&apos;s nice to have them available.</p>
+<p>Recall in Chapter 4, we discussed the <code>compose(..)</code> utility and showed an implementation with <code>reduce(..)</code>:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">compose</span>(<span class="hljs-params">...fns</span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">composed</span>(<span class="hljs-params">result</span>)</span>{
+        <span class="hljs-keyword">return</span> fns.reverse().reduce( <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">reducer</span>(<span class="hljs-params">result,fn</span>)</span>{
+            <span class="hljs-keyword">return</span> fn( result );
+        }, result );
+    };
+}
+</code></pre>
+<p>To illustrate <code>reduce(..)</code>-based composition differently, consider a reducer that will compose functions left-to-right (like <code>pipe(..)</code> does), to use in an array chain:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> pipeReducer = (composedFn,fn) =&gt; pipe( composedFn, fn );
+
+<span class="hljs-keyword">var</span> fn =
+    [<span class="hljs-number">3</span>,<span class="hljs-number">17</span>,<span class="hljs-number">6</span>,<span class="hljs-number">4</span>]
+    .map( v =&gt; n =&gt; v * n )
+    .reduce( pipeReducer );
+
+fn( <span class="hljs-number">9</span> );            <span class="hljs-comment">// 11016  (9 * 3 * 17 * 6 * 4)</span>
+fn( <span class="hljs-number">10</span> );            <span class="hljs-comment">// 12240  (10 * 3 * 17 * 6 * 4)</span>
+</code></pre>
+<p><code>pipeReducer(..)</code> is unfortunately not point-free (see &quot;No Points&quot; in Chapter 3), but we can&apos;t just pass <code>pipe(..)</code> as the reducer itself, because it&apos;s variadic; the extra arguments (<code>idx</code> and <code>arr</code>) that <code>reduce(..)</code> passes to its reducer function would be problematic.</p>
+<p>Earlier we talked about using <code>unary(..)</code> to limit a <code>mapperFn(..)</code> or <code>predicateFn(..)</code> to just a single argument. It might be handy to have a <code>binary(..)</code> that does something similar but limits to two arguments, for a <code>reducerFn(..)</code> function:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> binary =
+    fn =&gt;
+        (arg1,arg2) =&gt;
+            fn( arg1, arg2 );
+</code></pre>
+<p>Using <code>binary(..)</code>, our previous example is a little cleaner:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> pipeReducer = binary( pipe );
+
+<span class="hljs-keyword">var</span> fn =
+    [<span class="hljs-number">3</span>,<span class="hljs-number">17</span>,<span class="hljs-number">6</span>,<span class="hljs-number">4</span>]
+    .map( v =&gt; n =&gt; v * n )
+    .reduce( pipeReducer );
+
+fn( <span class="hljs-number">9</span> );            <span class="hljs-comment">// 11016  (9 * 3 * 17 * 6 * 4)</span>
+fn( <span class="hljs-number">10</span> );            <span class="hljs-comment">// 12240  (10 * 3 * 17 * 6 * 4)</span>
+</code></pre>
+<p>Unlike <code>map(..)</code> and <code>filter(..)</code> whose order of passing through the array wouldn&apos;t actually matter, <code>reduce(..)</code> definitely uses left-to-right processing. If you want to reduce right-to-left, JavaScript provides a <code>reduceRight(..)</code>, with all other behaviors the same as <code>reduce(..)</code>:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> hyphenate = (str,char) =&gt; str + <span class="hljs-string">&quot;-&quot;</span> + char;
+
+[<span class="hljs-string">&quot;a&quot;</span>,<span class="hljs-string">&quot;b&quot;</span>,<span class="hljs-string">&quot;c&quot;</span>].reduce( hyphenate );
+<span class="hljs-comment">// &quot;a-b-c&quot;</span>
+
+[<span class="hljs-string">&quot;a&quot;</span>,<span class="hljs-string">&quot;b&quot;</span>,<span class="hljs-string">&quot;c&quot;</span>].reduceRight( hyphenate );
+<span class="hljs-comment">// &quot;c-b-a&quot;</span>
+</code></pre>
+<p>Where <code>reduce(..)</code> works left-to-right and thus acts naturally like <code>pipe(..)</code> in composing functions, <code>reduceRight(..)</code>&apos;s right-to-left ordering is natural for performing a <code>compose(..)</code>-like operation. So, let&apos;s revisit <code>compose(..)</code> using <code>reduceRight(..)</code>:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">compose</span>(<span class="hljs-params">...fns</span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">composed</span>(<span class="hljs-params">result</span>)</span>{
+        <span class="hljs-keyword">return</span> fns.reduceRight( <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">reducer</span>(<span class="hljs-params">result,fn</span>)</span>{
+            <span class="hljs-keyword">return</span> fn( result );
+        }, result );
+    };
+}
+</code></pre>
+<p>Now, we don&apos;t need to do <code>fns.reverse()</code>; we just reduce from the other direction!</p>
+<h3 id="map-as-reduce">Map As Reduce</h3>
+<p>The <code>map(..)</code> operation is iterative in its nature, so it can also be represented as a reduction (<code>reduce(..)</code>). The trick is to realize that the <code>initialValue</code> of <code>reduce(..)</code> can be itself an (empty) array, in which case the result of a reduction can be another list!</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> double = v =&gt; v * <span class="hljs-number">2</span>;
+
+[<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>].map( double );
+<span class="hljs-comment">// [2,4,6,8,10]</span>
+
+[<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>].reduce(
+    (list,v) =&gt; (
+        list.push( double( v ) ),
+        list
+    ), []
+);
+<span class="hljs-comment">// [2,4,6,8,10]</span>
+</code></pre>
+<p><strong>Note:</strong> We&apos;re cheating with this reducer and allowing a side effect by allowing <code>list.push(..)</code> to mutate the list that was passed in. In general, that&apos;s not a good idea, obviously, but since we know the <code>[]</code> list is being created and passed in, it&apos;s less dangerous. You could be more formal -- yet less performant! -- by creating a new list with the val <code>concat(..)</code>d onto the end. We&apos;ll come back to this cheat in Appendix A.</p>
+<p>Implementing <code>map(..)</code> with <code>reduce(..)</code> is not on its surface an obvious step or even an improvement. However, this ability will be a crucial recognition for more advanced techniques like those we&apos;ll cover in Appendix A &quot;Transducing&quot;.</p>
+<h3 id="filter-as-reduce">Filter As Reduce</h3>
+<p>Just as <code>map(..)</code> can be done with <code>reduce(..)</code>, so can <code>filter(..)</code>:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> isOdd = v =&gt; v % <span class="hljs-number">2</span> == <span class="hljs-number">1</span>;
+
+[<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>].filter( isOdd );
+<span class="hljs-comment">// [1,3,5]</span>
+
+[<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>].reduce(
+    (list,v) =&gt; (
+        isOdd( v ) ? list.push( v ) : <span class="hljs-literal">undefined</span>,
+        list
+    ), []
+);
+<span class="hljs-comment">// [1,3,5]</span>
+</code></pre>
+<p><strong>Note:</strong> More impure reducer cheating here. Instead of <code>list.push(..)</code>, we could have done <code>list.concat(..)</code> and returned the new list. We&apos;ll come back to this cheat in Appendix A.</p>
+<h2 id="advanced-list-operations">Advanced List Operations</h2>
+<p>Now that we feel somewhat comfortable with the foundational list operations <code>map(..)</code>, <code>filter(..)</code>, and <code>reduce(..)</code>, let&apos;s look at a few more-sophisticated operations you may find useful in various situations. These are generally utilities you&apos;ll find in various FP libraries.</p>
+<h3 id="unique">Unique</h3>
+<p>Filtering a list to include only unique values, based on <code>indexOf(..)</code> searching ( which uses <code>===</code> strict equality comparision):</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> unique =
+    arr =&gt;
+        arr.filter(
+            (v,idx) =&gt;
+                arr.indexOf( v ) == idx
+        );
+</code></pre>
+<p>This technique works by observing that we should only include the first occurrence of an item from <code>arr</code> into the new list; when running left-to-right, this will only be true if its <code>idx</code> position is the same as the <code>indexOf(..)</code> found position.</p>
+<p>Another way to implement <code>unique(..)</code> is to run through <code>arr</code> and include an item into a new (initially empty) list if that item cannot already be found in the new list. For that processing, we use <code>reduce(..)</code>:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> unique =
+    arr =&gt;
+        arr.reduce(
+            (list,v) =&gt;
+                list.indexOf( v ) == <span class="hljs-number">-1</span> ?
+                    ( list.push( v ), list ) : list
+        , [] );
+</code></pre>
+<p><strong>Note:</strong> There are many other ways to implement this algorithm using more imperative approaches like loops, and many of them are likely &quot;more efficient&quot; performance-wise. However, the advantage of either of these presented approaches is that they use existing built-in list operations, which makes them easier to chain/compose alongside other list operations. We&apos;ll talk more about those concerns later in this chapter.</p>
+<p><code>unique(..)</code> nicely produces a new list with no duplicates:</p>
+<pre><code class="lang-js">unique( [<span class="hljs-number">1</span>,<span class="hljs-number">4</span>,<span class="hljs-number">7</span>,<span class="hljs-number">1</span>,<span class="hljs-number">3</span>,<span class="hljs-number">1</span>,<span class="hljs-number">7</span>,<span class="hljs-number">9</span>,<span class="hljs-number">2</span>,<span class="hljs-number">6</span>,<span class="hljs-number">4</span>,<span class="hljs-number">0</span>,<span class="hljs-number">5</span>,<span class="hljs-number">3</span>] );
+<span class="hljs-comment">// [1, 4, 7, 3, 9, 2, 6, 0, 5]</span>
+</code></pre>
+<h3 id="flatten">Flatten</h3>
+<p>From time to time, you may have (or produce through some other operations) an array that&apos;s not just a flat list of values, but with nested arrays, such as:</p>
+<pre><code class="lang-js">[ [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>], <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, [<span class="hljs-number">6</span>, [<span class="hljs-number">7</span>, <span class="hljs-number">8</span>]] ]
+</code></pre>
+<p>What if you&apos;d like to transform it into:</p>
+<pre><code class="lang-js">[ <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>, <span class="hljs-number">8</span> ]
+</code></pre>
+<p>The operation we&apos;re looking for is typically called <code>flatten(..)</code>, and it could be implemented like this using our swiss army knife <code>reduce(..)</code>:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> flatten =
+    arr =&gt;
+        arr.reduce(
+            (list,v) =&gt;
+                list.concat( <span class="hljs-built_in">Array</span>.isArray( v ) ? flatten( v ) : v )
+        , [] );
+</code></pre>
+<p><strong>Note:</strong> This implementation choice relies on recursion to handle the nesting of lists. More on recursion in a later chapter.</p>
+<p>To use <code>flatten(..)</code> with an array of arrays (of any nested depth):</p>
+<pre><code class="lang-js">flatten( [[<span class="hljs-number">0</span>,<span class="hljs-number">1</span>],<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,[<span class="hljs-number">4</span>,[<span class="hljs-number">5</span>,<span class="hljs-number">6</span>,<span class="hljs-number">7</span>],[<span class="hljs-number">8</span>,[<span class="hljs-number">9</span>,[<span class="hljs-number">10</span>,[<span class="hljs-number">11</span>,<span class="hljs-number">12</span>],<span class="hljs-number">13</span>]]]]] );
+<span class="hljs-comment">// [0,1,2,3,4,5,6,7,8,9,10,11,12,13]</span>
+</code></pre>
+<p>You might like to limit the recursive flattening to a certain depth. We can handle this by adding an optional <code>depth</code> limit argument to the implementaiton:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> flatten =
+    (arr,depth = <span class="hljs-literal">Infinity</span>) =&gt;
+        arr.reduce(
+            (list,v) =&gt;
+                list.concat(
+                    depth &gt; <span class="hljs-number">0</span> ?
+                        (depth &gt; <span class="hljs-number">1</span> &amp;&amp; <span class="hljs-built_in">Array</span>.isArray( v ) ?
+                            flatten( v, depth - <span class="hljs-number">1</span> ) :
+                            v
+                        ) :
+                        [v]
+                )
+        , [] );
+</code></pre>
+<p>Illustrating the results with different flattening depths:</p>
+<pre><code class="lang-js">flatten( [[<span class="hljs-number">0</span>,<span class="hljs-number">1</span>],<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,[<span class="hljs-number">4</span>,[<span class="hljs-number">5</span>,<span class="hljs-number">6</span>,<span class="hljs-number">7</span>],[<span class="hljs-number">8</span>,[<span class="hljs-number">9</span>,[<span class="hljs-number">10</span>,[<span class="hljs-number">11</span>,<span class="hljs-number">12</span>],<span class="hljs-number">13</span>]]]]], <span class="hljs-number">0</span> );
+<span class="hljs-comment">// [[0,1],2,3,[4,[5,6,7],[8,[9,[10,[11,12],13]]]]]</span>
+
+flatten( [[<span class="hljs-number">0</span>,<span class="hljs-number">1</span>],<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,[<span class="hljs-number">4</span>,[<span class="hljs-number">5</span>,<span class="hljs-number">6</span>,<span class="hljs-number">7</span>],[<span class="hljs-number">8</span>,[<span class="hljs-number">9</span>,[<span class="hljs-number">10</span>,[<span class="hljs-number">11</span>,<span class="hljs-number">12</span>],<span class="hljs-number">13</span>]]]]], <span class="hljs-number">1</span> );
+<span class="hljs-comment">// [0,1,2,3,4,[5,6,7],[8,[9,[10,[11,12],13]]]]</span>
+
+flatten( [[<span class="hljs-number">0</span>,<span class="hljs-number">1</span>],<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,[<span class="hljs-number">4</span>,[<span class="hljs-number">5</span>,<span class="hljs-number">6</span>,<span class="hljs-number">7</span>],[<span class="hljs-number">8</span>,[<span class="hljs-number">9</span>,[<span class="hljs-number">10</span>,[<span class="hljs-number">11</span>,<span class="hljs-number">12</span>],<span class="hljs-number">13</span>]]]]], <span class="hljs-number">2</span> );
+<span class="hljs-comment">// [0,1,2,3,4,5,6,7,8,[9,[10,[11,12],13]]]</span>
+
+flatten( [[<span class="hljs-number">0</span>,<span class="hljs-number">1</span>],<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,[<span class="hljs-number">4</span>,[<span class="hljs-number">5</span>,<span class="hljs-number">6</span>,<span class="hljs-number">7</span>],[<span class="hljs-number">8</span>,[<span class="hljs-number">9</span>,[<span class="hljs-number">10</span>,[<span class="hljs-number">11</span>,<span class="hljs-number">12</span>],<span class="hljs-number">13</span>]]]]], <span class="hljs-number">3</span> );
+<span class="hljs-comment">// [0,1,2,3,4,5,6,7,8,9,[10,[11,12],13]]</span>
+
+flatten( [[<span class="hljs-number">0</span>,<span class="hljs-number">1</span>],<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,[<span class="hljs-number">4</span>,[<span class="hljs-number">5</span>,<span class="hljs-number">6</span>,<span class="hljs-number">7</span>],[<span class="hljs-number">8</span>,[<span class="hljs-number">9</span>,[<span class="hljs-number">10</span>,[<span class="hljs-number">11</span>,<span class="hljs-number">12</span>],<span class="hljs-number">13</span>]]]]], <span class="hljs-number">4</span> );
+<span class="hljs-comment">// [0,1,2,3,4,5,6,7,8,9,10,[11,12],13]</span>
+
+flatten( [[<span class="hljs-number">0</span>,<span class="hljs-number">1</span>],<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,[<span class="hljs-number">4</span>,[<span class="hljs-number">5</span>,<span class="hljs-number">6</span>,<span class="hljs-number">7</span>],[<span class="hljs-number">8</span>,[<span class="hljs-number">9</span>,[<span class="hljs-number">10</span>,[<span class="hljs-number">11</span>,<span class="hljs-number">12</span>],<span class="hljs-number">13</span>]]]]], <span class="hljs-number">5</span> );
+<span class="hljs-comment">// [0,1,2,3,4,5,6,7,8,9,10,11,12,13]</span>
+</code></pre>
+<h4 id="mapping-then-flattening">Mapping, Then Flattening</h4>
+<p>One of the most common usages of <code>flatten(..)</code> behavior is when you&apos;ve mapped a list of elements where each transformed value from the original list is now itself a list of values. For example:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> firstNames = [
+    { name: <span class="hljs-string">&quot;Jonathan&quot;</span>, variations: [ <span class="hljs-string">&quot;John&quot;</span>, <span class="hljs-string">&quot;Jon&quot;</span>, <span class="hljs-string">&quot;Jonny&quot;</span> ] },
+    { name: <span class="hljs-string">&quot;Stephanie&quot;</span>, variations: [ <span class="hljs-string">&quot;Steph&quot;</span>, <span class="hljs-string">&quot;Stephy&quot;</span> ] },
+    { name: <span class="hljs-string">&quot;Frederick&quot;</span>, variations: [ <span class="hljs-string">&quot;Fred&quot;</span>, <span class="hljs-string">&quot;Freddy&quot;</span> ] }
+];
+
+firstNames
+.map( entry =&gt; [entry.name].concat( entry.variations ) );
+<span class="hljs-comment">// [ [&quot;Jonathan&quot;,&quot;John&quot;,&quot;Jon&quot;,&quot;Jonny&quot;], [&quot;Stephanie&quot;,&quot;Steph&quot;,&quot;Stephy&quot;],</span>
+<span class="hljs-comment">//   [&quot;Frederick&quot;,&quot;Fred&quot;,&quot;Freddy&quot;] ]</span>
+</code></pre>
+<p>The return value is an array of arrays, which might be more awkward to work with. If we want a single dimension list with all the names, we can then <code>flatten(..)</code> that result:</p>
+<pre><code class="lang-js">flatten(
+    firstNames
+    .map( entry =&gt; [entry.name].concat( entry.variations ) )
+);
+<span class="hljs-comment">// [&quot;Jonathan&quot;,&quot;John&quot;,&quot;Jon&quot;,&quot;Jonny&quot;,&quot;Stephanie&quot;,&quot;Steph&quot;,&quot;Stephy&quot;,&quot;Frederick&quot;,</span>
+<span class="hljs-comment">//  &quot;Fred&quot;,&quot;Freddy&quot;]</span>
+</code></pre>
+<p>Besides being slightly more verbose, the disadvantage of doing the <code>map(..)</code> and <code>flatten(..)</code> as separate steps is primarily around performance; this approach processes the list twice.</p>
+<p>FP libraries typically define a <code>flatMap(..)</code> (often also called <code>chain(..)</code>) that does the mapping-then-flattening combined. For consistency and ease of composition (via currying), the <code>flatMap(..)</code> / <code>chain(..)</code> utility typically matches the <code>mapperFn, arr</code> parameter order that we saw earlier with the standalone <code>map(..)</code>, <code>filter(..)</code>, and <code>reduce(..)</code> utilities.</p>
+<pre><code class="lang-js">flatMap( entry =&gt; [entry.name].concat( entry.variations ), firstNames );
+<span class="hljs-comment">// [&quot;Jonathan&quot;,&quot;John&quot;,&quot;Jon&quot;,&quot;Jonny&quot;,&quot;Stephanie&quot;,&quot;Steph&quot;,&quot;Stephy&quot;,&quot;Frederick&quot;,</span>
+<span class="hljs-comment">//  &quot;Fred&quot;,&quot;Freddy&quot;]</span>
+</code></pre>
+<p>The naive implementation of <code>flatMap(..)</code> with both steps done separately:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> flatMap =
+    (mapperFn,arr) =&gt;
+        flatten( arr.map( mapperFn ), <span class="hljs-number">1</span> );
+</code></pre>
+<p><strong>Note:</strong> We use <code>1</code> for the flattening-depth because the typical definition of <code>flatMap(..)</code> is that the flattening is shallow on just the first level.</p>
+<p>Since this approach still processes the list twice resulting in worse performance, we can combine the operations manually, using <code>reduce(..)</code>:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> flatMap =
+    (mapperFn,arr) =&gt;
+        arr.reduce(
+            (list,v) =&gt;
+                list.concat( mapperFn( v ) )
+        , [] );
+</code></pre>
+<p>While there&apos;s some convenience and performance gained with a <code>flatMap(..)</code> utility, there may very well be times when you need other operations like <code>filter(..)</code>ing mixed in. If that&apos;s the case, doing the <code>map(..)</code> and <code>flatten(..)</code> separately might still be more appropriate.</p>
+<h3 id="zip">Zip</h3>
+<p>So far, the list operations we&apos;ve examined have operated on a single list. But some cases will need to process multiple lists. One well-known operation alternates selection of values from each of two input lists into sub-lists, called <code>zip(..)</code>:</p>
+<pre><code class="lang-js">zip( [<span class="hljs-number">1</span>,<span class="hljs-number">3</span>,<span class="hljs-number">5</span>,<span class="hljs-number">7</span>,<span class="hljs-number">9</span>], [<span class="hljs-number">2</span>,<span class="hljs-number">4</span>,<span class="hljs-number">6</span>,<span class="hljs-number">8</span>,<span class="hljs-number">10</span>] );
+<span class="hljs-comment">// [ [1,2], [3,4], [5,6], [7,8], [9,10] ]</span>
+</code></pre>
+<p>Values <code>1</code> and <code>2</code> were selected into the sub-list <code>[1,2]</code>, then <code>3</code> and <code>4</code> into <code>[3,4]</code>, etc. The definition of <code>zip(..)</code> requires a value from each of the two lists. If the two lists are of different lengths, the selection of values will continue until the shorter list has been exhausted, with the extra values in the other list ignored.</p>
+<p>An implementation of <code>zip(..)</code>:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">zip</span>(<span class="hljs-params">arr1,arr2</span>) </span>{
+    <span class="hljs-keyword">var</span> zipped = [];
+    arr1 = arr1.slice();
+    arr2 = arr2.slice();
+
+    <span class="hljs-keyword">while</span> (arr1.length &gt; <span class="hljs-number">0</span> &amp;&amp; arr2.length &gt; <span class="hljs-number">0</span>) {
+        zipped.push( [ arr1.shift(), arr2.shift() ] );
+    }
+
+    <span class="hljs-keyword">return</span> zipped;
+}
+</code></pre>
+<p>The <code>arr1.slice()</code> and <code>arr2.slice()</code> calls ensure <code>zip(..)</code> is pure by not causing side effects on the received array references.</p>
+<p><strong>Note:</strong> There are some decidedly un-FP things going on in this implementation. There&apos;s an imperative <code>while</code>-loop and mutations of lists with both <code>shift()</code> and <code>push(..)</code>. Earlier in the book, I asserted that it&apos;s reasonable for pure functions to use impure behavior inside them (usually for performance), as long as the effects are fully self-contained. This implementation is safely pure.</p>
+<h3 id="merge">Merge</h3>
+<p>Merging two lists by interleaving values from each source looks like this:</p>
+<pre><code class="lang-js">mergeLists( [<span class="hljs-number">1</span>,<span class="hljs-number">3</span>,<span class="hljs-number">5</span>,<span class="hljs-number">7</span>,<span class="hljs-number">9</span>], [<span class="hljs-number">2</span>,<span class="hljs-number">4</span>,<span class="hljs-number">6</span>,<span class="hljs-number">8</span>,<span class="hljs-number">10</span>] );
+<span class="hljs-comment">// [1,2,3,4,5,6,7,8,9,10]</span>
+</code></pre>
+<p>It may not be obvious, but this result seems similar to what we get if we compose <code>flatten(..)</code> and <code>zip(..)</code>:</p>
+<pre><code class="lang-js">zip( [<span class="hljs-number">1</span>,<span class="hljs-number">3</span>,<span class="hljs-number">5</span>,<span class="hljs-number">7</span>,<span class="hljs-number">9</span>], [<span class="hljs-number">2</span>,<span class="hljs-number">4</span>,<span class="hljs-number">6</span>,<span class="hljs-number">8</span>,<span class="hljs-number">10</span>] );
+<span class="hljs-comment">// [ [1,2], [3,4], [5,6], [7,8], [9,10] ]</span>
+
+flatten( [ [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>], [<span class="hljs-number">3</span>,<span class="hljs-number">4</span>], [<span class="hljs-number">5</span>,<span class="hljs-number">6</span>], [<span class="hljs-number">7</span>,<span class="hljs-number">8</span>], [<span class="hljs-number">9</span>,<span class="hljs-number">10</span>] ] );
+<span class="hljs-comment">// [1,2,3,4,5,6,7,8,9,10]</span>
+
+<span class="hljs-comment">// composed:</span>
+flatten( zip( [<span class="hljs-number">1</span>,<span class="hljs-number">3</span>,<span class="hljs-number">5</span>,<span class="hljs-number">7</span>,<span class="hljs-number">9</span>], [<span class="hljs-number">2</span>,<span class="hljs-number">4</span>,<span class="hljs-number">6</span>,<span class="hljs-number">8</span>,<span class="hljs-number">10</span>] ) );
+<span class="hljs-comment">// [1,2,3,4,5,6,7,8,9,10]</span>
+</code></pre>
+<p>However, recall that <code>zip(..)</code> only selects values until the shorter of two lists is exhausted, ignoring the leftover values; merging two lists would most naturally retain those extra values. Also, <code>flatten(..)</code> works recursively on nested lists, but you might expect list-merging to only work shallowly, keeping nested lists.</p>
+<p>So, let&apos;s define a <code>mergeLists(..)</code> that works more like we&apos;d expect:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">mergeLists</span>(<span class="hljs-params">arr1,arr2</span>) </span>{
+    <span class="hljs-keyword">var</span> merged = [];
+    arr1 = arr1.slice();
+    arr2 = arr2.slice();
+
+    <span class="hljs-keyword">while</span> (arr1.length &gt; <span class="hljs-number">0</span> || arr2.length &gt; <span class="hljs-number">0</span>) {
+        <span class="hljs-keyword">if</span> (arr1.length &gt; <span class="hljs-number">0</span>) {
+            merged.push( arr1.shift() );
+        }
+        <span class="hljs-keyword">if</span> (arr2.length &gt; <span class="hljs-number">0</span>) {
+            merged.push( arr2.shift() );
+        }
+    }
+
+    <span class="hljs-keyword">return</span> merged;
+}
+</code></pre>
+<p><strong>Note:</strong> Various FP libraries don&apos;t define a <code>mergeLists(..)</code> but instead define a <code>merge(..)</code> that merges properties of two objects; the results of such a <code>merge(..)</code> will differ from our <code>mergeLists(..)</code>.</p>
+<p>Alternatively, here&apos;s a couple of options to implement the list merging as a reducer:</p>
+<pre><code class="lang-js"><span class="hljs-comment">// via @rwaldron</span>
+<span class="hljs-keyword">var</span> mergeReducer =
+    (merged,v,idx) =&gt;
+        (merged.splice( idx * <span class="hljs-number">2</span>, <span class="hljs-number">0</span>, v ), merged);
+
+
+<span class="hljs-comment">// via @WebReflection</span>
+<span class="hljs-keyword">var</span> mergeReducer =
+    (merged,v,idx) =&gt;
+        merged
+            .slice( <span class="hljs-number">0</span>, idx * <span class="hljs-number">2</span> )
+            .concat( v, merged.slice( idx * <span class="hljs-number">2</span> ) );
+</code></pre>
+<p>And using a <code>mergeReducer(..)</code>:</p>
+<pre><code class="lang-js">[<span class="hljs-number">1</span>,<span class="hljs-number">3</span>,<span class="hljs-number">5</span>,<span class="hljs-number">7</span>,<span class="hljs-number">9</span>]
+.reduce( mergeReducer, [<span class="hljs-number">2</span>,<span class="hljs-number">4</span>,<span class="hljs-number">6</span>,<span class="hljs-number">8</span>,<span class="hljs-number">10</span>] );
+<span class="hljs-comment">// [1,2,3,4,5,6,7,8,9,10]</span>
+</code></pre>
+<p><strong>Tip:</strong> We&apos;ll use the <code>mergeReducer(..)</code> trick later in the chapter.</p>
+<h2 id="method-vs-standalone">Method vs. Standalone</h2>
+<p>A common source of frustration for FPers in JavaScript is unifying their strategy for working with utilities when some of them are provided as standalone functions -- think about the various FP utilities we&apos;ve derived in previous chapters -- and others are methods of the array prototype -- like the ones we&apos;ve seen in this chapter.</p>
+<p>The pain of this problem becomes more evident when you consider combining multiple operations:</p>
+<pre><code class="lang-js">[<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>]
+.filter( isOdd )
+.map( double )
+.reduce( sum, <span class="hljs-number">0</span> );                    <span class="hljs-comment">// 18</span>
+
+<span class="hljs-comment">// vs.</span>
+
+reduce(
+    map(
+        filter( [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>], isOdd ),
+        double
+    ),
+    sum,
+    <span class="hljs-number">0</span>
+);                                    <span class="hljs-comment">// 18</span>
+</code></pre>
+<p>Both API styles accomplish the same task, but they have very different ergonomics. Many FPers will prefer the latter to the former, but the former is unquestionably more common in JavaScript. One thing specifically that&apos;s disliked about the latter is the nesting of the calls. The preference for the method chain style -- typically called a fluent API style, as in jQuery and other tools -- is that it&apos;s compact/concise and it reads in declarative top-down order.</p>
+<p>The visual order for that manual composition of the standalone style is neither strictly left-to-right (top-to-bottom) nor right-to-left (bottom-to-top); it&apos;s inner-to-outer, which harms the readability.</p>
+<p>Automatic composition normalizes the reading order as right-to-left (bottom-to-top) for both styles. So, to explore the implications of the style differences, let&apos;s examine composition specifically; it seems like it should be straightforward, but it&apos;s a little awkward in both cases.</p>
+<h3 id="composing-method-chains">Composing Method Chains</h3>
+<p>The array methods receive the implicit <code>this</code> argument, so despite their appearance, they can&apos;t be treated as unary; that makes composition more awkward. To cope, we&apos;ll first need a <code>this</code>-aware version of <code>partial(..)</code>:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> partialThis =
+    (fn,...presetArgs) =&gt;
+        <span class="hljs-comment">// intentionally `function` to allow `this`-binding</span>
+        <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">partiallyApplied</span>(<span class="hljs-params">...laterArgs</span>)</span>{
+            <span class="hljs-keyword">return</span> fn.apply( <span class="hljs-keyword">this</span>, [...presetArgs, ...laterArgs] );
+        };
+</code></pre>
+<p>We&apos;ll also need a version of <code>compose(..)</code> that calls each of the partially applied methods in the context of the chain -- the input value it&apos;s being &quot;passed&quot; (via implicit <code>this</code>) from the previous step:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> composeChainedMethods =
+    (...fns) =&gt;
+        result =&gt;
+            fns.reduceRight(
+                (result,fn) =&gt;
+                    fn.call( result )
+                , result
+            );
+</code></pre>
+<p>And using these two <code>this</code>-aware utilities together:</p>
+<pre><code class="lang-js">composeChainedMethods(
+   partialThis( <span class="hljs-built_in">Array</span>.prototype.reduce, sum, <span class="hljs-number">0</span> ),
+   partialThis( <span class="hljs-built_in">Array</span>.prototype.map, double ),
+   partialThis( <span class="hljs-built_in">Array</span>.prototype.filter, isOdd )
+)
+( [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>] );                    <span class="hljs-comment">// 18</span>
+</code></pre>
+<p><strong>Note:</strong> The three <code>Array.prototype.XXX</code>-style references are grabbing references to the built-in <code>Array.prototype.*</code> methods so that we can reuse them with our own arrays.</p>
+<h3 id="composing-standalone-utilities">Composing Standalone Utilities</h3>
+<p>Standalone <code>compose(..)</code>-style composition of these utilities doesn&apos;t need all the <code>this</code> contortions, which is its most favorable argument. For example, we could define standalones as:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> filter = (arr,predicateFn) =&gt; arr.filter( predicateFn );
+
+<span class="hljs-keyword">var</span> map = (arr,mapperFn) =&gt; arr.map( mapperFn );
+
+<span class="hljs-keyword">var</span> reduce = (arr,reducerFn,initialValue) =&gt;
+    arr.reduce( reducerFn, initialValue );
+</code></pre>
+<p>But this particular standalone style suffers from its own awkwardness; the cascading array context is the first argument rather than the last, so we have to use right-partial application to compose them:</p>
+<pre><code class="lang-js">compose(
+    partialRight( reduce, sum, <span class="hljs-number">0</span> )
+    partialRight( map, double )
+    partialRight( filter, isOdd )
+)
+( [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>] );                    <span class="hljs-comment">// 18</span>
+</code></pre>
+<p>That&apos;s why FP libraries typically define <code>filter(..)</code>, <code>map(..)</code>, and <code>reduce(..)</code> to alternately receive the array last instead of first. They also typically automatically curry the utilities:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> filter = curry(
+    (predicateFn,arr) =&gt;
+        arr.filter( predicateFn )
+);
+
+<span class="hljs-keyword">var</span> map = curry(
+    (mapperFn,arr) =&gt;
+        arr.map( mapperFn )
+);
+
+<span class="hljs-keyword">var</span> reduce = curry(
+    (reducerFn,initialValue,arr) =&gt;
+        arr.reduce( reducerFn, initialValue );
+</code></pre>
+<p>Working with the utilities defined in this way, the composition flow is a bit nicer:</p>
+<pre><code class="lang-js">compose(
+    reduce( sum )( <span class="hljs-number">0</span> ),
+    map( double ),
+    filter( isOdd )
+)
+( [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>] );                    <span class="hljs-comment">// 18</span>
+</code></pre>
+<p>The cleanliness of this approach is in part why FPers prefer the standalone utility style instead of instance methods. But your mileage may vary.</p>
+<h3 id="adapting-methods-to-standalones">Adapting Methods To Standalones</h3>
+<p>In the previous definition of <code>filter(..)</code> / <code>map(..)</code> / <code>reduce(..)</code>, you might have spotted the common pattern across all three: they all dispatch to the corresponding native array method. So, can we generate these standalone adaptations with a utility? Yes! Let&apos;s make a utility called <code>unboundMethod(..)</code> to do just that:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> unboundMethod =
+    (methodName,argCount = <span class="hljs-number">2</span>) =&gt;
+        curry(
+            (...args) =&gt; {
+                <span class="hljs-keyword">var</span> obj = args.pop();
+                <span class="hljs-keyword">return</span> obj[methodName]( ...args );
+            },
+            argCount
+        );
+</code></pre>
+<p>And to use this utility:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> filter = unboundMethod( <span class="hljs-string">&quot;filter&quot;</span>, <span class="hljs-number">2</span> );
+<span class="hljs-keyword">var</span> map = unboundMethod( <span class="hljs-string">&quot;map&quot;</span>, <span class="hljs-number">2</span> );
+<span class="hljs-keyword">var</span> reduce = unboundMethod( <span class="hljs-string">&quot;reduce&quot;</span>, <span class="hljs-number">3</span> );
+
+compose(
+    reduce( sum )( <span class="hljs-number">0</span> ),
+    map( double ),
+    filter( isOdd )
+)
+( [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>] );                    <span class="hljs-comment">// 18</span>
+</code></pre>
+<p><strong>Note:</strong> <code>unboundMethod(..)</code> is called <code>invoker(..)</code> in Ramda.</p>
+<h3 id="adapting-standalones-to-methods">Adapting Standalones To Methods</h3>
+<p>If you prefer to work with only array methods (fluent chain style), you have two choices. You can:</p>
+<ol>
+<li>Extend the built-in <code>Array.prototype</code> with additional methods.</li>
+<li>Adapt a standalone utility to work as a reducer function and pass it to the <code>reduce(..)</code> instance method.</li>
+</ol>
+<p><strong>Don&apos;t do (1).</strong> It&apos;s never a good idea to extend built-in natives like <code>Array.prototype</code> -- unless you define a subclass of <code>Array</code>, but that&apos;s beyond our discussion scope here. In an effort to discourage bad practices, we won&apos;t go any further into this approach.</p>
+<p>Let&apos;s <strong>focus on (2)</strong> instead. To illustrate this point, we&apos;ll convert the recursive <code>flatten(..)</code> standalone utility from earlier:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> flatten =
+    arr =&gt;
+        arr.reduce(
+            (list,v) =&gt;
+                list.concat( <span class="hljs-built_in">Array</span>.isArray( v ) ? flatten( v ) : v )
+        , [] );
+</code></pre>
+<p>Let&apos;s pull out the inner <code>reducer(..)</code> function as the standalone utility (and adapt it to work without the outer <code>flatten(..)</code>):</p>
+<pre><code class="lang-js"><span class="hljs-comment">// intentionally a function to allow recursion by name</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">flattenReducer</span>(<span class="hljs-params">list,v</span>) </span>{
+    <span class="hljs-keyword">return</span> list.concat(
+        <span class="hljs-built_in">Array</span>.isArray( v ) ? v.reduce( flattenReducer, [] ) : v
+    );
+}
+</code></pre>
+<p>Now, we can use this utility in an array method chain via <code>reduce(..)</code>:</p>
+<pre><code class="lang-js">[ [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>], <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, [<span class="hljs-number">6</span>, [<span class="hljs-number">7</span>, <span class="hljs-number">8</span>]] ]
+.reduce( flattenReducer, [] )
+<span class="hljs-comment">// ..</span>
+</code></pre>
+<h2 id="looking-for-lists">Looking For Lists</h2>
+<p>So far, most of the examples have been rather trivial, based on simple lists of numbers or strings. Let&apos;s now talk about where list operations can start to shine: modeling an imperative series of statements declaratively.</p>
+<p>Consider this base example:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> getSessionId = partial( prop, <span class="hljs-string">&quot;sessId&quot;</span> );
+<span class="hljs-keyword">var</span> getUserId = partial( prop, <span class="hljs-string">&quot;uId&quot;</span> );
+
+<span class="hljs-keyword">var</span> session, sessionId, user, userId, orders;
+
+session = getCurrentSession();
+<span class="hljs-keyword">if</span> (session != <span class="hljs-literal">null</span>) sessionId = getSessionId( sessionId );
+<span class="hljs-keyword">if</span> (sessionId != <span class="hljs-literal">null</span>) user = lookupUser( sessionId );
+<span class="hljs-keyword">if</span> (user != <span class="hljs-literal">null</span>) userId = getUserId( user );
+<span class="hljs-keyword">if</span> (userId != <span class="hljs-literal">null</span>) orders = lookupOrders( userId );
+<span class="hljs-keyword">if</span> (orders != <span class="hljs-literal">null</span>) processOrders( orders );
+</code></pre>
+<p>First, let&apos;s observe that the five variable declarations and the running series of <code>if</code> conditionals guarding the function calls are effectively one big composition of these six calls <code>getCurrentSession()</code>, <code>getSessionId(..)</code>, <code>lookupUser(..)</code>, <code>getUserId(..)</code>, <code>lookupOrders(..)</code>, and <code>processOrders(..)</code>. Ideally, we&apos;d like to get rid of all these variable declarations and imperative conditionals.</p>
+<p>Unfortunately, the <code>compose(..)</code> / <code>pipe(..)</code> utilties we explored in Chapter 4 don&apos;t by themselves offer a convenient way to express the <code>!= null</code> conditionals in the composition. Let&apos;s define a utility to help:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> guard =
+    fn =&gt;
+        arg =&gt;
+            arg != <span class="hljs-literal">null</span> ? fn( arg ) : arg;
+</code></pre>
+<p>This <code>guard(..)</code> utility lets us map the five conditional-guarded functions:</p>
+<pre><code class="lang-js">[ getSessionId, lookupUser, getUserId, lookupOrders, processOrders ]
+.map( guard )
+</code></pre>
+<p>The result of this mapping is an array of functions that are ready to compose (actually, pipe, in this listed order). We could spread this array to <code>pipe(..)</code>, but since we&apos;re already doing list operations, let&apos;s do it with a <code>reduce(..)</code>, using the session value from <code>getCurrentSession()</code> as the initial value:</p>
+<pre><code class="lang-js">.reduce(
+    (result,nextFn) =&gt; nextFn( result )
+    , getCurrentSession()
+)
+</code></pre>
+<p>Next, let&apos;s observe that <code>getSessionId(..)</code> and <code>getUserId(..)</code> can be expressed as a mapping from the respective values <code>&quot;sessId&quot;</code> and <code>&quot;uId&quot;</code>:</p>
+<pre><code class="lang-js">[ <span class="hljs-string">&quot;sessId&quot;</span>, <span class="hljs-string">&quot;uId&quot;</span> ].map( propName =&gt; partial( prop, propName ) )
+</code></pre>
+<p>But to use these, we&apos;ll need to interleave them with the other three functions (<code>lookupUser(..)</code>, <code>lookupOrders(..)</code>, and <code>processOrders(..)</code>) to get the array of five functions to guard / compose as discussed above.</p>
+<p>To do the interleaving, we can model this as list merging. Recall <code>mergeReducer(..)</code> from earlier in the chapter:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> mergeReducer =
+    (merged,v,idx) =&gt;
+        (merged.splice( idx * <span class="hljs-number">2</span>, <span class="hljs-number">0</span>, v ), merged);
+</code></pre>
+<p>We can use <code>reduce(..)</code> (our swiss army knife, remember!?) to &quot;insert&quot; <code>lookupUser(..)</code> in the array between the generated <code>getSessionId(..)</code> and <code>getUserId(..)</code> functions, by merging two lists:</p>
+<pre><code class="lang-js">.reduce( mergeReducer, [ lookupUser ] )
+</code></pre>
+<p>Then we&apos;ll concatenate <code>lookupOrders(..)</code> and <code>processOrders(..)</code> onto the end of the running functions array:</p>
+<pre><code class="lang-js">.concat( lookupOrders, processOrders )
+</code></pre>
+<p>To review, the generated list of five functions is expressed as:</p>
+<pre><code class="lang-js">[ <span class="hljs-string">&quot;sessId&quot;</span>, <span class="hljs-string">&quot;uId&quot;</span> ].map( propName =&gt; partial( prop, propName ) )
+.reduce( mergeReducer, [ lookupUser ] )
+.concat( lookupOrders, processOrders )
+</code></pre>
+<p>Finally, to put it all together, take this list of functions and tack on the guarding and composition from earlier:</p>
+<pre><code class="lang-js">[ <span class="hljs-string">&quot;sessId&quot;</span>, <span class="hljs-string">&quot;uId&quot;</span> ].map( propName =&gt; partial( prop, propName ) )
+.reduce( mergeReducer, [ lookupUser ] )
+.concat( lookupOrders, processOrders )
+.map( guard )
+.reduce(
+    (result,nextFn) =&gt; nextFn( result )
+    , getCurrentSession()
+);
+</code></pre>
+<p>Gone are all the imperative variable declarations and conditionals, and in their place we have clean and declarative list operations chained together.</p>
+<p>If this version is harder for you read right now than the original, don&apos;t worry. The original is unquestionably the imperative form you&apos;re probably more familiar with. Part of your evolution to become a functional programmer is to develop a recognition of FP patterns such as list operations. Over time, these will jump out of the code more readily as your sense of code readability shifts to declarative style.</p>
+<p>Before we leave this topic, let&apos;s take a reality check: the example here is heavily contrived. Not all code segments will be straightforwardly modeled as list operations. The pragmatic take-away is to develop the instinct to look for these opportunities, but not get too hung up on code acrobatics; some improvement is better than none. Always step back and ask if you&apos;re <strong>improving or harming</strong> code readability.</p>
+<h2 id="fusion">Fusion</h2>
+<p>As you roll FP list operations into more of your thinking about code, you&apos;ll likely start seeing very quickly chains that combine behavior like:</p>
+<pre><code class="lang-js">..
+.filter(..)
+.map(..)
+.reduce(..);
+</code></pre>
+<p>And more often than not, you&apos;re also probably going to end up with chains with multiple adjacent instances of each operation, like:</p>
+<pre><code class="lang-js">someList
+.filter(..)
+.filter(..)
+.map(..)
+.map(..)
+.map(..)
+.reduce(..);
+</code></pre>
+<p>The good news is the chain-style is declarative and it&apos;s easy to read the specific steps that will happen, in order. The downside is that each of these operations loops over the entire list, meaning performance can suffer unnecessarily, especially if the list is longer.</p>
+<p>With the alternate standalone style, you might see code like this:</p>
+<pre><code class="lang-js">map(
+    fn3,
+    map(
+        fn2,
+        map( fn1, someList )
+    )
+);
+</code></pre>
+<p>With this style, the operations are listed from bottom-to-top, and we still loop over the list 3 times.</p>
+<p>Fusion deals with combining adjacent operators to reduce the number of times the list is iterated over. We&apos;ll focus here on collapsing adjacent <code>map(..)</code>s as it&apos;s the most straightforward to explain.</p>
+<p>Imagine this scenario:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> removeInvalidChars = str =&gt; str.replace( <span class="hljs-regexp">/[^\w]*/g</span>, <span class="hljs-string">&quot;&quot;</span> );
+
+<span class="hljs-keyword">var</span> upper = str =&gt; str.toUpperCase();
+
+<span class="hljs-keyword">var</span> elide = str =&gt;
+    str.length &gt; <span class="hljs-number">10</span> ?
+        str.substr( <span class="hljs-number">0</span>, <span class="hljs-number">7</span> ) + <span class="hljs-string">&quot;...&quot;</span> :
+        str;
+
+<span class="hljs-keyword">var</span> words = <span class="hljs-string">&quot;Mr. Jones isn&apos;t responsible for this disaster!&quot;</span>
+    .split( <span class="hljs-regexp">/\s/</span> );
+
+words;
+<span class="hljs-comment">// [&quot;Mr.&quot;,&quot;Jones&quot;,&quot;isn&apos;t&quot;,&quot;responsible&quot;,&quot;for&quot;,&quot;this&quot;,&quot;disaster!&quot;]</span>
+
+words
+.map( removeInvalidChars )
+.map( upper )
+.map( elide );
+<span class="hljs-comment">// [&quot;MR&quot;,&quot;JONES&quot;,&quot;ISNT&quot;,&quot;RESPONS...&quot;,&quot;FOR&quot;,&quot;THIS&quot;,&quot;DISASTER&quot;]</span>
+</code></pre>
+<p>Think about each value that goes through this flow of transformations. The first value in the <code>words</code> list starts out as <code>&quot;Mr.&quot;</code>, becomes <code>&quot;Mr&quot;</code>, then <code>&quot;MR&quot;</code>, and then passes through <code>elide(..)</code> unchanged. Another piece of data flows: <code>&quot;responsible&quot;</code> -&gt; <code>&quot;responsible&quot;</code> -&gt; <code>&quot;RESPONSIBLE&quot;</code> -&gt; <code>&quot;RESPONS...&quot;</code>.</p>
+<p>In other words, you could think of these data transformations like this:</p>
+<pre><code class="lang-js">elide( upper( removeInvalidChars( <span class="hljs-string">&quot;Mr.&quot;</span> ) ) );
+<span class="hljs-comment">// &quot;MR&quot;</span>
+
+elide( upper( removeInvalidChars( <span class="hljs-string">&quot;responsible&quot;</span> ) ) );
+<span class="hljs-comment">// &quot;RESPONS...&quot;</span>
+</code></pre>
+<p>Did you catch the point? We can express the three separate steps of the adjacent <code>map(..)</code> calls as a composition of the transformers, since they are all unary functions and each returns the value that&apos;s suitable as input to the next. We can fuse the mapper functions using <code>compose(..)</code>, and then pass the composed function to a single <code>map(..)</code> call:</p>
+<pre><code class="lang-js">words
+.map(
+    compose( elide, upper, removeInvalidChars )
+);
+<span class="hljs-comment">// [&quot;MR&quot;,&quot;JONES&quot;,&quot;ISNT&quot;,&quot;RESPONS...&quot;,&quot;FOR&quot;,&quot;THIS&quot;,&quot;DISASTER&quot;]</span>
+</code></pre>
+<p>This is another case where <code>pipe(..)</code> can be a more convenient form of composition, for its ordering readability:</p>
+<pre><code class="lang-js">words
+.map(
+    pipe( removeInvalidChars, upper, elide )
+);
+<span class="hljs-comment">// [&quot;MR&quot;,&quot;JONES&quot;,&quot;ISNT&quot;,&quot;RESPONS...&quot;,&quot;FOR&quot;,&quot;THIS&quot;,&quot;DISASTER&quot;]</span>
+</code></pre>
+<p>What about fusing two or more <code>filter(..)</code> predicate functions? Typically treated as unary functions, they seem suitable for composition. But the wrinkle is they each return a different kind of value (<code>boolean</code>) than the next one would want as input. Fusing adjacent <code>reduce(..)</code> calls is also possible, but reducers are not unary so that&apos;s a bit more challenging; we need more sophisticated tricks to pull this kind of fusion off. We&apos;ll cover these advanced techniques in Appendix A &quot;Transducing&quot;.</p>
+<h2 id="beyond-lists">Beyond Lists</h2>
+<p>So far we&apos;ve been discussing operations in the context of the list (array) data structure; it&apos;s by far the most common scenario you encounter them. But in a more general sense, these operations can be performed against any collection of values.</p>
+<p>Just as we said earlier that array&apos;s <code>map(..)</code> adapts a single-value operation to all its values, any data structure can provide a <code>map(..)</code> operation to do the same. Likewise, it can implement <code>filter(..)</code>, <code>reduce(..)</code>, or any other operation that makes sense for working with the data structure&apos;s values.</p>
+<p>The important part to maintain in the spirit of FP is that these operators must behave according to value immutability, meaning that they must return a new data structure rather than mutating the existing one.</p>
+<p>Let&apos;s illustrate with a well-known data structure: the binary tree. A binary tree is a node (just an object!) that has two references to other nodes (themselves binary trees), typically referred to as <em>left</em> and <em>right</em> child trees. Each node in the tree holds one value of the overall data structure.</p>
+<p align="center">
+    <img src="fig7.png" width="250">
+</p>
+
+<p>For ease of illustration, we&apos;ll make our binary tree a binary search tree (BST). However, the operations we&apos;ll identify work the same for any regular non-BST binary tree.</p>
+<p><strong>Note:</strong> A binary search tree is a general binary tree with a special constraint on the relationship of values in the tree to each other. Each value of nodes on the left side of a tree is less than the value of the node at the root of that tree, which in turn is less than each value of nodes in the right side of the tree. The notion of &quot;less than&quot; is relative to the kind of data stored; it can be numerical for numbers, lexicographic for strings, etc. BSTs are useful because they make searching for a value in the tree straightforward and more efficient, using a recursive binary search algorithm.</p>
+<p>To make a binary tree node object, let&apos;s use this factory function:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> BinaryTree =
+    (value,parent,left,right) =&gt; ({ value, parent, left, right });
+</code></pre>
+<p>For convenience, we make each node store the <code>left</code> and <code>right</code> child trees as well as a reference to its own <code>parent</code> node.</p>
+<p>Let&apos;s now define a BST of names of common produce (fruits, vegetables):</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> banana = BinaryTree( <span class="hljs-string">&quot;banana&quot;</span> );
+<span class="hljs-keyword">var</span> apple = banana.left = BinaryTree( <span class="hljs-string">&quot;apple&quot;</span>, banana );
+<span class="hljs-keyword">var</span> cherry = banana.right = BinaryTree( <span class="hljs-string">&quot;cherry&quot;</span>, banana );
+<span class="hljs-keyword">var</span> apricot = apple.right = BinaryTree( <span class="hljs-string">&quot;apricot&quot;</span>, apple );
+<span class="hljs-keyword">var</span> avocado = apricot.right = BinaryTree( <span class="hljs-string">&quot;avocado&quot;</span>, apricot );
+<span class="hljs-keyword">var</span> cantelope = cherry.left = BinaryTree( <span class="hljs-string">&quot;cantelope&quot;</span>, cherry );
+<span class="hljs-keyword">var</span> cucumber = cherry.right = BinaryTree( <span class="hljs-string">&quot;cucumber&quot;</span>, cherry );
+<span class="hljs-keyword">var</span> grape = cucumber.right = BinaryTree( <span class="hljs-string">&quot;grape&quot;</span>, cucumber );
+</code></pre>
+<p>In this particular tree structure, <code>banana</code> is the root node; this tree could have been set up with nodes in different locations, but still had a BST with the same traversal.</p>
+<p>Our tree looks like:</p>
+<p align="center">
+    <img src="fig8.png" width="450">
+</p>
+
+<p>There are multiple ways to traverse a binary tree to process its values. If it&apos;s a BST (our&apos;s is!) and we do an <em>in-order</em> traversal -- always visit the left child tree first, then the node itself, then the right child tree -- we&apos;ll visit the values in ascending (sorted) order.</p>
+<p>Since you can&apos;t just easily <code>console.log(..)</code> a binary tree like you can with an array, let&apos;s first define a convenience method, mostly to use for printing. <code>forEach(..)</code> will visit the nodes of a binary tree in the same manner as an array:</p>
+<pre><code class="lang-js"><span class="hljs-comment">// in-order traversal</span>
+BinaryTree.forEach = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">forEach</span>(<span class="hljs-params">visitFn,node</span>)</span>{
+    <span class="hljs-keyword">if</span> (node) {
+        <span class="hljs-keyword">if</span> (node.left) {
+            forEach( visitFn, node.left );
+        }
+
+        visitFn( node );
+
+        <span class="hljs-keyword">if</span> (node.right) {
+            forEach( visitFn, node.right );
+        }
+    }
+};
+</code></pre>
+<p><strong>Note:</strong> Working with binary trees lends itself most naturally to recursive processing. Our <code>forEach(..)</code> utility recursively calls itself to process both the left and right child trees. We&apos;ll cover recursion in more detail in a later chapter, where we&apos;ll cover recursion in that chapter on recursion.</p>
+<p>Recall <code>forEach(..)</code> was described at the beginning of this chapter as only being useful for side effects, which is not very typically desired in FP. In this case, we&apos;ll use <code>forEach(..)</code> only for the side effect of I/O, so it&apos;s perfectly reasonable as a helper.</p>
+<p>Use <code>forEach(..)</code> to print out values from the tree:</p>
+<pre><code class="lang-js">BinaryTree.forEach( node =&gt; <span class="hljs-built_in">console</span>.log( node.value ), banana );
+<span class="hljs-comment">// apple apricot avocado banana cantelope cherry cucumber grape</span>
+
+<span class="hljs-comment">// visit only the `cherry`-rooted subtree</span>
+BinaryTree.forEach( node =&gt; <span class="hljs-built_in">console</span>.log( node.value ), cherry );
+<span class="hljs-comment">// cantelope cherry cucumber grape</span>
+</code></pre>
+<p>To operate on our binary tree data structure using FP patterns, let&apos;s start by defining a <code>map(..)</code>:</p>
+<pre><code class="lang-js">BinaryTree.map = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">map</span>(<span class="hljs-params">mapperFn,node</span>)</span>{
+    <span class="hljs-keyword">if</span> (node) {
+        <span class="hljs-keyword">let</span> newNode = mapperFn( node );
+        newNode.parent = node.parent;
+        newNode.left = node.left ?
+            map( mapperFn, node.left ) : <span class="hljs-literal">undefined</span>;
+        newNode.right = node.right ?
+            map( mapperFn, node.right ): <span class="hljs-literal">undefined</span>;
+
+        <span class="hljs-keyword">if</span> (newNode.left) {
+            newNode.left.parent = newNode;
+        }
+        <span class="hljs-keyword">if</span> (newNode.right) {
+            newNode.right.parent = newNode;
+        }
+
+        <span class="hljs-keyword">return</span> newNode;
+    }
+};
+</code></pre>
+<p>You might have assumed we&apos;d <code>map(..)</code> only the node <code>value</code> properties, but in general we might actually want to map the tree nodes themselves. So, the <code>mapperFn(..)</code> is passed the whole node being visited, and it expects to receive a new <code>BinaryTree(..)</code> node back, with the transformation applied. If you just return the same node, this operation will mutate your tree and quite possibly cause unexpected results!</p>
+<p>Let&apos;s map our tree to a list of produce with all uppercase names:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> BANANA = BinaryTree.map(
+    node =&gt; BinaryTree( node.value.toUpperCase() ),
+    banana
+);
+
+BinaryTree.forEach( node =&gt; <span class="hljs-built_in">console</span>.log( node.value ), BANANA );
+<span class="hljs-comment">// APPLE APRICOT AVOCADO BANANA CANTELOPE CHERRY CUCUMBER GRAPE</span>
+</code></pre>
+<p><code>BANANA</code> is a different tree (with all different nodes) than <code>banana</code>, just like calling <code>map(..)</code> on an array returns a new array. Just like arrays of other objects/arrays, if <code>node.value</code> itself references some object/array, you&apos;ll also need to handle manually copying it in the mapper function if you want deeper immutability.</p>
+<p>How about <code>reduce(..)</code>? Same basic process: do an in-order traversal of the tree nodes. One usage would be to <code>reduce(..)</code> our tree to an array of its values, which would be useful in further adapting other typical list operations. Or we can <code>reduce(..)</code> our tree to a string concatenation of all its produce names.</p>
+<p>We&apos;ll mimic the behavior of the array <code>reduce(..)</code>, which makes passing the <code>initialValue</code> argument optional. This algorithm is a little trickier, but still manageable:</p>
+<pre><code class="lang-js">BinaryTree.reduce = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">reduce</span>(<span class="hljs-params">reducerFn,initialValue,node</span>)</span>{
+    <span class="hljs-keyword">if</span> (<span class="hljs-built_in">arguments</span>.length &lt; <span class="hljs-number">3</span>) {
+        <span class="hljs-comment">// shift the parameters since `initialValue` was omitted</span>
+        node = initialValue;
+    }
+
+    <span class="hljs-keyword">if</span> (node) {
+        <span class="hljs-keyword">let</span> result;
+
+        <span class="hljs-keyword">if</span> (<span class="hljs-built_in">arguments</span>.length &lt; <span class="hljs-number">3</span>) {
+            <span class="hljs-keyword">if</span> (node.left) {
+                result = reduce( reducerFn, node.left );
+            }
+            <span class="hljs-keyword">else</span> {
+                <span class="hljs-keyword">return</span> node.right ?
+                    reduce( reducerFn, node, node.right ) :
+                    node;
+            }
+        }
+        <span class="hljs-keyword">else</span> {
+            result = node.left ?
+                reduce( reducerFn, initialValue, node.left ) :
+                initialValue;
+        }
+
+        result = reducerFn( result, node );
+        result = node.right ?
+            reduce( reducerFn, result, node.right ) : result;
+        <span class="hljs-keyword">return</span> result;
+    }
+
+    <span class="hljs-keyword">return</span> initialValue;
+};
+</code></pre>
+<p>Let&apos;s use <code>reduce(..)</code> to make our shopping list (an array):</p>
+<pre><code class="lang-js">BinaryTree.reduce(
+    (result,node) =&gt; result.concat( node.value ),
+    [],
+    banana
+);
+<span class="hljs-comment">// [&quot;apple&quot;,&quot;apricot&quot;,&quot;avocado&quot;,&quot;banana&quot;,&quot;cantelope&quot;</span>
+<span class="hljs-comment">//   &quot;cherry&quot;,&quot;cucumber&quot;,&quot;grape&quot;]</span>
+</code></pre>
+<p>Finally, let&apos;s consider <code>filter(..)</code> for our tree. This algorithm is trickiest so far because it effectively (not actually) involves removing nodes from the tree, which requires handling several corner cases. Don&apos;t get intimiated by the implementation, though. Just skip over it for now, if you prefer, and focus on how we use it instead.</p>
+<pre><code class="lang-js">BinaryTree.filter = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">filter</span>(<span class="hljs-params">predicateFn,node</span>)</span>{
+    <span class="hljs-keyword">if</span> (node) {
+        <span class="hljs-keyword">let</span> newNode;
+        <span class="hljs-keyword">let</span> newLeft = node.left ?
+            filter( predicateFn, node.left ) : <span class="hljs-literal">undefined</span>;
+        <span class="hljs-keyword">let</span> newRight = node.right ?
+            filter( predicateFn, node.right ) : <span class="hljs-literal">undefined</span>;
+
+        <span class="hljs-keyword">if</span> (predicateFn( node )) {
+            newNode = BinaryTree(
+                node.value,
+                node.parent,
+                newLeft,
+                newRight
+            );
+            <span class="hljs-keyword">if</span> (newLeft) {
+                newLeft.parent = newNode;
+            }
+            <span class="hljs-keyword">if</span> (newRight) {
+                newRight.parent = newNode;
+            }
+        }
+        <span class="hljs-keyword">else</span> {
+            <span class="hljs-keyword">if</span> (newLeft) {
+                <span class="hljs-keyword">if</span> (newRight) {
+                    newNode = BinaryTree(
+                        <span class="hljs-literal">undefined</span>,
+                        node.parent,
+                        newLeft,
+                        newRight
+                    );
+                    newLeft.parent = newRight.parent = newNode;
+
+                    <span class="hljs-keyword">if</span> (newRight.left) {
+                        <span class="hljs-keyword">let</span> minRightNode = newRight;
+                        <span class="hljs-keyword">while</span> (minRightNode.left) {
+                            minRightNode = minRightNode.left;
+                        }
+
+                        newNode.value = minRightNode.value;
+
+                        <span class="hljs-keyword">if</span> (minRightNode.right) {
+                            minRightNode.parent.left =
+                                minRightNode.right;
+                            minRightNode.right.parent =
+                                minRightNode.parent;
+                        }
+                        <span class="hljs-keyword">else</span> {
+                            minRightNode.parent.left = <span class="hljs-literal">undefined</span>;
+                        }
+
+                        minRightNode.right =
+                            minRightNode.parent = <span class="hljs-literal">undefined</span>;
+                    }
+                    <span class="hljs-keyword">else</span> {
+                        newNode.value = newRight.value;
+                        newNode.right = newRight.right;
+                        <span class="hljs-keyword">if</span> (newRight.right) {
+                            newRight.right.parent = newNode;
+                        }
+                    }
+                }
+                <span class="hljs-keyword">else</span> {
+                    <span class="hljs-keyword">return</span> newLeft;
+                }
+            }
+            <span class="hljs-keyword">else</span> {
+                <span class="hljs-keyword">return</span> newRight;
+            }
+        }
+
+        <span class="hljs-keyword">return</span> newNode;
+    }
+};
+</code></pre>
+<p>The majority of this code listing is dedicated to handling the shifting of a node&apos;s parent/child references if it&apos;s &quot;removed&quot; (filtered out) of the duplicated tree structure.</p>
+<p>As an example to illustrate using <code>filter(..)</code>, let&apos;s narrow our produce tree down to only vegetables:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> vegetables = [ <span class="hljs-string">&quot;asparagus&quot;</span>, <span class="hljs-string">&quot;avocado&quot;</span>, <span class="hljs-string">&quot;brocolli&quot;</span>, <span class="hljs-string">&quot;carrot&quot;</span>,
+    <span class="hljs-string">&quot;celery&quot;</span>, <span class="hljs-string">&quot;corn&quot;</span>, <span class="hljs-string">&quot;cucumber&quot;</span>, <span class="hljs-string">&quot;lettuce&quot;</span>, <span class="hljs-string">&quot;potato&quot;</span>, <span class="hljs-string">&quot;squash&quot;</span>,
+    <span class="hljs-string">&quot;zucchini&quot;</span> ];
+
+<span class="hljs-keyword">var</span> whatToBuy = BinaryTree.filter(
+    <span class="hljs-comment">// filter the produce list only for vegetables</span>
+    node =&gt; vegetables.indexOf( node.value ) != <span class="hljs-number">-1</span>,
+    banana
+);
+
+<span class="hljs-comment">// shopping list</span>
+BinaryTree.reduce(
+    (result,node) =&gt; result.concat( node.value ),
+    [],
+    whatToBuy
+);
+<span class="hljs-comment">// [&quot;avocado&quot;,&quot;cucumber&quot;]</span>
+</code></pre>
+<p>You will likely use most of the list operations from this chapter in the context of simple arrays. But now we&apos;ve seen that the concepts apply to whatever data structures and operations you might need. That&apos;s a powerful expression of how FP can be widely applied to many different application scenarios!</p>
+<h2 id="summary">Summary</h2>
+<p>Three common and powerful list operations:</p>
+<ul>
+<li><code>map(..)</code>: transforms values as it projects them to a new list.</li>
+<li><code>filter(..)</code>: selects or excludes values as it projects them to a new list.</li>
+<li><code>reduce(..)</code>: combines values in a list to produce some other (usually but not always non-list) value.</li>
+</ul>
+<p>Other more advanced operations that can be very useful in processing lists: <code>unique(..)</code>, <code>flatten(..)</code>, and <code>merge(..)</code>.</p>
+<p>Fusion uses function composition techniques to consolidate multiple adjacent <code>map(..)</code> calls. This is mostly a performance optimization, but it also improves the declarative nature of your list operations.</p>
+<p>Lists are typically visualized as arrays, but can be generalized as any data structure that represents/produces an ordered collection of values. As such, all these &quot;list operations&quot; are actually &quot;data structure operations&quot;.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ch7.html" class="navigation navigation-prev " aria-label="Previous page: Chapter 7: Closure vs Object">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="ch9.html" class="navigation navigation-next " aria-label="Next page: Chapter 9: Recursion">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Chapter 8: List Operations","level":"1.11","depth":1,"next":{"title":"Chapter 9: Recursion","level":"1.12","depth":1,"path":"ch9.md","ref":"ch9.md","articles":[]},"previous":{"title":"Chapter 7: Closure vs Object","level":"1.10","depth":1,"path":"ch7.md","ref":"ch7.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ch8.md","mtime":"2017-03-13T18:38:58.766Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-13T19:03:34.902Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

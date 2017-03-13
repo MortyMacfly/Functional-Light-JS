@@ -1,0 +1,638 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Appendix B: The Humble Monad · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="apC.html" />
+    
+    
+    <link rel="prev" href="apA.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Foreword (TBA)
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="preface.html">
+            
+                <a href="preface.html">
+            
+                    
+                    Preface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="ch1.html">
+            
+                <a href="ch1.html">
+            
+                    
+                    Chapter 1: Why Functional Programming?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="ch2.html">
+            
+                <a href="ch2.html">
+            
+                    
+                    Chapter 2: Foundations of Functional Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="ch3.html">
+            
+                <a href="ch3.html">
+            
+                    
+                    Chapter 3: Managing Function Inputs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="ch4.html">
+            
+                <a href="ch4.html">
+            
+                    
+                    Chapter 4: Composing Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="ch5.html">
+            
+                <a href="ch5.html">
+            
+                    
+                    Chapter 5: Reducing Side Effects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="ch6.html">
+            
+                <a href="ch6.html">
+            
+                    
+                    Chapter 6: Value Immutability
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="ch7.html">
+            
+                <a href="ch7.html">
+            
+                    
+                    Chapter 7: Closure vs Object
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="ch8.html">
+            
+                <a href="ch8.html">
+            
+                    
+                    Chapter 8: List Operations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="ch9.html">
+            
+                <a href="ch9.html">
+            
+                    
+                    Chapter 9: Recursion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="ch10.html">
+            
+                <a href="ch10.html">
+            
+                    
+                    Chapter 10: Functional Async
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="ch11.html">
+            
+                <a href="ch11.html">
+            
+                    
+                    Chapter 11: Putting It All together
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="apA.html">
+            
+                <a href="apA.html">
+            
+                    
+                    Appendix A: Transducing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.16" data-path="apB.html">
+            
+                <a href="apB.html">
+            
+                    
+                    Appendix B: The Humble Monad
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="apC.html">
+            
+                <a href="apC.html">
+            
+                    
+                    Appendix C: FP Libraries
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Appendix B: The Humble Monad</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="functional-light-javascript">Functional-Light JavaScript</h1>
+<h1 id="appendix-b-the-humble-monad">Appendix B: The Humble Monad</h1>
+<p>Let me just start off this appendix by admitting: I did not know much about what a monad was before starting to write the following. And it took a lot of mistakes to get something sensible. If you don&apos;t believe me, go look at the commit history of this appendix in the Git repo for this book (<a href="https://github.com/getify/Functional-Light-JS)!" target="_blank">https://github.com/getify/Functional-Light-JS)!</a></p>
+<p>I am including the topic of monads in the book because it&apos;s part of the journey that every developer will encounter while learning FP, just as I have in this book writing.</p>
+<p>We&apos;re basically ending this book with a brief glimpse at monads, whereas most other FP literature kinda almost starts with monads! I do not encounter in my &quot;functional light&quot; programming much of a need to think explicitly in terms of monads, so that&apos;s why this material is more bonus than main core. But that&apos;s not to say monads aren&apos;t useful or prevalent -- they very much are.</p>
+<p>There&apos;s a bit of a joke around the JavaScript FP world that pretty much everybody has to write their own tutorial or blog post on what a monad is, like the writing of it alone is some rite-of-passage. Over the years, monads have variously been depicted as burritos, onions, and all sorts of other wacky conceptual abstractions. I hope there&apos;s none of that silly business going on here!</p>
+<blockquote>
+<p>A monad is just a monoid in the category of endofunctors.</p>
+</blockquote>
+<p>We started the preface with this quote, so it seems fitting we come back to it here. But no, we won&apos;t be talking about monoids, endofunctors, or category theory. That quote is not only condescending, but totally unhelpful.</p>
+<p>My only hope for what you get out of this discussion is to not be scared of the term monad or the concept anymore -- I have been, for years! -- and to be able to recognize them when you see them. You might, just maybe, even use them on occassion.</p>
+<h2 id="type">Type</h2>
+<p>There&apos;s a huge area of interest in FP that we&apos;ve basically stayed entirely away from throughout this book: type theory. I&apos;m not going to get very deep into type theory, because quite frankly I&apos;m not qualified to do so. And you wouldn&apos;t appreciate it even if I did.</p>
+<p>But what I will say is that a monad is basically a value type.</p>
+<p>The number <code>42</code> has a value type (number!) that brings with it certain characteristics and capabilities that we rely on. The string <code>&quot;42&quot;</code> may look very similar, but it has a different purpose in our program.</p>
+<p>In object oriented programming, when you have a set of data (even a single discrete value) and you have some behavior you want to bundle with it, you create an object/class to represent that &quot;type&quot;. Instances are then members of that type. This practice generally goes by the name &quot;Data Structures&quot;.</p>
+<p>I&apos;m going to use the notion of data structures very loosely here, and assert that we may find it useful in a program to define a set of behaviors and constraints for a certain value, and bundle them together with that value into a single abstraction. That way, as we work with one or more of those kinds of values in our program, their behaviors come along for free and will make working with them more convenient. And by convenient, I mean more declarative and approachable for the reader of your code!</p>
+<p>A monad is a data structure. It&apos;s a type. It&apos;s a set of behaviors that are specifically designed to make working with a value predictable.</p>
+<p>Recall in Chapter 8 that we talked about functors: a value along with a map-like utility to perform an operation on all its constitute data members. A monad is a functor that includes some additional behavior.</p>
+<h2 id="loose-interface">Loose Interface</h2>
+<p>Actually, a monad isn&apos;t a single data type, it&apos;s really more like a related collection of data types. It&apos;s kind of an interface that&apos;s implemented differently depending on the needs of different values. Each implementation is a different type of monad.</p>
+<p>For example, you may read about the &quot;Identity Monad&quot;, the &quot;IO Monad&quot;, the &quot;Maybe Monad&quot;, the &quot;Either Monad&quot;, or a variety of others. Each of these has the basic monad behavior defined, but it extends or overrides the interactions according to the use cases for each different type of monad.</p>
+<p>It&apos;s a little more than an interface though, because it&apos;s not just the presence of certain API methods that makes an object a monad. There&apos;s a certain set of guarantees about the interactions of these methods that is necessary, to be monadic. These well-known invariants are critical to usage of monads improving readability by familiarity; otherwise, it&apos;s just an ad hoc data structure that must be fully read to be understood by the reader.</p>
+<p>As a matter of fact, there&apos;s not even just one single unified agreement on the names of these monadic methods, the way a true interface would mandate; a monad is more like a loose interface. Some people call a certain method <code>bind(..)</code>, some call it <code>chain(..)</code>, some call it <code>flatMap(..)</code>, etc.</p>
+<p>So a monad is an object data structure with sufficient methods (of practically any name or sort) that at a minimum satisfy the main behavioral requirements of the monad definition. Each kind of monad has a different kind of extension above the minimum. But, because they all have an overlap in behavior, using two different kinds of monads together is still straightforward and predictable.</p>
+<p>It&apos;s in that sense that monads are sort of like an interface.</p>
+<h2 id="maybe">Maybe</h2>
+<p>It&apos;s very common in FP material to cover well-known monads like Maybe. And actually, the Maybe monad is really a pairing of two other simpler monads: Just and Nothing.</p>
+<p>Since a monad is a type, you might think we&apos;d define <code>Maybe</code> as a class to be instantiated. That&apos;s a valid way of doing it, but it introduces <code>this</code>-binding issues in the methods that I don&apos;t want to juggle; instead I&apos;m going to stick with just a simple function / object approach.</p>
+<p>Here&apos;s a minimal implementation of Maybe:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> Maybe = { Just, Nothing, <span class="hljs-keyword">of</span><span class="hljs-comment">/* aka: unit, pure */</span>: Just };
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Just</span>(<span class="hljs-params">val</span>) </span>{
+    <span class="hljs-keyword">return</span> { map, chain, ap, inspect };
+
+    <span class="hljs-comment">// *********************</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">map</span>(<span class="hljs-params">fn</span>) </span>{ <span class="hljs-keyword">return</span> Just( fn( val ) ); }
+    <span class="hljs-comment">// aka: bind, flatMap</span>
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">chain</span>(<span class="hljs-params">fn</span>) </span>{ <span class="hljs-keyword">return</span> fn( val ); }
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">ap</span>(<span class="hljs-params">anotherMonad</span>) </span>{ <span class="hljs-keyword">return</span> anotherMonad.map( val ); }
+
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">inspect</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-string">`Just(<span class="hljs-subst">${ val }</span>)`</span>;
+    }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Nothing</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">return</span> { map: Nothing, chain: Nothing, ap: Nothing, inspect };
+
+    <span class="hljs-comment">// *********************</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">inspect</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;Nothing&quot;</span>;
+    }
+}
+</code></pre>
+<p><strong>Note:</strong> The <code>inspect(..)</code> method is included here only for our demonstration purposes. It serves no direct role in the monadic sense.</p>
+<p>Don&apos;t worry if most of this doesn&apos;t make sense right now. We&apos;re not gonna obsess much over the details or the math/theory behind the design of the Monad. Instead, we&apos;ll focus more on illustrating what we can do with it.</p>
+<p>Any monad instances of both <code>Just(..)</code> and <code>Nothing()</code> will all have <code>map(..)</code>, <code>chain(..)</code> (also called <code>bind(..)</code> or <code>flatMap(..)</code>), and <code>ap(..)</code> methods, as do all monads. The purpose of these methods and their behavior is to provide a standardized way of multiple monad instances working together. You&apos;ll notice that whatever <code>val</code> value a <code>Just(..)</code> instance holds, it&apos;s never changed. All methods create new monad instances instead of mutating it.</p>
+<p>Maybe is the pairing of these two monads. If a value is non-empty, it&apos;s represented by an instance of <code>Just(..)</code>; if it&apos;s empty, it&apos;s represented by an instance of <code>Nothing()</code>. Notice there&apos;s no imposition here of what &quot;empty&quot; means -- your code gets to decide that. More on that in the next section.</p>
+<p>But the value of this kind of monad representation is that whether we have a <code>Just(..)</code> instance of a <code>Nothing()</code> instance, we&apos;ll use it the same. <code>Nothing()</code> instances have no-op definitions for all methods. So if such a monad instance shows up in our monadic operations, it has the effect of basically short-circuiting to ignore behavior.</p>
+<p>The power of the Maybe abstraction is to encapsulate that behavior/no-op duality implicitly.</p>
+<h3 id="different-maybes">Different Maybes</h3>
+<p>Many implementations of a JavaScript Maybe monad include a check (usually in <code>map(..)</code>) to see if the value is <code>null</code> / <code>undefined</code>, and skipping the behavior if so. In fact, Maybe is trumpeted as being valuable precisely because it sort of automatically short-circuits its behavior with the encapsulated empty-value check.</p>
+<p>Here&apos;s how Maybe is typically illustrated:</p>
+<pre><code class="lang-js"><span class="hljs-comment">// instead of unsafe `console.log( someObj.something.else.entirely )`:</span>
+
+Maybe.of( someObj )
+.map( prop( <span class="hljs-string">&quot;something&quot;</span> ) )
+.map( prop( <span class="hljs-string">&quot;else&quot;</span> ) )
+.map( prop( <span class="hljs-string">&quot;entirely&quot;</span> ) )
+.map( <span class="hljs-built_in">console</span>.log );
+</code></pre>
+<p>In other words, if at any point in the chain we get a <code>null</code> / <code>undefined</code> value, the Maybe magically switches into no-op mode -- it&apos;s now a <code>Nothing()</code> monad instance! -- and stops doing anything for the rest of the chain. That makes the nested property access safe against throwing JS exceptions if some property is missing/empty. That&apos;s cool, and a nice helpful abstraction for sure!</p>
+<p>But... that approach to Maybe is not a pure monad.</p>
+<p>The core spirit of a Monad says that it must be valid for all values and cannot do any inspection of the value, at all -- not even a null check. So those other implementations are cutting corners for the sake of convenience. It&apos;s not a huge deal, but when it comes to learning something, you should probably learn it in its purest form first before you go bending the rules.</p>
+<p>The earlier implementation of the Maybe monad I provided differs from other Maybes primarily in that it does not have the null-check in it. Also, we present <code>Maybe</code> as a loose pairing of <code>Just(..)</code> / <code>Nothing()</code>.</p>
+<p>So wait. If we don&apos;t get the automatic short-circuting, why is Maybe useful at all?!? That seems like its whole point.</p>
+<p>Never fear! We can simply provide the empty-check externally, and the rest of the short-circuting behavior of the Maybe monad will work just fine. Here&apos;s how you could do the <code>someObj.something.else.entirely</code> nested-property access from before. But we&apos;ll do it more &quot;correctly&quot;:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isEmpty</span>(<span class="hljs-params">val</span>) </span>{
+    <span class="hljs-keyword">return</span> val === <span class="hljs-literal">null</span> || val === <span class="hljs-literal">undefined</span>;
+}
+
+<span class="hljs-keyword">var</span> safeProp = curry( <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">safeProp</span>(<span class="hljs-params">prop,obj</span>)</span>{
+    <span class="hljs-keyword">if</span> (isEmpty( obj[prop] )) <span class="hljs-keyword">return</span> Maybe.Nothing();
+    <span class="hljs-keyword">return</span> Maybe.of( obj[prop] );
+} );
+
+Maybe.of( someObj )
+.chain( safeProp( <span class="hljs-string">&quot;something&quot;</span> ) )
+.chain( safeProp( <span class="hljs-string">&quot;else&quot;</span> ) )
+.chain( safeProp( <span class="hljs-string">&quot;entirely&quot;</span> ) )
+.map( <span class="hljs-built_in">console</span>.log );
+</code></pre>
+<p>We made a <code>safeProp(..)</code> that does the empty-check, and selects either a <code>Nothing()</code> monad instance if so, or wraps the value in a <code>Just(..)</code> instance (via <code>Maybe.of(..)</code>). Then instead of <code>map(..)</code>, we use <code>chain(..)</code> which knows how to &quot;unwrap&quot; the monad that <code>safeProp(..)</code> returns.</p>
+<p>We get the same chain short-circuiting upon encountering an empty value. We just don&apos;t embed that logic into the Maybe.</p>
+<p>The benefit of the monad, and Maybe specifically, is that our <code>map(..)</code> and <code>chain(..)</code> methods have a consistent and predictable interaction regardless of which kind of monad comes back. That&apos;s pretty cool!</p>
+<h2 id="humble">Humble</h2>
+<p>Now that we have a little more understanding of Maybe and what it does, I&apos;m going to put a little twist on it -- and add some self-deferential humor to our discussion -- by inventing the Maybe+Humble monad. Technically, <code>Humble(..)</code> is not a monad itself, but a factory function that produces a Maybe monad instance.</p>
+<p>Humble is an admittedly contrived data structure wrapper that uses Maybe to track the status of an <code>egoLevel</code> number. Specifically, <code>Humble(..)</code>-produced monad instances only operate if their ego level value is low enough (less than <code>42</code>!) to be considered humble; otherwise it&apos;s a <code>Nothing()</code> no-op. That should sound a lot like Maybe; it&apos;s pretty similar!</p>
+<p>Here&apos;s the factory function for our Maybe+Humble monad:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Humble</span>(<span class="hljs-params">egoLevel</span>) </span>{
+    <span class="hljs-comment">// accept anything other than a number that&apos;s 42 or higher</span>
+    <span class="hljs-keyword">return</span> !(<span class="hljs-built_in">Number</span>( egoLevel ) &gt;= <span class="hljs-number">42</span>) ?
+        Maybe.of( egoLevel ) :
+        Maybe.Nothing();
+}
+</code></pre>
+<p>You&apos;ll notice that this factory function is kinda like <code>safeProp(..)</code>, in that it uses a condition to decide if it should pick the <code>Just(..)</code> or the <code>Nothing()</code> part of the Maybe.</p>
+<p>Let&apos;s illustrate some basic usage:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> bob = Humble( <span class="hljs-number">45</span> );
+<span class="hljs-keyword">var</span> alice = Humble( <span class="hljs-number">39</span> );
+
+bob.inspect();                            <span class="hljs-comment">// Nothing</span>
+alice.inspect();                        <span class="hljs-comment">// Just(39)</span>
+</code></pre>
+<p>What if Alice wins a big award and is now a bit more proud of herself?</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">winAward</span>(<span class="hljs-params">ego</span>) </span>{
+    <span class="hljs-keyword">return</span> Humble( ego + <span class="hljs-number">3</span> );
+}
+
+alice = alice.chain( winAward );
+alice.inspect();                        <span class="hljs-comment">// Nothing</span>
+</code></pre>
+<p>The <code>Humble( 39 + 3 )</code> call creates a <code>Nothing()</code> monad instance to return back from the <code>chain(..)</code> call, so now Alice doesn&apos;t qualify as humble anymore.</p>
+<p>Now, let&apos;s use a few monads them together:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> bob = Humble( <span class="hljs-number">41</span> );
+<span class="hljs-keyword">var</span> alice = Humble( <span class="hljs-number">39</span> );
+
+<span class="hljs-keyword">var</span> teamMembers = curry( <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">teamMembers</span>(<span class="hljs-params">ego1,ego2</span>)</span>{
+    <span class="hljs-built_in">console</span>.log( <span class="hljs-string">`Our humble team&apos;s egos: <span class="hljs-subst">${ego1}</span> <span class="hljs-subst">${ego2}</span>`</span> );
+} );
+
+bob.map( teamMembers ).ap( alice );
+<span class="hljs-comment">// Our humble team&apos;s egos: 41 39</span>
+</code></pre>
+<p>Since <code>teamMembers(..)</code> is curried, the <code>bob.map(..)</code> call passes in the <code>bob</code> ego level (<code>41</code>), and creates a monad instance with the remaining function wrapped up. Calling <code>ap(alice)</code> on <em>that</em> monad calls <code>alice.map(..)</code> and passes to it the function from the monad. The effect is that both monad&apos;s values have been provided to <code>teamMembers(..)</code> function, printing out the message as shown.</p>
+<p>However, if either or both monads are actually <code>Nothing()</code> instances (because their ego level was too high):</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> frank = Humble( <span class="hljs-number">45</span> );
+
+bob.map( teamMembers ).ap( frank );
+
+frank.map( teamMembers ).ap( bob );
+</code></pre>
+<p><code>teamMembers(..)</code> never gets called (and no message is printed), because <code>frank</code> is a <code>Nothing()</code> instance. That&apos;s the power of the Maybe monad, and our <code>Humble(..)</code> factory allows us to select based on the ego level. Cool!</p>
+<h3 id="humility">Humility</h3>
+<p>One more example to illustrate the behaviors of our Maybe+Humble data structure:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">introduction</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-built_in">console</span>.log( <span class="hljs-string">&quot;I&apos;m just a learner like you! :)&quot;</span> );
+}
+
+<span class="hljs-keyword">var</span> egoChange = curry( <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">egoChange</span>(<span class="hljs-params">amount,concept,egoLevel</span>) </span>{
+    <span class="hljs-built_in">console</span>.log( <span class="hljs-string">`<span class="hljs-subst">${amount &gt; 0 ? &quot;Learned&quot; : &quot;Shared&quot;}</span> <span class="hljs-subst">${concept}</span>.`</span> );
+    <span class="hljs-keyword">return</span> Humble( egoLevel + amount );
+} );
+
+<span class="hljs-keyword">var</span> learn = egoChange( <span class="hljs-number">3</span> );
+
+<span class="hljs-keyword">var</span> learner = Humble( <span class="hljs-number">35</span> );
+
+learner
+.chain( learn( <span class="hljs-string">&quot;closures&quot;</span> ) )
+.chain( learn( <span class="hljs-string">&quot;side effects&quot;</span> ) )
+.chain( learn( <span class="hljs-string">&quot;recursion&quot;</span> ) )
+.chain( learn( <span class="hljs-string">&quot;map/reduce&quot;</span> ) )
+.map( introduction );
+<span class="hljs-comment">// Learned closures.</span>
+<span class="hljs-comment">// Learned side effects.</span>
+<span class="hljs-comment">// Learned recursion.</span>
+</code></pre>
+<p>Unfortunately, the learning process seems to have been cut short. You see, I&apos;ve found that learning a bunch of stuff without sharing with others: inflates your ego too much and is not good for your skills.</p>
+<p>Let&apos;s try a better approach:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> share = egoChange( <span class="hljs-number">-2</span> );
+
+learner
+.chain( learn( <span class="hljs-string">&quot;closures&quot;</span> ) )
+.chain( share( <span class="hljs-string">&quot;closures&quot;</span> ) )
+.chain( learn( <span class="hljs-string">&quot;side effects&quot;</span> ) )
+.chain( share( <span class="hljs-string">&quot;side effects&quot;</span> ) )
+.chain( learn( <span class="hljs-string">&quot;recursion&quot;</span> ) )
+.chain( share( <span class="hljs-string">&quot;recursion&quot;</span> ) )
+.chain( learn( <span class="hljs-string">&quot;map/reduce&quot;</span> ) )
+.chain( share( <span class="hljs-string">&quot;map/reduce&quot;</span> ) )
+.map( introduction );
+<span class="hljs-comment">// Learned closures.</span>
+<span class="hljs-comment">// Shared closures.</span>
+<span class="hljs-comment">// Learned side effects.</span>
+<span class="hljs-comment">// Shared side effects.</span>
+<span class="hljs-comment">// Learned recursion.</span>
+<span class="hljs-comment">// Shared recursion.</span>
+<span class="hljs-comment">// Learned map/reduce.</span>
+<span class="hljs-comment">// Shared map/reduce.</span>
+<span class="hljs-comment">// I&apos;m just a learner like you! :)</span>
+</code></pre>
+<p>Sharing while you learn. That&apos;s the best way to learn more and learn better.</p>
+<h2 id="summary">Summary</h2>
+<p>What is a monad, anyway?</p>
+<p>A monad is a value type, an interface, an object data structure with encapsulated behaviors.</p>
+<p>But none of those definitions are particularly useful. Here&apos;s an attempt at something better: a monad is how you organize behavior around a value in a more declarative way.</p>
+<p>As with everything else in this book, use monads where they are helpful but don&apos;t use them just because everyone else talks about them in FP. Monads aren&apos;t a universal silver bullet, but they do offer some utility when used conservatively.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="apA.html" class="navigation navigation-prev " aria-label="Previous page: Appendix A: Transducing">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="apC.html" class="navigation navigation-next " aria-label="Next page: Appendix C: FP Libraries">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Appendix B: The Humble Monad","level":"1.16","depth":1,"next":{"title":"Appendix C: FP Libraries","level":"1.17","depth":1,"path":"apC.md","ref":"apC.md","articles":[]},"previous":{"title":"Appendix A: Transducing","level":"1.15","depth":1,"path":"apA.md","ref":"apA.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"apB.md","mtime":"2017-03-13T18:38:58.762Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-13T19:03:34.902Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

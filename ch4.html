@@ -1,0 +1,995 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Chapter 4: Composing Functions · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ch5.html" />
+    
+    
+    <link rel="prev" href="ch3.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Foreword (TBA)
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="preface.html">
+            
+                <a href="preface.html">
+            
+                    
+                    Preface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="ch1.html">
+            
+                <a href="ch1.html">
+            
+                    
+                    Chapter 1: Why Functional Programming?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="ch2.html">
+            
+                <a href="ch2.html">
+            
+                    
+                    Chapter 2: Foundations of Functional Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="ch3.html">
+            
+                <a href="ch3.html">
+            
+                    
+                    Chapter 3: Managing Function Inputs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7" data-path="ch4.html">
+            
+                <a href="ch4.html">
+            
+                    
+                    Chapter 4: Composing Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="ch5.html">
+            
+                <a href="ch5.html">
+            
+                    
+                    Chapter 5: Reducing Side Effects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="ch6.html">
+            
+                <a href="ch6.html">
+            
+                    
+                    Chapter 6: Value Immutability
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="ch7.html">
+            
+                <a href="ch7.html">
+            
+                    
+                    Chapter 7: Closure vs Object
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="ch8.html">
+            
+                <a href="ch8.html">
+            
+                    
+                    Chapter 8: List Operations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="ch9.html">
+            
+                <a href="ch9.html">
+            
+                    
+                    Chapter 9: Recursion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="ch10.html">
+            
+                <a href="ch10.html">
+            
+                    
+                    Chapter 10: Functional Async
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="ch11.html">
+            
+                <a href="ch11.html">
+            
+                    
+                    Chapter 11: Putting It All together
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="apA.html">
+            
+                <a href="apA.html">
+            
+                    
+                    Appendix A: Transducing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="apB.html">
+            
+                <a href="apB.html">
+            
+                    
+                    Appendix B: The Humble Monad
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="apC.html">
+            
+                <a href="apC.html">
+            
+                    
+                    Appendix C: FP Libraries
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Chapter 4: Composing Functions</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="functional-light-javascript">Functional-Light JavaScript</h1>
+<h1 id="chapter-4-composing-functions">Chapter 4: Composing Functions</h1>
+<p>By now, I hope you&apos;re feeling much more comfortable with what it means to use functions for functional programming.</p>
+<p>A functional programmer sees every function in their program like a little simple lego piece. They recognize the blue 2x2 brick at a glance, and know exactly how it works and what they can do with it. As they go about building a bigger complex lego model, as they need each next piece, they already have an instinct for which of their many spare pieces to grab.</p>
+<p>But sometimes you take the blue 2x2 brick and the gray 4x1 brick and put them together in a certain way, and you realize, &quot;that&apos;s a useful piece that I need often&quot;.</p>
+<p>So now you&apos;ve come up with a new &quot;piece&quot;, a combination of two other pieces, and you can reach for that kind of piece now anytime you need it. It&apos;s more effective to recognize and use this compound blue-gray L-brick thing where it&apos;s needed than to separately think about assembling the two individual bricks each time.</p>
+<p>Functions come in a variety of shapes and sizes. And we can define a certain combination of them to make a new compound function that will be handy in various parts of the program. This process of using functions together is called composition.</p>
+<h2 id="output-to-input">Output To Input</h2>
+<p>We&apos;ve already seen a few examples of composition. For example, in Chapter 3 our discussion of <code>unary(..)</code> included this expression: <code>unary(adder(3))</code>. Think about what&apos;s happening there.</p>
+<p>To compose two functions together, pass the output of the first function call as the input of the second function call. In <code>unary(adder(3))</code>, the <code>adder(3)</code> call returns a value (a function); that value is directly passed as an argument to <code>unary(..)</code>, which also returns a value (another function).</p>
+<p>To take a step back and visualize the conceptual flow of data, consider:</p>
+<pre><code>functionValue &lt;-- unary &lt;-- adder &lt;-- 3
+</code></pre><p><code>3</code> is the input to <code>adder(..)</code>. The output of <code>adder(..)</code> is the input to <code>unary(..)</code>. The output of <code>unary(..)</code> is <code>functionValue</code>. This is the composition of <code>unary(..)</code> and <code>adder(..)</code>.</p>
+<p>Think of this flow of data like a conveyor belt in a candy factory, where each operation is a step in the process of cooling, cutting, and wrapping a piece of candy. We&apos;ll use the candy factory metaphor throughout this chapter to explain what composition is.</p>
+<p align="center">
+    <img src="fig2.png">
+</p>
+
+<p>Let&apos;s examine composition in action one step at a time. Consider these two utilitites you might have in your program:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">words</span>(<span class="hljs-params">str</span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">String</span>( str )
+        .toLowerCase()
+        .split( <span class="hljs-regexp">/\s|\b/</span> )
+        .filter( <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">alpha</span>(<span class="hljs-params">v</span>)</span>{
+            <span class="hljs-keyword">return</span> <span class="hljs-regexp">/^[\w]+$/</span>.test( v );
+        } );
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">unique</span>(<span class="hljs-params">list</span>) </span>{
+    <span class="hljs-keyword">var</span> uniqList = [];
+
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; list.length; i++) {
+        <span class="hljs-comment">// value not yet in the new list?</span>
+        <span class="hljs-keyword">if</span> (uniqList.indexOf( list[i] ) === <span class="hljs-number">-1</span> ) {
+            uniqList.push( list[i] );
+        }
+    }
+
+    <span class="hljs-keyword">return</span> uniqList;
+}
+</code></pre>
+<p>To use these two utilities to analyze a string of text:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> text = <span class="hljs-string">&quot;To compose two functions together, pass the \
+output of the first function call as the input of the \
+second function call.&quot;</span>;
+
+<span class="hljs-keyword">var</span> wordsFound = words( text );
+<span class="hljs-keyword">var</span> wordsUsed = unique( wordsFound );
+
+wordsUsed;
+<span class="hljs-comment">// [&quot;to&quot;,&quot;compose&quot;,&quot;two&quot;,&quot;functions&quot;,&quot;together&quot;,&quot;pass&quot;,</span>
+<span class="hljs-comment">// &quot;the&quot;,&quot;output&quot;,&quot;of&quot;,&quot;first&quot;,&quot;function&quot;,&quot;call&quot;,&quot;as&quot;,</span>
+<span class="hljs-comment">// &quot;input&quot;,&quot;second&quot;]</span>
+</code></pre>
+<p>We name the array output of <code>words(..)</code> as <code>wordsFound</code>. The input of <code>unique(..)</code> is also an array, so we can pass the <code>wordsFound</code> into it.</p>
+<p>Back to the candy factory assembly line: the first machine takes as &quot;input&quot; the melted chocolate, and its &quot;output&quot; is a chunk of formed and cooled chocolate. The next machine a little down the assembly line takes as its &quot;input&quot; the chunk of chocolate, and its &quot;output&quot; is a cut-up of piece of chocolate candy. Next, a machine on the line takes small pieces of chocolate candy from the conveyor belt and outputs wrapped candies ready to bag and ship.</p>
+<p><img src="fig3.png" align="right" width="70" hspace="20"></p>
+<p>The candy factory is fairly successful with this process, but as with all businesses, management keeps searching for ways to grow.</p>
+<p>To keep up with demand for more candy production, they decide to take out the conveyor belt contraption and just stack all three machines on top of each other, so that the output valve of one is connected directly to the input valve of the one below it. There&apos;s no longer sprawling wasted space where a chunk of chocolate slowly and noisly rumbles down a conveyor belt from the first machine to the second.</p>
+<p>This innovation saves a lot of room on the factory floor, so management is happy they&apos;ll get to make more candy each day!</p>
+<p>The code equivalent of this improved candy factory configuration is to skip the intermediate step (the <code>wordsFound</code> variable in the earlier snippet), and just use the two function calls together:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> wordsUsed = unique( words( text ) );
+</code></pre>
+<p><strong>Note:</strong> Though we typically read the function calls left-to-right -- <code>unique(..)</code> and then <code>words(..)</code> -- the order of operations will actually be more right-to-left, or inner-to-outer. <code>words(..)</code> will run first and then <code>unique(..)</code>. Later we&apos;ll talk about a pattern that matches the order of execution to our natural left-to-right reading, called <code>pipe(..)</code>.</p>
+<p>The stacked machines are working fine, but it&apos;s kind of clunky to have the wires hanging out all over the place. The more of these machine-stacks they create, the more cluttered the factory floor gets. And the effort to assemble and maintain all these machine stacks is awfully time intensive.</p>
+<p><img src="fig4.png" align="left" width="130" hspace="20"></p>
+<p>One morning, an engineer at the candy factory has a great idea. She figures that it&apos;d be much more efficient if she made an outer box to hide all the wires; on the inside, all three of the machines are hooked up together, and on the outside everything is now neat and tidy. On the top of this fancy new machine is a valve to pour in melted chocolate and on the bottom is a valve that spits out wrapped chocolate candies. Brilliant!</p>
+<p>This single compound machine is much easier to move around and install wherever the factory needs it. The workers on the factory floor are even happier because they don&apos;t need to fidget with buttons and dials on three individual machines anymore; they quickly prefer using the single fancy machine.</p>
+<p>Relating back to the code: we now realize that the pairing of <code>words(..)</code> and <code>unique(..)</code> in that specific order of execution -- think: compound lego -- is something we could use in several other parts of our application. So, let&apos;s define a compound function that combines them:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">uniqueWords</span>(<span class="hljs-params">str</span>) </span>{
+    <span class="hljs-keyword">return</span> unique( words( str ) );
+}
+</code></pre>
+<p><code>uniqueWords(..)</code> takes a string and returns an array. It&apos;s a composition of <code>unique(..)</code> and <code>words(..)</code>, as it fulfills the data flow:</p>
+<pre><code>wordsUsed &lt;-- unique &lt;-- words &lt;-- text
+</code></pre><p>You certainly get it by now: the unfolding revolution in candy factory design is function composition.</p>
+<h3 id="machine-making">Machine Making</h3>
+<p>The candy factory is humming along nicely, and thanks to all the saved space, they now have plenty of room to try out making new kinds of candies. Building on the earlier success, management is keen to keep inventing new fancy compound machines for their growing candy assortment.</p>
+<p>But the factory engineers struggle to keep up, because each time a new kind of fancy compound machine needs to be made, they spend quite a bit of time making the new outer box and fitting the individual machines into it.</p>
+<p>So the factory engineers contact an industrial machine vendor for help. They&apos;re amazed to find out that this vendor offers a <strong>machine-making</strong> machine! As incredible as it sounds, they purchase a machine that can take a couple of the factory&apos;s smaller machines -- the chocolate cooling one and the cutting one, for example -- and wire them together automatically, even wrapping a nice clean bigger box around them. This is surely going to make the candy factory really take off!</p>
+<p align="center">
+    <img src="fig5.png" width="300">
+</p>
+
+<p>Back to code land, let&apos;s consider a utility called <code>compose2(..)</code> that creates a composition of two functions automatically, exactly the same way we did manually:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">compose2</span>(<span class="hljs-params">fn2,fn1</span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">composed</span>(<span class="hljs-params">origValue</span>)</span>{
+        <span class="hljs-keyword">return</span> fn2( fn1( origValue ) );
+    };
+}
+
+<span class="hljs-comment">// or the ES6 =&gt; form</span>
+<span class="hljs-keyword">var</span> compose2 =
+    (fn2,fn1) =&gt;
+        origValue =&gt;
+            fn2( fn1( origValue ) );
+</code></pre>
+<p>Did you notice that we defined the parameter order as <code>fn2,fn1</code>, and furthermore that it&apos;s the second function listed (aka <code>fn1</code> parameter name) that runs first, then the first function listed (<code>fn2</code>)? In other words, the functions compose from right-to-left.</p>
+<p>That may seem like a strange choice, but there are some reasons for it. Most typical FP libraries define their <code>compose(..)</code> to work right-to-left in terms of ordering, so we&apos;re sticking with that convention.</p>
+<p>But why? I think the easiest explanation (but perhaps not the most historically accurate) is that we&apos;re listing them to match the order they are written if done manually, or rather the order we encounter them when reading from left-to-right.</p>
+<p><code>unique(words(str))</code> lists the functions in the left-to-right order <code>unique, words</code>, so we make our <code>compose2(..)</code> utility accept them in that order, too. Now, the more efficient definition of the candy making machine is:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> uniqueWords = compose2( unique, words );
+</code></pre>
+<h3 id="composition-variation">Composition Variation</h3>
+<p>It may seem like the <code>&lt;-- unique &lt;-- words</code> combination is the only order these two functions can be composed. But we could actually compose them in the opposite order to create a utility with a bit of a different purpose:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> letters = compose2( words, unique );
+
+<span class="hljs-keyword">var</span> chars = letters( <span class="hljs-string">&quot;How are you Henry?&quot;</span> );
+chars;
+<span class="hljs-comment">// [&quot;h&quot;,&quot;o&quot;,&quot;w&quot;,&quot;a&quot;,&quot;r&quot;,&quot;e&quot;,&quot;y&quot;,&quot;u&quot;,&quot;n&quot;]</span>
+</code></pre>
+<p>This works because the <code>words(..)</code> utility, for value-type safety sake, first coerces its input to a string using <code>String(..)</code>. So the array that <code>unique(..)</code> returns -- now the input to <code>words(..)</code> -- becomes the string <code>&quot;H,o,w, ,a,r,e,y,u,n,?&quot;</code>, and then the rest of the behavior in <code>words(..)</code> processes that string into the <code>chars</code> array.</p>
+<p>Admittedly, this is a contrived example. But the point is that function compositions are not always unidirectional. Sometimes we put the gray brick on top of the blue brick, and sometimes we put the blue brick on top.</p>
+<p>The candy factory better be careful if they try to feed the wrapped candies into the machine that mixes and cools the chocolate!</p>
+<h3 id="general-composition">General Composition</h3>
+<p>If we can define the composition of two functions, we can just keep going to support composing any number of functions. The general data visualization flow for any number of functions being composed looks like this:</p>
+<pre><code>finalValue &lt;-- func1 &lt;-- func2 &lt;-- ... &lt;-- funcN &lt;-- origValue
+</code></pre><p align="center">
+    <img src="fig6.png" width="300">
+</p>
+
+<p>Now the candy factory owns the best machine of all: a machine that can take any number of separate smaller machines and spit out a big fancy machine that does every step in order. That&apos;s one heck of a candy operation! It&apos;s Willy Wonka&apos;s dream!</p>
+<p>We can implement a general <code>compose(..)</code> utility like this:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">compose</span>(<span class="hljs-params">...fns</span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">composed</span>(<span class="hljs-params">result</span>)</span>{
+        <span class="hljs-comment">// copy the array of functions</span>
+        <span class="hljs-keyword">var</span> list = fns.slice();
+
+        <span class="hljs-keyword">while</span> (list.length &gt; <span class="hljs-number">0</span>) {
+            <span class="hljs-comment">// take the last function off the end of the list</span>
+            <span class="hljs-comment">// and execute it</span>
+            result = list.pop()( result );
+        }
+
+        <span class="hljs-keyword">return</span> result;
+    };
+}
+
+<span class="hljs-comment">// or the ES6 =&gt; form</span>
+<span class="hljs-keyword">var</span> compose =
+    (...fns) =&gt;
+        result =&gt; {
+            <span class="hljs-keyword">var</span> list = fns.slice();
+
+            <span class="hljs-keyword">while</span> (list.length &gt; <span class="hljs-number">0</span>) {
+                <span class="hljs-comment">// take the last function off the end of the list</span>
+                <span class="hljs-comment">// and execute it</span>
+                result = list.pop()( result );
+            }
+
+            <span class="hljs-keyword">return</span> result;
+        };
+</code></pre>
+<p>Now let&apos;s look at an example of composing more than two functions. Recalling our <code>uniqueWords(..)</code> composition example, let&apos;s add a <code>skipShortWords(..)</code> to the mix:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">skipShortWords</span>(<span class="hljs-params">list</span>) </span>{
+    <span class="hljs-keyword">var</span> filteredList = [];
+
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; list.length; i++) {
+        <span class="hljs-keyword">if</span> (list[i].length &gt; <span class="hljs-number">4</span>) {
+            filteredList.push( list[i] );
+        }
+    }
+
+    <span class="hljs-keyword">return</span> filteredList;
+}
+</code></pre>
+<p>Let&apos;s define <code>biggerWords(..)</code> that includes <code>skipShortWords(..)</code>. The manual composition equivalent we&apos;re looking for is <code>skipShortWords(unique(words(text)))</code>, so let&apos;s do it with <code>compose(..)</code>:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> text = <span class="hljs-string">&quot;To compose two functions together, pass the \
+output of the first function call as the input of the \
+second function call.&quot;</span>;
+
+<span class="hljs-keyword">var</span> biggerWords = compose( skipShortWords, unique, words );
+
+<span class="hljs-keyword">var</span> wordsUsed = biggerWords( text );
+
+wordsUsed;
+<span class="hljs-comment">// [&quot;compose&quot;,&quot;functions&quot;,&quot;together&quot;,&quot;output&quot;,&quot;first&quot;,</span>
+<span class="hljs-comment">// &quot;function&quot;,&quot;input&quot;,&quot;second&quot;]</span>
+</code></pre>
+<p>Now, let&apos;s recall <code>partialRight(..)</code> from Chapter 3 to do something more interesting with composition. We can build a right-partial application of <code>compose(..)</code> itself, pre-specifying the second and third arguments (<code>unique(..)</code> and <code>words(..)</code>, respectively); we&apos;ll call it <code>filterWords(..)</code> (see below).</p>
+<p>Then, we can complete the composition multiple times by calling <code>filterWords(..)</code>, but with different first-arguments respectively:</p>
+<pre><code class="lang-js"><span class="hljs-comment">// Note: uses a `&lt;= 4` check instead of the `&gt; 4` check</span>
+<span class="hljs-comment">// that `skipShortWords(..)` uses</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">skipLongWords</span>(<span class="hljs-params">list</span>) </span>{ <span class="hljs-comment">/* .. */</span> }
+
+<span class="hljs-keyword">var</span> filterWords = partialRight( compose, unique, words );
+
+<span class="hljs-keyword">var</span> biggerWords = filterWords( skipShortWords );
+<span class="hljs-keyword">var</span> shorterWords = filterWords( skipLongWords );
+
+biggerWords( text );
+<span class="hljs-comment">// [&quot;compose&quot;,&quot;functions&quot;,&quot;together&quot;,&quot;output&quot;,&quot;first&quot;,</span>
+<span class="hljs-comment">// &quot;function&quot;,&quot;input&quot;,&quot;second&quot;]</span>
+
+shorterWords( text );
+<span class="hljs-comment">// [&quot;to&quot;,&quot;two&quot;,&quot;pass&quot;,&quot;the&quot;,&quot;of&quot;,&quot;call&quot;,&quot;as&quot;]</span>
+</code></pre>
+<p>Take a moment to consider what the right-partial application on <code>compose(..)</code> gives us. It allows us to specify ahead of time the first step(s) of a composition, and then create specialized variations of that composition with different subsequent steps (<code>biggerWords(..)</code> and <code>shorterWords(..)</code>). This is one of the most powerful tricks of FP!</p>
+<p>You can also <code>curry(..)</code> a composition instead of partial application, though because of right-to-left ordering, you might more often want to <code>curry( reverseArgs(compose), ..)</code> rather than just <code>curry( compose, ..)</code> itself.</p>
+<p><strong>Note:</strong> Since <code>curry(..)</code> (at least the way we implemented it in Chapter 3) relies on either detecting the arity (<code>length</code>) or having it manually specified, and <code>compose(..)</code> is a variadic function, you&apos;ll need to manually specify the intended arity like <code>curry(.. , 3)</code>.</p>
+<h3 id="alternate-implementations">Alternate Implementations</h3>
+<p>While you may very well never implement your own <code>compose(..)</code> to use in production, and rather just use a library&apos;s implementation as provided, I&apos;ve found that understanding how it works under the covers actually helps solidify general FP concepts very well.</p>
+<p>So let&apos;s examine some different implementation options for <code>compose(..)</code>. We&apos;ll also see there are some pros/cons to each implementation, especially performance.</p>
+<p>We&apos;ll be looking at the <code>reduce(..)</code> utility in detail later in the text, but for now, just know that it reduces a list (array) to a single finite value. It&apos;s like a fancy loop.</p>
+<p>For example, if you did an addition-reduction across the list of numbers <code>[1,2,3,4,5,6]</code>, you&apos;d be looping over them adding them together as you go. The reduction would add <code>1</code> to <code>2</code>, and add that result to <code>3</code>, and then add that result to <code>4</code>, and so on, resulting in the final summation: <code>21</code>.</p>
+<p>The original version of <code>compose(..)</code> uses a loop and eagerly (aka, immediately) calculates the result of one call to pass into the next call. We can do that same thing with <code>reduce(..)</code>:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">compose</span>(<span class="hljs-params">...fns</span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">composed</span>(<span class="hljs-params">result</span>)</span>{
+        <span class="hljs-keyword">return</span> fns.reverse().reduce( <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">reducer</span>(<span class="hljs-params">result,fn</span>)</span>{
+            <span class="hljs-keyword">return</span> fn( result );
+        }, result );
+    };
+}
+
+<span class="hljs-comment">// or the ES6 =&gt; form</span>
+<span class="hljs-keyword">var</span> compose = (...fns) =&gt;
+    result =&gt;
+        fns.reverse().reduce(
+            (result,fn) =&gt;
+                fn( result )
+            , result
+        );
+</code></pre>
+<p>Notice that the <code>reduce(..)</code> looping happens each time the final <code>composed(..)</code> function is run, and that each intermediate <code>result(..)</code> is passed along to the next iteration as the input to the next call.</p>
+<p>The advantage of this implementation is that the code is more concise and also that it uses a well-known FP construct: <code>reduce(..)</code>. And the performance of this implementation is also similar to the original <code>for</code>-loop version.</p>
+<p>However, this implementation is limited in that the outer composed function (aka, the first function in the composition) can only receive a single argument. Most other implementations pass along all arguments to that first call. If every function in the composition is unary, this is no big deal. But if you need to pass multiple arguments to that first call, you&apos;d want a different implementation.</p>
+<p>To fix that first call single-argument limitation, we can still use <code>reduce(..)</code> but produce a lazy-evaluation function wrapping:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">compose</span>(<span class="hljs-params">...fns</span>) </span>{
+    <span class="hljs-keyword">return</span> fns.reverse().reduce( <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">reducer</span>(<span class="hljs-params">fn1,fn2</span>)</span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">composed</span>(<span class="hljs-params">...args</span>)</span>{
+            <span class="hljs-keyword">return</span> fn2( fn1( ...args ) );
+        };
+    } );
+}
+
+<span class="hljs-comment">// or the ES6 =&gt; form</span>
+<span class="hljs-keyword">var</span> compose =
+    (...fns) =&gt;
+        fns.reverse().reduce( (fn1,fn2) =&gt;
+            (...args) =&gt;
+                fn2( fn1( ...args ) )
+        );
+</code></pre>
+<p>Notice that we return the result of the <code>reduce(..)</code> call directly, which is itself a function, not a computed result. <em>That</em> function lets us pass in as many arguments as we want, passing them all down the line to the first function call in the composition, then bubbling up each result through each subsequent call.</p>
+<p>Instead of calculating the running result and passing it along as the <code>reduce(..)</code> looping proceeds, this implementation runs the <code>reduce(..)</code> looping <strong>once</strong> up front at composition time, and defers all the function call calculations -- referred to as lazy calculation. Each partial result of the reduction is a successively more wrapped function.</p>
+<p>When you call the final composed function and provide one or more arguments, all the levels of the big nested function, from the inner most call to the outer, are executed in reverse succession (not via a loop).</p>
+<p>The performance characteristics will potentially be different than in the previous <code>reduce(..)</code>-based implementation. Here, <code>reduce(..)</code> only runs once to produce a big composed function, and then this composed function call simply executes all its nested functions each call. In the former version, <code>reduce(..)</code> would be run for every call.</p>
+<p>Your mileage may vary on which implementation is better, but keep in mind that this latter implementation isn&apos;t limited in argument count the way the former one is.</p>
+<p>We could also define <code>compose(..)</code> using recursion. The recursive definition for <code>compose(fn1,fn2, .. fnN)</code> would look like:</p>
+<pre><code>compose( compose(fn1,fn2, .. fnN-1), fnN );
+</code></pre><p><strong>Note:</strong> We will cover recursion in deep detail in Chapter 9, so if this approach seems confusing, feel free to skip it for now and come back later after reading that chapter.</p>
+<p>Here&apos;s how we implement    <code>compose(..)</code> with recursion:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">compose</span>(<span class="hljs-params">...fns</span>) </span>{
+    <span class="hljs-comment">// pull off the last two arguments</span>
+    <span class="hljs-keyword">var</span> [ fn1, fn2, ...rest ] = fns.reverse();
+
+    <span class="hljs-keyword">var</span> composedFn = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">composed</span>(<span class="hljs-params">...args</span>)</span>{
+        <span class="hljs-keyword">return</span> fn2( fn1( ...args ) );
+    };
+
+    <span class="hljs-keyword">if</span> (rest.length == <span class="hljs-number">0</span>) <span class="hljs-keyword">return</span> composedFn;
+
+    <span class="hljs-keyword">return</span> compose( ...rest.reverse(), composedFn );
+}
+
+<span class="hljs-comment">// or the ES6 =&gt; form</span>
+<span class="hljs-keyword">var</span> compose =
+    (...fns) =&gt; {
+        <span class="hljs-comment">// pull off the last two arguments</span>
+        <span class="hljs-keyword">var</span> [ fn1, fn2, ...rest ] = fns.reverse();
+
+        <span class="hljs-keyword">var</span> composedFn =
+            (...args) =&gt;
+                fn2( fn1( ...args ) );
+
+        <span class="hljs-keyword">if</span> (rest.length == <span class="hljs-number">0</span>) <span class="hljs-keyword">return</span> composedFn;
+
+        <span class="hljs-keyword">return</span> compose( ...rest.reverse(), composedFn );
+    };
+</code></pre>
+<p>I think the benefit of a recursive implementation is mostly conceptual. I personally find it much easier to think about a repetitive action in recursive terms instead of in a loop where I have to track the running result, so I prefer the code to express it that way.</p>
+<p>Others will find the recursive approach quite a bit more daunting to mentally juggle. I invite you to make your own evaluations.</p>
+<h2 id="reordered-composition">Reordered Composition</h2>
+<p>We talked earlier about the right-to-left ordering of standard <code>compose(..)</code> implementations. The advantage is in listing the arguments (functions) in the same order they&apos;d appear if doing the composition manually.</p>
+<p>The disadvantage is they&apos;re listed in the reverse order that they execute, which could be confusing. It was also more awkward to have to use <code>partialRight(compose, ..)</code> to pre-specify the <em>first</em> function(s) to execute in the composition.</p>
+<p>The reverse ordering, composing from left-to-right, has a common name: <code>pipe(..)</code>. This name is said to come from Unix/Linux land, where multiple programs are strung together by &quot;pipe&quot;ing (<code>|</code> operator) the output of the first one in as the input of the second, and so on (i.e., <code>ls -la | grep &quot;foo&quot; | less</code>).</p>
+<p><code>pipe(..)</code> is identical to <code>compose(..)</code> except it processes through the list of functions in left-to-right order:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">pipe</span>(<span class="hljs-params">...fns</span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">piped</span>(<span class="hljs-params">result</span>)</span>{
+        <span class="hljs-keyword">var</span> list = fns.slice();
+
+        <span class="hljs-keyword">while</span> (list.length &gt; <span class="hljs-number">0</span>) {
+            <span class="hljs-comment">// take the first function from the list</span>
+            <span class="hljs-comment">// and execute it</span>
+            result = list.shift()( result );
+        }
+
+        <span class="hljs-keyword">return</span> result;
+    };
+}
+</code></pre>
+<p>In fact, we could just define <code>pipe(..)</code> as the arguments-reversal of <code>compose(..)</code>:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> pipe = reverseArgs( compose );
+</code></pre>
+<p>That was easy!</p>
+<p>Recall this example from general composition earlier:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> biggerWords = compose( skipShortWords, unique, words );
+</code></pre>
+<p>To express that with <code>pipe(..)</code>, we just reverse the order we list them in:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> biggerWords = pipe( words, unique, skipShortWords );
+</code></pre>
+<p>The advantage of <code>pipe(..)</code> is that it lists the functions in order of execution, which can sometimes reduce reader confusion. It may be simpler to see <code>pipe(words,unique,skipShortWords)</code> and read that we do <code>words(..)</code> first, then <code>unique(..)</code>, and finally <code>skipShortWords(..)</code>.</p>
+<p><code>pipe(..)</code> is also handy if you&apos;re in a situation where you want to partially apply the <em>first</em> function(s) that execute. Earlier we did that with right-partial application of <code>compose(..)</code>.</p>
+<p>Compare:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> filterWords = partialRight( compose, unique, words );
+
+<span class="hljs-comment">// vs</span>
+
+<span class="hljs-keyword">var</span> filterWords = partial( pipe, words, unique );
+</code></pre>
+<p>As you may recall from <code>partialRight(..)</code>&apos;s definition in Chapter 3, it uses <code>reverseArgs(..)</code> under the covers, just as our <code>pipe(..)</code> now does. So we get the same result either way.</p>
+<p>The slight performance advantage to <code>pipe(..)</code> in this specific case is that since we&apos;re not trying to preserve the right-to-left argument order of <code>compose(..)</code> by doing a right-partial application, using <code>pipe(..)</code> we don&apos;t need to reverse the argument order back, like we do inside <code>partialRight(..)</code>. So <code>partial(pipe, ..)</code> is a little better here than <code>partialRight(compose, ..)</code>.</p>
+<p>In general, <code>pipe(..)</code> and <code>compose(..)</code> will not have any significant performance differences when using a well-established FP library.</p>
+<h2 id="abstraction">Abstraction</h2>
+<p>Abstraction is often defined as pulling out the generality between two or more tasks. The general part is defined once, so as to avoid repetition. To perform each task&apos;s specialization, the general part is parameterized.</p>
+<p>For example, consider this (obviously contrived) code:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">saveComment</span>(<span class="hljs-params">txt</span>) </span>{
+    <span class="hljs-keyword">if</span> (txt != <span class="hljs-string">&quot;&quot;</span>) {
+        comments[comments.length] = txt;
+    }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">trackEvent</span>(<span class="hljs-params">evt</span>) </span>{
+    <span class="hljs-keyword">if</span> (evt.name !== <span class="hljs-literal">undefined</span>) {
+        events[evt.name] = evt;
+    }
+}
+</code></pre>
+<p>Both of these utilities are storing a value in a data source. That&apos;s the generality. The specialty is that one of them sticks the value at the end of an array, while the other sets the value at a property name of an object.</p>
+<p>So let&apos;s abstract:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">storeData</span>(<span class="hljs-params">store,location,value</span>) </span>{
+    store[location] = value;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">saveComment</span>(<span class="hljs-params">txt</span>) </span>{
+    <span class="hljs-keyword">if</span> (txt != <span class="hljs-string">&quot;&quot;</span>) {
+        storeData( comments, comments.length, txt );
+    }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">trackEvent</span>(<span class="hljs-params">evt</span>) </span>{
+    <span class="hljs-keyword">if</span> (evt.name !== <span class="hljs-literal">undefined</span>) {
+        storeData( events, evt.name, evt );
+    }
+}
+</code></pre>
+<p>The general task of referencing a property on an object (or array, thanks to JS&apos;s convenient operator overloading of <code>[ ]</code>) and setting its value is abstracted into its own function <code>storeData(..)</code>. While this utility only has a single line of code right now, one could envision other general behavior that was common across both tasks, such as generating a unique numeric ID or storing a timestamp with the value.</p>
+<p>If we repeat the common general behavior in multiple places, we run the maintenance risk of changing some instances but forgetting to change others. There&apos;s a principle at play in this kind of abstraction, often referred to as DRY (don&apos;t repeat yourself).</p>
+<p>DRY strives to have only one definition in a program for any given task. An alternate quip to motivate DRY coding is that programmers are just generally lazy and don&apos;t want to do unnecessary work.</p>
+<p>Abstraction can be taken too far. Consider:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">conditionallyStoreData</span>(<span class="hljs-params">store,location,value,checkFn</span>) </span>{
+    <span class="hljs-keyword">if</span> (checkFn( value, store, location )) {
+        store[location] = value;
+    }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">notEmpty</span>(<span class="hljs-params">val</span>) </span>{ <span class="hljs-keyword">return</span> val != <span class="hljs-string">&quot;&quot;</span>; }
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isUndefined</span>(<span class="hljs-params">val</span>) </span>{ <span class="hljs-keyword">return</span> val === <span class="hljs-literal">undefined</span>; }
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isPropUndefined</span>(<span class="hljs-params">val,obj,prop</span>) </span>{
+    <span class="hljs-keyword">return</span> isUndefined( obj[prop] );
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">saveComment</span>(<span class="hljs-params">txt</span>) </span>{
+    conditionallyStoreData( comments, comments.length, txt, notEmpty );
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">trackEvent</span>(<span class="hljs-params">evt</span>) </span>{
+    conditionallyStoreData( events, evt.name, evt, isPropUndefined );
+}
+</code></pre>
+<p>In an effort to DRY and avoid repeating an <code>if</code> statement, we moved the conditional into the general abstraction. We also assumed that we may have checks for non-empty strings or non-<code>undefined</code> values elsewhere in the program, so we might as well DRY those out, too!</p>
+<p>This code <em>is</em> more DRY, but to an overkill extent. Programmers must be careful to apply the appropriate levels of abstraction to each part of their program, no more, no less.</p>
+<p>Regarding our greater discussion of function composition in this chapter, it might seem like its benefit is this kind of DRY abstraction. But let&apos;s not jump to that conclusion, because I think composition actually serves a more important purpose in our code.</p>
+<p>Moreover, <strong>composition is helpful even if there&apos;s only one occurrence of something</strong> (no repetition to DRY out).</p>
+<p>Aside from generalization vs specialization, I think there&apos;s another more useful definition for abstraction, as revealed by this quote:</p>
+<blockquote>
+<p>... abstraction is a process by which the programmer associates a name with a potentially complicated program fragment, which can then be thought of in terms of its purpose of function, rather than in terms of how that function is achieved. By hiding irrelevant details, abstraction reduces conceptual complexity, making it possible for the programmer to focus on a manageable subset of the program text at any particular time.</p>
+<p>Programming Language Pragmatics, Michael L Scott</p>
+<p><a href="https://books.google.com/books?id=jM-cBAAAQBAJ&amp;pg=PA115&amp;lpg=PA115&amp;dq=%22making+it+possible+for+the+programmer+to+focus+on+a+manageable+subset%22&amp;source=bl&amp;ots=yrJ3a-Tvi6&amp;sig=XZwYoWwbQxP2w5qh2k2uMAPj47k&amp;hl=en&amp;sa=X&amp;ved=0ahUKEwjKr-Ty35DSAhUJ4mMKHbPrAUUQ6AEIIzAA#v=onepage&amp;q=%22making%20it%20possible%20for%20the%20programmer%20to%20focus%20on%20a%20manageable%20subset%22&amp;f=false" target="_blank">https://books.google.com/books?id=jM-cBAAAQBAJ&amp;pg=PA115&amp;lpg=PA115&amp;dq=%22making+it+possible+for+the+programmer+to+focus+on+a+manageable+subset%22&amp;source=bl&amp;ots=yrJ3a-Tvi6&amp;sig=XZwYoWwbQxP2w5qh2k2uMAPj47k&amp;hl=en&amp;sa=X&amp;ved=0ahUKEwjKr-Ty35DSAhUJ4mMKHbPrAUUQ6AEIIzAA#v=onepage&amp;q=%22making%20it%20possible%20for%20the%20programmer%20to%20focus%20on%20a%20manageable%20subset%22&amp;f=false</a></p>
+</blockquote>
+<p>// TODO: make a proper reference to this book/quote, or at least find a better online link</p>
+<p>The point this quote makes is that abstraction -- generally, pulling out some piece of code into its own function -- serves the primary purpose of separating apart two pieces of functionality so that each piece can be focused on independent of the other.</p>
+<p>Note that abstraction in this sense is not intended to <em>hide</em> details, as if to treat things as black boxes. That notion is more closely associated with the programming principle of encapsulation. <strong>We&apos;re not abstracting to hide, but to separate to improve focus</strong>.</p>
+<p>Recall that at the outset of this text I described the goal of FP as creating more readable, understandable code. One effective way of doing that is untangling complected -- read: tightly braided, as in strands of rope -- code into separate, simpler -- read: loosely bound -- pieces of code. In that way, the reader isn&apos;t distracted by the details of one part while looking for the details of the other part.</p>
+<p>Our higher goal is not to implement something only once, as it is with the DRY mindset. As a matter of fact, sometimes we&apos;ll actually repeat ourselves in code. Instead, we seek to implement separate things, separately. We&apos;re trying to improve focus, because that improves readability.</p>
+<p>Another way of describing this goal is with imperative vs declarative programming style. Imperative code is primarily concerned with explicitly stating <em>how</em> to accomplish a task. Declarative code states <em>what</em> the outcome should be, and leaves the implementation to some other responsibility.</p>
+<p>In other words, declarative code abstracts the <em>what</em> from the <em>how</em>. Typically declarative coding is favored in readability over imperative, though no program (except of course machine code 1&apos;s and 0&apos;s) is ever entirely one or the other. The programmer must seek balance between them.</p>
+<p>ES6 added many syntactic affordances that transform old imperative operations into newer declarative forms. Perhaps one of the clearest is destructuring. Destructuring is a pattern for assignment that describes how a compound value (object, array) is taken apart into its constituent values.</p>
+<p>Here&apos;s an example of array destructuring:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getData</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">return</span> [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>];
+}
+
+<span class="hljs-comment">// imperative</span>
+<span class="hljs-keyword">var</span> tmp = getData();
+<span class="hljs-keyword">var</span> a = tmp[<span class="hljs-number">0</span>];
+<span class="hljs-keyword">var</span> b = tmp[<span class="hljs-number">3</span>];
+
+<span class="hljs-comment">// declarative</span>
+<span class="hljs-keyword">var</span> [ a ,,, b ] = getData();
+</code></pre>
+<p>The <em>what</em> is assigning the first value of the array to <code>a</code> and the fourth value to <code>b</code>. The <em>how</em> is getting a reference to the array (<code>tmp</code>) and manually referencing indexes <code>0</code> and <code>3</code> in assignments to <code>a</code> and <code>b</code>, respectively.</p>
+<p>Does the array destructuring <em>hide</em> the assignment? Depends on your perspective. I&apos;m asserting that it simply separates the <em>what</em> from the <em>how</em>. The JS engine still does the assignments, but it prevents you from having to be distracted by <em>how</em> it&apos;s done.</p>
+<p>Instead, you read <code>[ a ,,, b ] = ..</code> and can see the assignment pattern merely telling you <em>what</em> will happen. Array destructuring is an example of declarative abstraction.</p>
+<h3 id="composition-as-abstraction">Composition As Abstraction</h3>
+<p>What&apos;s all this have to do with function composition? Function composition is also declarative abstraction.</p>
+<p>Recall the <code>shorterWords(..)</code> example from earlier. Let&apos;s compare an imperative and declarative definition for it:</p>
+<pre><code class="lang-js"><span class="hljs-comment">// imperative</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">shorterWords</span>(<span class="hljs-params">text</span>) </span>{
+    <span class="hljs-keyword">return</span> skipLongWords( unique( words( text ) ) );
+}
+
+<span class="hljs-comment">// declarative</span>
+<span class="hljs-keyword">var</span> shorterWords = compose( skipLongWords, unique, words );
+</code></pre>
+<p>The declarative form focuses on the <em>what</em> -- these 3 functions pipe data from a string to a list of shorter words -- and leaves the <em>how</em> to the internals of <code>compose(..)</code>.</p>
+<p>In a bigger sense, the <code>shorterWords = compose(..)</code> line explains the <em>how</em> for defining a <code>shorterWords(..)</code> utility, leaving this declarative line somewhere else in the code to focus only on the <em>what</em>:</p>
+<pre><code class="lang-js">shorterWords( text );
+</code></pre>
+<p>Composition abstracts getting a list of shorter words from the steps it takes to do that.</p>
+<p>By contrast, what if we hadn&apos;t used composition abstraction?</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> wordsFound = words( text );
+<span class="hljs-keyword">var</span> uniqueWordsFound = unique( wordsFound );
+skipLongWords( uniqueWordsFound );
+</code></pre>
+<p>Or even:</p>
+<pre><code class="lang-js">skipLongWords( unique( words( text ) ) );
+</code></pre>
+<p>Either of these two versions demonstrates a more imperative style as opposed to the prior declarative style. The reader&apos;s focus in those two snippets is inextricably tied to the <em>how</em> and less on the <em>what</em>.</p>
+<p>Function composition isn&apos;t just about saving code with DRY. Even if the usage of <code>shorterWords(..)</code> only occurs in one place -- so there&apos;s no repetition to avoid! -- separating the <em>how</em> from the <em>what</em> still improves our code.</p>
+<p>Composition is a powerful tool for abstraction that transforms imperative code into more readable declarative code.</p>
+<h2 id="revisiting-points">Revisiting Points</h2>
+<p>Now that we&apos;ve thoroughly covered composition -- a trick that will be immensely helpful in many areas of FP -- let&apos;s watch it in action by revisiting point-free style from &quot;No Points&quot; in Chapter 3 with a scenario that&apos;s a fair bit more complex to refactor:</p>
+<pre><code class="lang-js"><span class="hljs-comment">// given: ajax( url, data, cb )</span>
+
+<span class="hljs-keyword">var</span> getPerson = partial( ajax, <span class="hljs-string">&quot;http://some.api/person&quot;</span> );
+<span class="hljs-keyword">var</span> getLastOrder = partial( ajax, <span class="hljs-string">&quot;http://some.api/order&quot;</span>, { id: <span class="hljs-number">-1</span> } );
+
+getLastOrder( <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">orderFound</span>(<span class="hljs-params">order</span>)</span>{
+    getPerson( { id: order.personId }, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">personFound</span>(<span class="hljs-params">person</span>)</span>{
+        output( person.name );
+    } );
+} );
+</code></pre>
+<p>The &quot;points&quot; we&apos;d like to remove are the <code>order</code> and <code>person</code> parameter references.</p>
+<p>Let&apos;s start by trying to get the <code>person</code> &quot;point&quot; out of the <code>personFound(..)</code> function. To do so, let&apos;s first to define:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">extractName</span>(<span class="hljs-params">person</span>) </span>{
+    <span class="hljs-keyword">return</span> person.name;
+}
+</code></pre>
+<p>But let&apos;s observe that this operation could instead be expressed in generic terms: extracting any property by name off of any object. Let&apos;s call such a utility <code>prop(..)</code>:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">prop</span>(<span class="hljs-params">name,obj</span>) </span>{
+    <span class="hljs-keyword">return</span> obj[name];
+}
+
+<span class="hljs-comment">// or the ES6 =&gt; form</span>
+<span class="hljs-keyword">var</span> prop =
+    (name,obj) =&gt;
+        obj[name];
+</code></pre>
+<p>While we&apos;re dealing with object properties, let&apos;s also define the opposite utility: <code>setProp(..)</code> for setting a property value onto an object.</p>
+<p>However, we want to be careful not to just mutate an existing object but rather create a clone of the object to make the change to, and then return it. The reasons for such care will be discussed in detail in Chapter 5.</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">setProp</span>(<span class="hljs-params">name,obj,val</span>) </span>{
+    <span class="hljs-keyword">var</span> o = <span class="hljs-built_in">Object</span>.assign( {}, obj );
+    o[name] = val;
+    <span class="hljs-keyword">return</span> o;
+}
+</code></pre>
+<p>Now, to define an <code>extractName(..)</code> that pulls a <code>&quot;name&quot;</code> property off an object, we&apos;ll partially apply <code>prop(..)</code>:</p>
+<pre><code>var extractName = partial( prop, &quot;name&quot; );
+</code></pre><p><strong>Note:</strong> Don&apos;t miss that <code>extractName(..)</code> here hasn&apos;t actually extracted anything yet. We partially applied <code>prop(..)</code> to make a function that&apos;s waiting to extract the <code>&quot;name&quot;</code> property from whatever object we pass into it. We could also have done it with <code>curry(prop)(&quot;name&quot;)</code>.</p>
+<p>Next, let&apos;s narrow the focus on our example&apos;s nested lookup calls to this:</p>
+<pre><code class="lang-js">getLastOrder( <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">orderFound</span>(<span class="hljs-params">order</span>)</span>{
+    getPerson( { id: order.personId }, outputPersonName );
+} );
+</code></pre>
+<p>How can we define <code>outputPersonName(..)</code>? To visualize what we need, think about the desired flow of data:</p>
+<pre><code>output &lt;-- extractName &lt;-- person
+</code></pre><p><code>outputPersonName(..)</code> needs to be a function that takes an (object) value, passes it into <code>extractName(..)</code>, then passes that value to <code>output(..)</code>.</p>
+<p>Hopefully you recognized that as a <code>compose(..)</code> operation. So we can define <code>outputPersonName(..)</code> as:</p>
+<pre><code>var outputPersonName = compose( output, extractName );
+</code></pre><p>The <code>outputPersonName(..)</code> function we just created is the callback provided to <code>getPerson(..)</code>. So we can define a function called <code>processPerson(..)</code> that presets the callback argument, using <code>partialRight(..)</code>:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> processPerson = partialRight( getPerson, outputPersonName );
+</code></pre>
+<p>Let&apos;s reconstruct the nested lookups example again with our new function:</p>
+<pre><code class="lang-js">getLastOrder( <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">orderFound</span>(<span class="hljs-params">order</span>)</span>{
+    processPerson( { id: order.personId } );
+} );
+</code></pre>
+<p>Phew, we&apos;re making good progress!</p>
+<p>But we need to keep going and remove the <code>order</code> &quot;point&quot;. The next step is to observe that <code>personId</code> can be extracted from an object (like <code>order</code>) via <code>prop(..)</code>, just like we did with <code>name</code> on the <code>person</code> object:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> extractPersonId = partial( prop, <span class="hljs-string">&quot;personId&quot;</span> );
+</code></pre>
+<p>To construct the object (of the form <code>{ id: .. }</code>) that needs to be passed to <code>processPerson(..)</code>, let&apos;s make another utility for wrapping a value in an object at a specified property name, called <code>makeObjProp(..)</code>:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">makeObjProp</span>(<span class="hljs-params">name,value</span>) </span>{
+    <span class="hljs-keyword">return</span> setProp( name, {}, value );
+}
+
+<span class="hljs-comment">// or the ES6 =&gt; form</span>
+<span class="hljs-keyword">var</span> makeObjProp =
+    (name,value) =&gt;
+        setProp( name, {}, value );
+</code></pre>
+<p><strong>Tip:</strong> This utility is known as <code>objOf(..)</code> in the Ramda library.</p>
+<p>Just as we did with <code>prop(..)</code> to make <code>extractName(..)</code>, we&apos;ll partially apply <code>makeObjProp(..)</code> to build a function <code>personData(..)</code> that makes our data object:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> personData = partial( makeObjProp, <span class="hljs-string">&quot;id&quot;</span> );
+</code></pre>
+<p>To use <code>processPerson(..)</code> to perform the lookup of a person attached to an <code>order</code> value, the conceptual flow of data through operations we need is:</p>
+<pre><code>processPerson &lt;-- personData &lt;-- extractPersonId &lt;-- order
+</code></pre><p>So we&apos;ll just use <code>compose(..)</code> again to define a <code>lookupPerson(..)</code> utility:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> lookupPerson = compose( processPerson, personData, extractPersonId );
+</code></pre>
+<p>And... that&apos;s it! Putting the whole example back together without any &quot;points&quot;:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> getPerson = partial( ajax, <span class="hljs-string">&quot;http://some.api/person&quot;</span> );
+<span class="hljs-keyword">var</span> getLastOrder = partial( ajax, <span class="hljs-string">&quot;http://some.api/order&quot;</span>, { id: <span class="hljs-number">-1</span> } );
+
+<span class="hljs-keyword">var</span> extractName = partial( prop, <span class="hljs-string">&quot;name&quot;</span> );
+<span class="hljs-keyword">var</span> outputPersonName = compose( output, extractName );
+<span class="hljs-keyword">var</span> processPerson = partialRight( getPerson, outputPersonName );
+<span class="hljs-keyword">var</span> personData = partial( makeObjProp, <span class="hljs-string">&quot;id&quot;</span> );
+<span class="hljs-keyword">var</span> extractPersonId = partial( prop, <span class="hljs-string">&quot;personId&quot;</span> );
+<span class="hljs-keyword">var</span> lookupPerson = compose( processPerson, personData, extractPersonId );
+
+getLastOrder( lookupPerson );
+</code></pre>
+<p>Wow. Point-free. And <code>compose(..)</code> turned out to be really helpful in two places!</p>
+<p>I think in this case, even though the steps to derive our final answer were a bit drawn out, the end result is much more readable code, because we&apos;ve ended up explicitly calling out each step.</p>
+<p>And even if you didn&apos;t like seeing/naming all those intermediate steps, you can preserve point-free but wire the expressions together without individual variables:</p>
+<pre><code class="lang-js">partial( ajax, <span class="hljs-string">&quot;http://some.api/order&quot;</span>, { id: <span class="hljs-number">-1</span> } )
+(
+    compose(
+        partialRight(
+            partial( ajax, <span class="hljs-string">&quot;http://some.api/person&quot;</span> ),
+            compose( output, partial( prop, <span class="hljs-string">&quot;name&quot;</span> ) )
+        ),
+        partial( makeObjProp, <span class="hljs-string">&quot;id&quot;</span> ),
+        partial( prop, <span class="hljs-string">&quot;personId&quot;</span> )
+    )
+);
+</code></pre>
+<p>This snippet is less verbose for sure, but I think it&apos;s less readable than the previous snippet where each operation is its own variable. Either way, composition helped us with our point-free style.</p>
+<h2 id="summary">Summary</h2>
+<p>Function composition is a pattern for defining a function that routes the output of one function call into another function call, and its output to another, and so on.</p>
+<p>Because JS functions can only return single values, the pattern essentially dictates that all functions in the composition (except perhaps the first called) need to be unary, taking only a single input from the output of the previous.</p>
+<p>Instead of listing out each step as a discrete call in our code, function composition using a utility like <code>compose(..)</code> abstracts that implementation detail so the code is more readable, allowing us to focus on <em>what</em> the composition will be used to accomplish, not <em>how</em> it will be performed.</p>
+<p>Composition -- declarative data flow -- is one of the most important tools that underpins most of the rest of FP.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ch3.html" class="navigation navigation-prev " aria-label="Previous page: Chapter 3: Managing Function Inputs">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="ch5.html" class="navigation navigation-next " aria-label="Next page: Chapter 5: Reducing Side Effects">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Chapter 4: Composing Functions","level":"1.7","depth":1,"next":{"title":"Chapter 5: Reducing Side Effects","level":"1.8","depth":1,"path":"ch5.md","ref":"ch5.md","articles":[]},"previous":{"title":"Chapter 3: Managing Function Inputs","level":"1.6","depth":1,"path":"ch3.md","ref":"ch3.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ch4.md","mtime":"2017-03-13T18:38:58.762Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-13T19:03:34.902Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

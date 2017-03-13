@@ -1,0 +1,680 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Chapter 10: Functional Async · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ch11.html" />
+    
+    
+    <link rel="prev" href="ch9.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Foreword (TBA)
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="preface.html">
+            
+                <a href="preface.html">
+            
+                    
+                    Preface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="ch1.html">
+            
+                <a href="ch1.html">
+            
+                    
+                    Chapter 1: Why Functional Programming?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="ch2.html">
+            
+                <a href="ch2.html">
+            
+                    
+                    Chapter 2: Foundations of Functional Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="ch3.html">
+            
+                <a href="ch3.html">
+            
+                    
+                    Chapter 3: Managing Function Inputs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="ch4.html">
+            
+                <a href="ch4.html">
+            
+                    
+                    Chapter 4: Composing Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="ch5.html">
+            
+                <a href="ch5.html">
+            
+                    
+                    Chapter 5: Reducing Side Effects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="ch6.html">
+            
+                <a href="ch6.html">
+            
+                    
+                    Chapter 6: Value Immutability
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="ch7.html">
+            
+                <a href="ch7.html">
+            
+                    
+                    Chapter 7: Closure vs Object
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="ch8.html">
+            
+                <a href="ch8.html">
+            
+                    
+                    Chapter 8: List Operations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="ch9.html">
+            
+                <a href="ch9.html">
+            
+                    
+                    Chapter 9: Recursion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.13" data-path="ch10.html">
+            
+                <a href="ch10.html">
+            
+                    
+                    Chapter 10: Functional Async
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="ch11.html">
+            
+                <a href="ch11.html">
+            
+                    
+                    Chapter 11: Putting It All together
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="apA.html">
+            
+                <a href="apA.html">
+            
+                    
+                    Appendix A: Transducing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="apB.html">
+            
+                <a href="apB.html">
+            
+                    
+                    Appendix B: The Humble Monad
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="apC.html">
+            
+                <a href="apC.html">
+            
+                    
+                    Appendix C: FP Libraries
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Chapter 10: Functional Async</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="functional-light-javascript">Functional-Light JavaScript</h1>
+<h1 id="chapter-10-functional-async">Chapter 10: Functional Async</h1>
+<p>At this point of the book, you now have all the raw concepts in place for the foundation of FP that I call &quot;Functional-Light Programming&quot;. In this chapter, we&apos;re going to apply these concepts to a different context, but we won&apos;t really present particularly new ideas.</p>
+<p>So far, almost everything we&apos;ve done is synchronous, meaning that we call functions with immediate inputs and immediately get back output values. A lot of work can be done this way, but it&apos;s not nearly sufficient for the entirety of a modern JS application. To be truly ready for FP in the real world of JS, we need to understand async FP.</p>
+<p>Our goal in this chapter is to expand our thinking about managing values with FP, to spread out such operations over time.</p>
+<h2 id="time-as-state">Time As State</h2>
+<p>The most complicated state in your entire application is time. That is, it&apos;s far easier to manage state when the transition from one state to another is immediate and affirmatively in your control. When the state of your application changes implicitly in response to events spread out over time, management becomes exponentially more difficult.</p>
+<p>Every part of how we&apos;ve presented FP in this text has been about making code easier to read by making it more trustable and more predictable. When you introduce asynchrony to your program, those efforts take a big hit.</p>
+<p>But let&apos;s be more explicit: it&apos;s not the mere fact that some operations don&apos;t finish synchronously that is concerning; firing off asynchronous behavior is easy. It&apos;s the coordination of the responses to these actions, each of which has the potential to change the state of your application, that requires so much extra effort.</p>
+<p>So, is it better for you the author to take that effort, or should you just leave it to the reader of your code to figure out what the state of the program will be if A finishes before B, or vice versa? That&apos;s a rhetorical question but one with a pretty concrete answer from my perspective: to have any hope of making such complex code more readable, the author has to take a lot more concern than they normally would.</p>
+<h3 id="reducing-time">Reducing Time</h3>
+<p>One of the most important outcomes of async programming patterns is simplifying state change management by abstracting out time from our sphere of concern.</p>
+<p>To illustrate, let&apos;s first look at a scenario where a race condition (aka, time complexity) exists, and must be manually managed:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> customerId = <span class="hljs-number">42</span>;
+<span class="hljs-keyword">var</span> customer;
+
+lookupCustomer( customerId, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onCustomer</span>(<span class="hljs-params">customerRecord</span>)</span>{
+    <span class="hljs-keyword">var</span> orders = customer ? customer.orders : <span class="hljs-literal">null</span>;
+    customer = customerRecord;
+    <span class="hljs-keyword">if</span> (orders) {
+        customer.orders = orders;
+    }
+} );
+
+lookupOrders( customerId, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onOrders</span>(<span class="hljs-params">customerOrders</span>)</span>{
+    <span class="hljs-keyword">if</span> (!customer) {
+        customer = {};
+    }
+    customer.orders = customerOrders;
+} );
+</code></pre>
+<p>The <code>onCustomer(..)</code> and <code>onOrders(..)</code> callbacks are in a binary race condition. Assuming they both run, it&apos;s possible that either might run first, and it&apos;s impossible to predict which will happen.</p>
+<p>If we could embed the call to <code>lookupOrders(..)</code> inside of <code>onCustomer(..)</code>, we&apos;d be sure that <code>onOrders(..)</code> was running after <code>onCustomer(..)</code>. But we can&apos;t do that, because we need the two lookups to occur concurrently.</p>
+<p>So to normalize this time-based state complexity, we use a pairing of <code>if</code>-statement checks in the respective callbacks, along with an outer lexically-closed over variable <code>customer</code>. When each callback runs, it checks the state of <code>customer</code>, and thus determines its own relative ordering; if <code>customer</code> is unset for a callback, it&apos;s the first to run, otherwise it&apos;s the second.</p>
+<p>This code works, but it&apos;s far from ideal in terms of readability. The time complexity makes this code harder to read.</p>
+<p>Let&apos;s instead use a JS promise to factor time out of the picture:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> customerId = <span class="hljs-number">42</span>;
+
+<span class="hljs-keyword">var</span> customerPromise = lookupCustomer( customerId );
+<span class="hljs-keyword">var</span> ordersPromise = lookupOrders( customerId );
+
+customerPromise.then( <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onCustomer</span>(<span class="hljs-params">customer</span>)</span>{
+    ordersPromise.then( <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onOrders</span>(<span class="hljs-params">orders</span>)</span>{
+        customer.orders = orders;
+    } );
+} );
+</code></pre>
+<p>The <code>onOrders(..)</code> callback is now inside of the <code>onCustomer(..)</code> callback, so their relative ordering is guaranteed. The concurrency of the lookups is accomplished by making the <code>lookupCustomer(..)</code> and <code>lookupOrders(..)</code> calls separately before specifying the <code>then(..)</code> response handling.</p>
+<p>It may not be obvious, but there would otherwise inherently be a race condition in this snippet, were it not for how promises are defined to behave. If the lookup of the <code>orders</code> finishes before the <code>ordersPromise.then(..)</code> is called to provide an <code>onOrders(..)</code> callback, <em>something</em> needs to be smart enough to keep that <code>orders</code> list around until <code>onOrders(..)</code> can be called. In fact, the same concern could apply to <code>record</code> being present before <code>onCustomer(..)</code> is specified to receive it.</p>
+<p>That <em>something</em> is the same kind of time complexity logic we discussed with the previous snippet. But we don&apos;t have to worry about any of that complexity, either in the writing of this code or -- more importantly -- in the reading of it, because the promises take care of that time normalization for us.</p>
+<p>A promise represents a single (future) value in a time-independent manner. Moreover, extracting the value from a promise is the asynchronous form of the synchronous assiginment (via <code>=</code>) of an immediate value. In other words, a promise spreads an <code>=</code> assignment operation out over time, but in a trustable (time-independent) fashion.</p>
+<p>We&apos;ll now explore how we similarly can spread various synchronous FP operations from earlier in this book asynchronously over time.</p>
+<h2 id="eager-vs-lazy">Eager vs Lazy</h2>
+<p>Eager and lazy in the realm of computer science aren&apos;t compliments or insults, but rather ways to describe whether an operation will finish right away or progress over time.</p>
+<p>The FP operations that we&apos;ve seen in this text can be characterized as eager because they operate synchronously (right now) on a discrete immediate value or list/structure of values.</p>
+<p>Recall:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> a = [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>]
+
+<span class="hljs-keyword">var</span> b = a.map( v =&gt; v * <span class="hljs-number">2</span> );
+
+b;            <span class="hljs-comment">// [2,4,6]</span>
+</code></pre>
+<p>This mapping from <code>a</code> to <code>b</code> is eager because it operates on all the values in the <code>a</code> array at that moment, and produces a new <code>b</code> array. If you later modify <code>a</code>, for example adding a new value to the end of it, nothing will change about the contents of <code>b</code>. That&apos;s eager FP.</p>
+<p>But what would it look like to have a lazy FP operation? Consider something like this:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> a = [];
+
+<span class="hljs-keyword">var</span> b = mapLazy( a, v =&gt; v * <span class="hljs-number">2</span> );
+
+a.push( <span class="hljs-number">1</span> );
+
+a[<span class="hljs-number">0</span>];        <span class="hljs-comment">// 1</span>
+b[<span class="hljs-number">0</span>];        <span class="hljs-comment">// 2</span>
+
+a.push( <span class="hljs-number">2</span> );
+
+a[<span class="hljs-number">1</span>];        <span class="hljs-comment">// 2</span>
+b[<span class="hljs-number">1</span>];        <span class="hljs-comment">// 4</span>
+</code></pre>
+<p>The <code>mapLazy(..)</code> we&apos;ve imagined here essentially &quot;listens&quot; to the <code>a</code> array, and every time a new value is added to the end of it (with <code>push(..)</code>), it runs the <code>v =&gt; v * 2</code> mapping function and pushes the transformed value to the <code>b</code> array.</p>
+<p><strong>Note:</strong> The implementation of <code>mapLazy(..)</code> has not been shown because this is a fictional illustration, not a real operation. To accomplish this kind of lazy operation pairing between <code>a</code> and <code>b</code>, they will need to be smarter than simple arrays.</p>
+<p>Consider the benefits of being able to pair an <code>a</code> and <code>b</code> together, where any time you put a value into <code>a</code>, it&apos;s transformed and projected to <code>b</code>. That&apos;s the same kind of declarative FP power out of a <code>map(..)</code> operation, but now it can be stretched over time; you don&apos;t have to know all the values of <code>a</code> to set up the mapping.</p>
+<h2 id="reactive-fp">Reactive FP</h2>
+<p>To understand how we could create and use a lazy mapping between two sets of values, we need to abstract our idea of list (array) a bit.</p>
+<p>Let&apos;s imagine a smarter kind of array, not one which simply holds values but one which lazily receives and responds (aka &quot;reacts&quot;) to values. Consider:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> a = <span class="hljs-keyword">new</span> LazyArray();
+
+<span class="hljs-keyword">var</span> b = a.map( <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">double</span>(<span class="hljs-params">v</span>)</span>{
+    <span class="hljs-keyword">return</span> v * <span class="hljs-number">2</span>;
+} );
+
+setInterval( <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">everySecond</span>(<span class="hljs-params"></span>)</span>{
+    a.push( <span class="hljs-built_in">Math</span>.random() );
+}, <span class="hljs-number">1000</span> );
+</code></pre>
+<p>So far, this snippet doesn&apos;t look any different than a normal array. The only unusual thing is that we&apos;re used to the <code>map(..)</code> running eagerly and immediately producing a <code>b</code> array with all the currently mapped values from <code>a</code>. But the timer pushing random values into <code>a</code> is strange, since all those values are coming <em>after</em> the <code>map(..)</code> call.</p>
+<p>But this fictional <code>LazyArray</code> is different; it assumes that values may come one at a time, over time. Just <code>push(..)</code> values in whenever you want. <code>b</code> will be a lazy mapping of whatever values eventually end up in <code>a</code>.</p>
+<p>Also, we don&apos;t really need to keep values in <code>a</code> or <code>b</code> once they&apos;ve been handled; this special kind of array only holds a value only as long as its needed. So these arrays don&apos;t strictly grow in memory usage over time, an important characteristic of lazy data structures and operations. In fact, it&apos;s less like an array and more like a buffer.</p>
+<p>A normal array is eager in that it holds all of its values right now. A &quot;lazy array&quot; is an array where the values will come in over time.</p>
+<p>Since we won&apos;t necessarily know when a new value has arrived in <code>a</code>, another key thing we need is to be able to listen to <code>b</code> to be notified when new values are made available. We could imagine a listener like this:</p>
+<pre><code class="lang-js">b.listen( <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onValue</span>(<span class="hljs-params">v</span>)</span>{
+    <span class="hljs-built_in">console</span>.log( v );
+} );
+</code></pre>
+<p><code>b</code> is <em>reactive</em> in that it&apos;s set up to <em>react</em> to values as they come into <code>a</code>. There&apos;s an FP operation <code>map(..)</code> that describes how each value transfers from the origin <code>a</code> to the target <code>b</code>. Each discrete mapping operation is exactly how we modeled single-value operations with normal synchronous FP, but here we&apos;re spreading out the sourcing of values over time.</p>
+<p><strong>Note:</strong> The term most commonly applied to these concepts is Functional Reactive Programming (FRP). I&apos;m deliberately avoiding that term because there&apos;s some debate as to whether FP + Reactive genuinely constitutes FRP. We&apos;re not going to fully dive into all the implications of FRP here, so I&apos;ll just keep calling it reactive FP. Alternately, you could call it evented-FP if that feels less confusing.</p>
+<p>We can think of <code>a</code> as producing values and <code>b</code> as consuming them. So for readability, let&apos;s reorganize this snippet to separate the concerns into <em>producer</em> and <em>consumer</em> roles:</p>
+<pre><code class="lang-js"><span class="hljs-comment">// producer:</span>
+
+<span class="hljs-keyword">var</span> a = <span class="hljs-keyword">new</span> LazyArray();
+
+setInterval( <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">everySecond</span>(<span class="hljs-params"></span>)</span>{
+    a.push( <span class="hljs-built_in">Math</span>.random() );
+}, <span class="hljs-number">1000</span> );
+
+
+<span class="hljs-comment">// **************************</span>
+<span class="hljs-comment">// consumer:</span>
+
+<span class="hljs-keyword">var</span> b = a.map( <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">double</span>(<span class="hljs-params">v</span>)</span>{
+    <span class="hljs-keyword">return</span> v * <span class="hljs-number">2</span>;
+} );
+
+b.listen( <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onValue</span>(<span class="hljs-params">v</span>)</span>{
+    <span class="hljs-built_in">console</span>.log( v );
+} );
+</code></pre>
+<p><code>a</code> is the producer, which acts essentially like a stream of values. We can think of each value arriving in <code>a</code> as an <em>event</em>. The <code>map(..)</code> operation then triggers a corresponding event on <code>b</code>, which we <code>listen(..)</code> to so we can consume the new value.</p>
+<p>The reason we separate the <em>producer</em> and <em>consumer</em> concerns is so that different parts of our application can be responsible for each concern. This code organization can drastically improve both code readability and maintenance.</p>
+<h3 id="declarative-time">Declarative Time</h3>
+<p>We&apos;re being very careful about how we introduce time into the discussion. Specifically, just as promises abstract time away from our concern for a single asynchronous operation, reactive FP abstracts (separates) time away from a series of values/operations.</p>
+<p>From the perspective of <code>a</code> (the producer), the only evident time  concern is our manual <code>setInterval(..)</code> loop. But that&apos;s only for demonstration purposes.</p>
+<p>Imagine <code>a</code> could actually be attached to some other event source, like the user&apos;s mouse clicks or keystrokes, websocket messages from a server, etc. In that scenario, <code>a</code> doesn&apos;t actually have to concern itself with time. It&apos;s merely a time-independent conduit for values, whenever they are ready.</p>
+<p>From the perspective of <code>b</code> (the consumer), we do not know or care when/where the values in <code>a</code> come from. As a matter of fact, all the values could already be present. All we care about is that we want those values, whenever they are ready. Again, this is a time-independent (aka lazy) modeling of the <code>map(..)</code> transformation operation.</p>
+<p>The <em>time</em> relationship between <code>a</code> and <code>b</code> is declarative, not imperative.</p>
+<p>The value of organizing such operations-over-time this way may not feel particularly effective yet. Let&apos;s compare to how this same sort of functionality could have be expressed imperatively:</p>
+<pre><code class="lang-js"><span class="hljs-comment">// producer:</span>
+
+<span class="hljs-keyword">var</span> a = {
+    onValue(v){
+        b.onValue( v );
+    }
+};
+
+setInterval( <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">everySecond</span>(<span class="hljs-params"></span>)</span>{
+    a.onValue( <span class="hljs-built_in">Math</span>.random() );
+}, <span class="hljs-number">1000</span> );
+
+
+<span class="hljs-comment">// **************************</span>
+<span class="hljs-comment">// consumer:</span>
+
+<span class="hljs-keyword">var</span> b = {
+    map(v){
+        <span class="hljs-keyword">return</span> v * <span class="hljs-number">2</span>;
+    },
+    onValue(v){
+        v = <span class="hljs-keyword">this</span>.map( v );
+        <span class="hljs-built_in">console</span>.log( v );
+    }
+};
+</code></pre>
+<p>It may seem rather subtle, but there&apos;s a important difference between this more-imperative version of the code and the previous more-declarative version, aside from just <code>b.onValue(..)</code> needing to call <code>this.map(..)</code> itself. In the former snippet, <code>b</code> pulls from <code>a</code>, but in the latter snippet, <code>a</code> pushes to <code>b</code>. In other words, compare <code>b = a.map(..)</code> to <code>b.onValue(v)</code>.</p>
+<p>In the latter imperative snippet, it&apos;s not clear (readability wise) from the consumer&apos;s perspective where the <code>v</code> values are coming from. Moreover, the imperative hard coding of <code>b.onValue(..)</code> in the mix of producer <code>a</code>&apos;s logic is a bit of a violation of separation-of-concerns. That can make it harder to reason about producer and consumer independently.</p>
+<p>By contrast, in the former snippet, <code>b = a.map(..)</code> declares that <code>b</code>&apos;s values are seeded from <code>a</code>, and treats <code>a</code> as abstract event stream data source that we don&apos;t have to concern ourselves with at that moment. We <em>declare</em> that any value that comes from <code>a</code> into <code>b</code> will go through the <code>map(..)</code> operation as specified.</p>
+<h3 id="more-than-map">More Than Map</h3>
+<p>For convenience, we&apos;ve illustrated this notion of pairing <code>a</code> and <code>b</code> together over time via a one-to-one <code>map(..)</code>ing. But many of our other FP operations could be modeled over time as well.</p>
+<p>Consider:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> b = a.filter( <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isOdd</span>(<span class="hljs-params">v</span>) </span>{
+    <span class="hljs-keyword">return</span> v % <span class="hljs-number">2</span> == <span class="hljs-number">1</span>;
+} );
+
+b.listen( <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onlyOdds</span>(<span class="hljs-params">v</span>)</span>{
+    <span class="hljs-built_in">console</span>.log( <span class="hljs-string">&quot;Odd:&quot;</span>, v );
+} );
+</code></pre>
+<p>Here, a value from <code>a</code> only comes into <code>b</code> if it passes the <code>isOdd(..)</code> predicate.</p>
+<p>Even <code>reduce(..)</code> can be modeled over time:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> b = a.reduce( <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sum</span>(<span class="hljs-params">total,v</span>)</span>{
+    <span class="hljs-keyword">return</span> total + v;
+} );
+
+b.listen( <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">runningTotal</span>(<span class="hljs-params">v</span>)</span>{
+    <span class="hljs-built_in">console</span>.log( <span class="hljs-string">&quot;New current total:&quot;</span>, v );
+} );
+</code></pre>
+<p>Since we don&apos;t specify an <code>initialValue</code> to the <code>reduce(..)</code> call, neither the <code>sum(..)</code> reducer nor the <code>runningTotal(..)</code> event callback will be invoked until at least two values have come through from <code>a</code>.</p>
+<p>This snippet implies that the reduction has a <em>memory</em> of sorts, in that each time a future value comes in, the <code>sum(..)</code> reducer will be invoked with whatever the previous <code>total</code> was as well as the new next value <code>v</code>.</p>
+<p>Other FP operations extended over time could even involve an internal buffer, like for example <code>unique(..)</code> keeping track of every value it&apos;s seen so far.</p>
+<h3 id="observables">Observables</h3>
+<p>Hopefully by now you can see the importance of a reactive, evented, array-like data structure like the fictional <code>LazyArray</code> we&apos;ve conjured. The good news is, this kind of data structure already exists, and it&apos;s called an observable.</p>
+<p><strong>Note:</strong> Just to set some expectation: the following discussion is only a brief intro to the world of observables. This is a far more in-depth topic than we have space to fully explore. But if you&apos;ve understood functional-light programming in this text, and now understood how asynchronous-time can be modeled via FP principles, observables should follow very naturally for your continued learning.</p>
+<p>Observables have been implemented by a variety of userland libraries, most notably RxJS and Most. At the time of this writing, there&apos;s an in-progress proposal to add observables directly to JS, just like promises. For the sake of demonstration, we&apos;ll use RxJS-flavored Observables for these next examples.</p>
+<p>Here&apos;s our earlier reactive example, expressed with Observables instead of <code>LazyArray</code>:</p>
+<pre><code class="lang-js"><span class="hljs-comment">// producer:</span>
+
+<span class="hljs-keyword">var</span> a = <span class="hljs-keyword">new</span> Rx.Subject();
+
+setInterval( <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">everySecond</span>(<span class="hljs-params"></span>)</span>{
+    a.next( <span class="hljs-built_in">Math</span>.random() );
+}, <span class="hljs-number">1000</span> );
+
+
+<span class="hljs-comment">// **************************</span>
+<span class="hljs-comment">// consumer:</span>
+
+<span class="hljs-keyword">var</span> b = a.map( <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">double</span>(<span class="hljs-params">v</span>)</span>{
+    <span class="hljs-keyword">return</span> v * <span class="hljs-number">2</span>;
+} );
+
+b.subscribe( <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onValue</span>(<span class="hljs-params">v</span>)</span>{
+    <span class="hljs-built_in">console</span>.log( v );
+} );
+</code></pre>
+<p>In the RxJS universe, an Observer subscribes to an Observable. If you combine the functionality of an Observer and an Observable, you get a Subject. So, to keep our snippet simpler, we construct <code>a</code> as a Subject, so that we can call <code>next(..)</code> on it to push values (events) into its stream.</p>
+<p>If we want to keep the Observer and Observable separate:</p>
+<pre><code class="lang-js"><span class="hljs-comment">// producer:</span>
+
+<span class="hljs-keyword">var</span> a = Rx.Observable.create( <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onObserve</span>(<span class="hljs-params">observer</span>)</span>{
+    setInterval( <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">everySecond</span>(<span class="hljs-params"></span>)</span>{
+        observer.next( <span class="hljs-built_in">Math</span>.random() );
+    }, <span class="hljs-number">1000</span> );
+} );
+</code></pre>
+<p>In this snippet, <code>a</code> is the Observable, and unsurprisingly, the separate observer is called <code>observer</code>; it&apos;s able to &quot;observe&quot; some events (like our <code>setInterval(..)</code> loop); we use its <code>next(..)</code> method to send events to the <code>a</code> observable stream.</p>
+<p>In addition to <code>map(..)</code>, RxJS defines well over a hundred operators that are invoked lazily as each new value comes in. Just like with arrays, each operator on an Observable returns a new Observable, meaning they are chainable. If an invocation of operator function determines a value should be passed along from the input Observable, it will be fired on the output Observable; otherwise it&apos;s discarded.</p>
+<p>Example of a declarative observable chain:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> b =
+    a
+    .filter( v =&gt; v % <span class="hljs-number">2</span> == <span class="hljs-number">1</span> )        <span class="hljs-comment">// only odd numbers</span>
+    .distinctUntilChanged()            <span class="hljs-comment">// only consecutive-distinct</span>
+    .throttle( <span class="hljs-number">100</span> )                <span class="hljs-comment">// slow it down a bit</span>
+    .map( v = v * <span class="hljs-number">2</span> );                <span class="hljs-comment">// double them</span>
+
+b.subscribe( <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onValue</span>(<span class="hljs-params">v</span>)</span>{
+    <span class="hljs-built_in">console</span>.log( <span class="hljs-string">&quot;Next:&quot;</span>, v );
+} );
+</code></pre>
+<p><strong>Note:</strong> It&apos;s not necessary to assign the observable to <code>b</code> and then call <code>b.subscribe(..)</code> separately from the chain; that&apos;s only done to reinforce that each operator returns a new observable from the previous one. Often, the <code>subscribe(..)</code> call is just the final method in the chain.</p>
+<h2 id="summary">Summary</h2>
+<p>This book has detailed a wide variety of FP operations that take a single value (or an immediate list of values) and transform them into another value/values.</p>
+<p>For operations that will be proceed over time, all of these foundational FP principles can be applied time-independently. Exactly like promises model single future values, we can model eager lists of values instead as lazy observable (event) streams of values that may come in one-at-a-time.</p>
+<p>A <code>map(..)</code> on an array runs its mapping function once for each value currently in the array, putting all the mapped values in the outcome array. A <code>map(..)</code> on an observable runs its mapping function once for each value, whenever it comes in, and pushes all the mapped values to the output observable.</p>
+<p>In other words, if an array is an eager data structure for FP operations, an observable is its lazy over-time counterpart.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ch9.html" class="navigation navigation-prev " aria-label="Previous page: Chapter 9: Recursion">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="ch11.html" class="navigation navigation-next " aria-label="Next page: Chapter 11: Putting It All together">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Chapter 10: Functional Async","level":"1.13","depth":1,"next":{"title":"Chapter 11: Putting It All together","level":"1.14","depth":1,"path":"ch11.md","ref":"ch11.md","articles":[]},"previous":{"title":"Chapter 9: Recursion","level":"1.12","depth":1,"path":"ch9.md","ref":"ch9.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ch10.md","mtime":"2017-03-13T18:38:58.762Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-13T19:03:34.902Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

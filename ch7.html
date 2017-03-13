@@ -1,0 +1,966 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Chapter 7: Closure vs Object · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ch8.html" />
+    
+    
+    <link rel="prev" href="ch6.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Foreword (TBA)
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="preface.html">
+            
+                <a href="preface.html">
+            
+                    
+                    Preface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="ch1.html">
+            
+                <a href="ch1.html">
+            
+                    
+                    Chapter 1: Why Functional Programming?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="ch2.html">
+            
+                <a href="ch2.html">
+            
+                    
+                    Chapter 2: Foundations of Functional Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="ch3.html">
+            
+                <a href="ch3.html">
+            
+                    
+                    Chapter 3: Managing Function Inputs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="ch4.html">
+            
+                <a href="ch4.html">
+            
+                    
+                    Chapter 4: Composing Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="ch5.html">
+            
+                <a href="ch5.html">
+            
+                    
+                    Chapter 5: Reducing Side Effects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="ch6.html">
+            
+                <a href="ch6.html">
+            
+                    
+                    Chapter 6: Value Immutability
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.10" data-path="ch7.html">
+            
+                <a href="ch7.html">
+            
+                    
+                    Chapter 7: Closure vs Object
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="ch8.html">
+            
+                <a href="ch8.html">
+            
+                    
+                    Chapter 8: List Operations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="ch9.html">
+            
+                <a href="ch9.html">
+            
+                    
+                    Chapter 9: Recursion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="ch10.html">
+            
+                <a href="ch10.html">
+            
+                    
+                    Chapter 10: Functional Async
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="ch11.html">
+            
+                <a href="ch11.html">
+            
+                    
+                    Chapter 11: Putting It All together
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="apA.html">
+            
+                <a href="apA.html">
+            
+                    
+                    Appendix A: Transducing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="apB.html">
+            
+                <a href="apB.html">
+            
+                    
+                    Appendix B: The Humble Monad
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="apC.html">
+            
+                <a href="apC.html">
+            
+                    
+                    Appendix C: FP Libraries
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Chapter 7: Closure vs Object</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="functional-light-javascript">Functional-Light JavaScript</h1>
+<h1 id="chapter-7-closure-vs-object">Chapter 7: Closure vs Object</h1>
+<p>A number of years ago, Anton van Straaten crafted what has become a rather famous and oft-cited <a href="https://www.merriam-webster.com/dictionary/koan" target="_blank">koan</a> to illustrate and provoke an important tension between closure and objects:</p>
+<blockquote>
+<p>The venerable master Qc Na was walking with his student, Anton. Hoping to
+prompt the master into a discussion, Anton said &quot;Master, I have heard that
+objects are a very good thing - is this true?&quot; Qc Na looked pityingly at
+his student and replied, &quot;Foolish pupil - objects are merely a poor man&apos;s
+closures.&quot;</p>
+<p>Chastised, Anton took his leave from his master and returned to his cell,
+intent on studying closures. He carefully read the entire &quot;Lambda: The
+Ultimate...&quot; series of papers and its cousins, and implemented a small
+Scheme interpreter with a closure-based object system. He learned much, and
+looked forward to informing his master of his progress.</p>
+<p>On his next walk with Qc Na, Anton attempted to impress his master by
+saying &quot;Master, I have diligently studied the matter, and now understand
+that objects are truly a poor man&apos;s closures.&quot; Qc Na responded by hitting
+Anton with his stick, saying &quot;When will you learn? Closures are a poor man&apos;s
+object.&quot; At that moment, Anton became enlightened.</p>
+<p>Anton van Straaten 6/4/2003</p>
+<p><a href="http://people.csail.mit.edu/gregs/ll1-discuss-archive-html/msg03277.html" target="_blank">http://people.csail.mit.edu/gregs/ll1-discuss-archive-html/msg03277.html</a></p>
+</blockquote>
+<p>The original posting, while brief, has more context to the origin and motivations, and I strongly suggest you read that post to properly set your mindset for approaching this chapter.</p>
+<p>Many people I&apos;ve observed read this koan smirk at its clever wit but then move on without it changing much about their thinking. However, the purpose of a koan (from the Bhuddist Zen perspective) is to prod the reader into wrestling with the contradictory truths therein. So, go back and read it again. Now read it again.</p>
+<p>Which is it? Is a closure a poor man&apos;s object, or is an object a poor man&apos;s closure? Or neither? Or both? Is merely the take-away that closures and objects are in some way equivalent?</p>
+<p>And what does any of this have to do with functional programming? Pull up a chair and ponder for awhile. This chapter will be an interesting detour, an excursion if you will.</p>
+<h2 id="the-same-page">The Same Page</h2>
+<p>First, let&apos;s make sure we&apos;re all on the same page when we refer to closures and objects. We&apos;re obviously in the context of how JavaScript deals with these two mechanisms, and specifically talking about simple function closure (see &quot;Keeping Scope&quot; in Chapter 2) and simple objects (collections of key-value pairs).</p>
+<p>A simple function closure:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">outer</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">var</span> one = <span class="hljs-number">1</span>;
+    <span class="hljs-keyword">var</span> two = <span class="hljs-number">2</span>;
+
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">inner</span>(<span class="hljs-params"></span>)</span>{
+        <span class="hljs-keyword">return</span> one + two;
+    };
+}
+
+<span class="hljs-keyword">var</span> three = outer();
+
+three();            <span class="hljs-comment">// 3</span>
+</code></pre>
+<p>A simple object:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> obj = {
+    one: <span class="hljs-number">1</span>,
+    two: <span class="hljs-number">2</span>
+};
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">three</span>(<span class="hljs-params">outer</span>) </span>{
+    <span class="hljs-keyword">return</span> outer.one + outer.two;
+}
+
+three( obj );        <span class="hljs-comment">// 3</span>
+</code></pre>
+<p>Many people conjur lots of extra things when you mention &quot;closure&quot;, such as the asynchronous callbacks or even the module pattern with encapsulation and information hiding. Similarly, &quot;object&quot; brings to mind classes, <code>this</code>, prototypes, and a whole slew of other utilities and patterns.</p>
+<p>As we go along, we&apos;ll carefully address the parts of this external context that matter, but for now, try to just stick to the simplest interpretations of &quot;closure&quot; and &quot;object&quot; -- it&apos;ll make this exploration less confusing.</p>
+<h2 id="look-alike">Look Alike</h2>
+<p>It may not be obvious how closures and objects are related. So let&apos;s explore their similarities first.</p>
+<p>To frame this discussion, let me just briefly assert two things:</p>
+<ol>
+<li>A programming language without closures can simulate them with objects instead.</li>
+<li>A programming language without objects can simulate them with closures instead.</li>
+</ol>
+<p>In other words, we can think of closures and objects as two different representations of a thing.</p>
+<h3 id="state">State</h3>
+<p>Consider this code from above:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">outer</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">var</span> one = <span class="hljs-number">1</span>;
+    <span class="hljs-keyword">var</span> two = <span class="hljs-number">2</span>;
+
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">inner</span>(<span class="hljs-params"></span>)</span>{
+        <span class="hljs-keyword">return</span> one + two;
+    };
+}
+
+<span class="hljs-keyword">var</span> obj = {
+    one: <span class="hljs-number">1</span>,
+    two: <span class="hljs-number">2</span>
+};
+</code></pre>
+<p>Both the scope closed over by <code>inner()</code> and the object <code>obj</code> contain two elements of state: <code>one</code> with value <code>1</code> and <code>two</code> with value <code>2</code>. Syntactically and mechanically, these representations of state are different. But conceptually, they&apos;re actually quite similar.</p>
+<p>As a matter of fact, it&apos;s fairly straightforward to represent an object as a closure, or a closure as an object. Go ahead, try it yourself:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> point = {
+    x: <span class="hljs-number">10</span>,
+    y: <span class="hljs-number">12</span>,
+    z: <span class="hljs-number">14</span>
+};
+</code></pre>
+<p>Did you come up with something like?</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">outer</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">var</span> x = <span class="hljs-number">10</span>;
+    <span class="hljs-keyword">var</span> y = <span class="hljs-number">12</span>;
+    <span class="hljs-keyword">var</span> z = <span class="hljs-number">14</span>;
+
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">inner</span>(<span class="hljs-params"></span>)</span>{
+        <span class="hljs-keyword">return</span> [x,y,z];
+    }
+};
+
+<span class="hljs-keyword">var</span> point = outer();
+</code></pre>
+<p><strong>Note:</strong> The <code>inner()</code> function creates and returns a new array (aka, an object!) each time it&apos;s called. That&apos;s because JS doesn&apos;t afford us any capability to <code>return</code> multiple values without encapsulating them in an object. That&apos;s not technically a violation of our object-as-closure task, because it&apos;s just an implementation detail of exposing/transporting values; the state tracking itself is still object-free. With ES6+ array destructuring, we can declaratively ignore this temporary intermediate array on the other side: <code>var [x,y,z] = point()</code>. From a developer ergonomics perspective, the values are stored individually and tracked via closure instead of objects.</p>
+<p>What if we have nested objects?</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> person = {
+    name: <span class="hljs-string">&quot;Kyle Simpson&quot;</span>,
+    address: {
+        street: <span class="hljs-string">&quot;123 Easy St&quot;</span>,
+        city: <span class="hljs-string">&quot;JS&apos;ville&quot;</span>,
+        state: <span class="hljs-string">&quot;ES&quot;</span>
+    }
+};
+</code></pre>
+<p>We could represent that same kind of state with nested closures:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">outer</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">var</span> name = <span class="hljs-string">&quot;Kyle Simpson&quot;</span>;
+    <span class="hljs-keyword">return</span> middle();
+
+    <span class="hljs-comment">// ********************</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">middle</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-keyword">var</span> street = <span class="hljs-string">&quot;123 Easy St&quot;</span>;
+        <span class="hljs-keyword">var</span> city = <span class="hljs-string">&quot;JS&apos;ville&quot;</span>;
+        <span class="hljs-keyword">var</span> state = <span class="hljs-string">&quot;ES&quot;</span>;
+
+        <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">inner</span>(<span class="hljs-params"></span>)</span>{
+            <span class="hljs-keyword">return</span> [name,street,city,state];
+        };
+    }
+}
+
+<span class="hljs-keyword">var</span> person = outer();
+</code></pre>
+<p>Let&apos;s practice going the other direction, from closure to object:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">point</span>(<span class="hljs-params">x1,y1</span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">distFromPoint</span>(<span class="hljs-params">x2,y2</span>)</span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-built_in">Math</span>.sqrt(
+            <span class="hljs-built_in">Math</span>.pow( x2 - x1, <span class="hljs-number">2</span> ) +
+            <span class="hljs-built_in">Math</span>.pow( y2 - y1, <span class="hljs-number">2</span> )
+        );
+    };
+}
+
+<span class="hljs-keyword">var</span> pointDistance = point( <span class="hljs-number">1</span>, <span class="hljs-number">1</span> );
+
+pointDistance( <span class="hljs-number">4</span>, <span class="hljs-number">5</span> );        <span class="hljs-comment">// 5</span>
+</code></pre>
+<p><code>distFromPoint(..)</code> is closed over <code>x1</code> and <code>y1</code>, but we could instead explicitly pass those values as an object:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">pointDistance</span>(<span class="hljs-params">point,x2,y2</span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">Math</span>.sqrt(
+        <span class="hljs-built_in">Math</span>.pow( x2 - point.x1, <span class="hljs-number">2</span> ) +
+        <span class="hljs-built_in">Math</span>.pow( y2 - point.y1, <span class="hljs-number">2</span> )
+    );
+};
+
+pointDistance(
+    { x1: <span class="hljs-number">1</span>, y1: <span class="hljs-number">1</span> },
+    <span class="hljs-number">4</span>,    <span class="hljs-comment">// x2</span>
+    <span class="hljs-number">5</span>    <span class="hljs-comment">// y2</span>
+);
+<span class="hljs-comment">// 5</span>
+</code></pre>
+<p>The <code>point</code> object state explicitly passed in replaces the closure that implicitly held that state.</p>
+<h4 id="behavior-too">Behavior, Too!</h4>
+<p>It&apos;s not just that objects and closures represent ways to express collections of state, but also that they can include behavior via functions/methods. Bundling data with its behavior has a fancy name: encapsulation.</p>
+<p>Consider:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">person</span>(<span class="hljs-params">name,age</span>) </span>{
+    <span class="hljs-keyword">return</span> happyBirthday(){
+        age++;
+        <span class="hljs-built_in">console</span>.log(
+            <span class="hljs-string">&quot;Happy &quot;</span> + age + <span class="hljs-string">&quot;th Birthday, &quot;</span> + name + <span class="hljs-string">&quot;!&quot;</span>
+        );
+    }
+}
+
+<span class="hljs-keyword">var</span> birthdayBoy = person( <span class="hljs-string">&quot;Kyle&quot;</span>, <span class="hljs-number">36</span> );
+
+birthdayBoy();            <span class="hljs-comment">// Happy 37th Birthday, Kyle!</span>
+</code></pre>
+<p>The inner function <code>happyBirthday()</code> has closure over <code>name</code> and <code>age</code> so that the functionality therein is kept with the state.</p>
+<p>We can achieve that same capability with a <code>this</code> binding to an object:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> birthdayBoy = {
+    name: <span class="hljs-string">&quot;Kyle&quot;</span>,
+    age: <span class="hljs-number">36</span>,
+    happyBirthday() {
+        <span class="hljs-keyword">this</span>.age++;
+        <span class="hljs-built_in">console</span>.log(
+            <span class="hljs-string">&quot;Happy &quot;</span> + <span class="hljs-keyword">this</span>.age + <span class="hljs-string">&quot;th Birthday, &quot;</span> + <span class="hljs-keyword">this</span>.name + <span class="hljs-string">&quot;!&quot;</span>
+        );
+    }
+};
+
+birthdayBoy.happyBirthday();
+<span class="hljs-comment">// Happy 37th Birthday, Kyle!</span>
+</code></pre>
+<p>We&apos;re still expressing the encapsulation of state data with the <code>happyBirthday()</code> function, but with an object instead of a closure. And we don&apos;t have to explicitly pass in an object to a function (as with earlier examples); JavaScript&apos;s <code>this</code> binding easily creates an implicit binding.</p>
+<p>Another way to analyze this relationship: a closure associates a single function with a set of state, whereas an object holding the same state can have any number of functions to operate on that state.</p>
+<p>As a matter of fact, you could even expose multiple methods with a single closure as the interface. Consider a traditional object with two methods:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> person = {
+    firstName: <span class="hljs-string">&quot;Kyle&quot;</span>,
+    lastName: <span class="hljs-string">&quot;Simpson&quot;</span>,
+    first() {
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.firstName;
+    },
+    last()
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.lastName;
+    }
+}
+
+person.first() + <span class="hljs-string">&quot; &quot;</span> + person.last();
+<span class="hljs-comment">// Kyle Simpson</span>
+</code></pre>
+<p>Just using closure without objects, we could represent this program as:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">createPerson</span>(<span class="hljs-params">firstName,lastName</span>) </span>{
+    <span class="hljs-keyword">return</span> API;
+
+    <span class="hljs-comment">// ********************</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">API</span>(<span class="hljs-params">methodName</span>) </span>{
+        <span class="hljs-keyword">switch</span> (methodName) {
+            <span class="hljs-keyword">case</span> <span class="hljs-string">&quot;first&quot;</span>:
+                <span class="hljs-keyword">return</span> first();
+                <span class="hljs-keyword">break</span>;
+            <span class="hljs-keyword">case</span> <span class="hljs-string">&quot;last&quot;</span>:
+                <span class="hljs-keyword">return</span> last();
+                <span class="hljs-keyword">break</span>;
+        };
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">first</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-keyword">return</span> firstName;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">last</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-keyword">return</span> lastName;
+    }
+}
+
+<span class="hljs-keyword">var</span> person = createPerson( <span class="hljs-string">&quot;Kyle&quot;</span>, <span class="hljs-string">&quot;Simpson&quot;</span> );
+
+person( <span class="hljs-string">&quot;first&quot;</span> ) + <span class="hljs-string">&quot; &quot;</span> + person( <span class="hljs-string">&quot;last&quot;</span> );
+<span class="hljs-comment">// Kyle Simpson</span>
+</code></pre>
+<p>While these programs look and feel a bit different ergonomically, they&apos;re actually just different implementation variations of the same program behavior.</p>
+<h3 id="immutability">(Im)mutability</h3>
+<p>Many people will initially think that closures and objects behave differently with respect to mutability; closures protect from external mutation while objects do not. But, it turns out, both forms have identical mutation behavior.</p>
+<p>That&apos;s because what we care about, as discussed in Chapter 6, is <strong>value</strong> mutability, and this is a characteristic of the value itself, regardless of where or how it&apos;s assigned.</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">outer</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">var</span> x = <span class="hljs-number">1</span>;
+    <span class="hljs-keyword">var</span> y = [<span class="hljs-number">2</span>,<span class="hljs-number">3</span>];
+
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">inner</span>(<span class="hljs-params"></span>)</span>{
+        <span class="hljs-keyword">return</span> [ x, y[<span class="hljs-number">0</span>], y[<span class="hljs-number">1</span>] ];
+    };
+}
+
+<span class="hljs-keyword">var</span> xyPublic = {
+    x: <span class="hljs-number">1</span>,
+    y: [<span class="hljs-number">2</span>,<span class="hljs-number">3</span>]
+};
+</code></pre>
+<p>The value stored in the <code>x</code> lexical variable inside <code>outer()</code> is immutable -- remember, primitives like <code>2</code> are by definition immutable. But the value referenced by <code>y</code>, an array, is definitely mutable. The exact same goes for the <code>x</code> and <code>y</code> properties on <code>xyPublic</code>.</p>
+<p>We can reinforce the point that objects and closures have no bearing on mutability by pointing out that <code>y</code> is itself an array, and thus we need to break this example down further:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">outer</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">var</span> x = <span class="hljs-number">1</span>;
+    <span class="hljs-keyword">return</span> middle();
+
+    <span class="hljs-comment">// ********************</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">middle</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-keyword">var</span> y0 = <span class="hljs-number">2</span>;
+        <span class="hljs-keyword">var</span> y1 = <span class="hljs-number">3</span>;
+
+        <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">inner</span>(<span class="hljs-params"></span>)</span>{
+            <span class="hljs-keyword">return</span> [ x, y0, y1 ];
+        };
+    }
+}
+
+<span class="hljs-keyword">var</span> xyPublic = {
+    x: <span class="hljs-number">1</span>,
+    y: {
+        <span class="hljs-number">0</span>: <span class="hljs-number">2</span>,
+        <span class="hljs-number">1</span>: <span class="hljs-number">3</span>
+    }
+};
+</code></pre>
+<p>If you think about it as &quot;turtles (aka, objects) all the way down&quot;, at the lowest level, all state data is primitives, and all primitives are value-immutable.</p>
+<p>Whether you represent this state with nested objects, or with nested closures, the values being held are all immutable.</p>
+<h3 id="isomorphic">Isomorphic</h3>
+<p>The term &quot;isomorphic&quot; gets thrown around a lot in JavaScript these days, and it&apos;s usually used to refer to code that can be used/shared in both the server and the browser. I wrote a blog post awhile back that calls bogus on that usage of this word &quot;isomorphic&quot;, which actually has an explicit and important meaning that&apos;s being clouded.</p>
+<p>Here&apos;s some selections from a part of that post:</p>
+<blockquote>
+<p>What does isomorphic mean? Well, we could talk about it in mathematic terms, or sociology, or biology. The general notion of isomorphism is that you have two things which are similar in structure but not the same.</p>
+<p>In all those usages, isomorphism is differentiated from equality in this way: two values are equal if they&#x2019;re exactly identical in all ways, but they are isomorphic if they are represented differently but still have a 1-to-1, bi-directional mapping relationship.</p>
+<p>In other words, two things A and B would be isomorphic if you could map (convert) from A to B and then go back to A with the inverse mapping.</p>
+</blockquote>
+<p>Recall in &quot;Brief Math Review&quot; in Chapter 2, we discussed the mathematical definition of a function as being a mapping between inputs and outputs. We pointed out this is technically called a morphism. An isomorphism is a special case of bijective (aka, 2-way) morphism that requires not only that the mapping must be able to go in either direction, but also that the behavior is identical in either form.</p>
+<p>But instead of thinking about numbers, let&apos;s relate isomorphism to code. Again quoting my blog post:</p>
+<blockquote>
+<p>[W]hat would isomorphic JS be if there were such a thing? Well, it could be that you have one set of JS code that is converted to another set of JS code, and that (importantly) you could convert from the latter back to the former if you wanted.</p>
+</blockquote>
+<p>As we asserted earlier with our examples of closures-as-objects and objects-as-closures, these representative alternations go either way. In this respect, they are isomorphisms of each other.</p>
+<p>Put simply, closures and objects are isomorphic representations of state (and its associated functionality).</p>
+<p>The next time you hear someone say &quot;X is isomorphic with Y&quot;, what they mean is, &quot;X and Y can be converted from either one to the other in either direction, and maintain the same behavior regardless.&quot;</p>
+<h3 id="under-the-hood">Under The Hood</h3>
+<p>So, we can think of objects as an isomorphic representation of closures from the perspective of code we could write. But we can also observe that a closure system could actually be implemented -- and likely is -- with objects!</p>
+<p>Think about it this way: in the following code, how is JS keeping track of the <code>x</code> variable for <code>inner()</code> to keep referencing, well after <code>outer()</code> has already run?</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">outer</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">var</span> x = <span class="hljs-number">1</span>;
+
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">inner</span>(<span class="hljs-params"></span>)</span>{
+        <span class="hljs-keyword">return</span> x;
+    };
+}
+</code></pre>
+<p>We could imagine that the scope -- the set of all variables defined -- of <code>outer()</code> is implemented as an object with properties. So, conceptually, somewhere in memory, there&apos;s something like:</p>
+<pre><code class="lang-js">scopeOfOuter = {
+    x: <span class="hljs-number">1</span>
+};
+</code></pre>
+<p>And then for the <code>inner()</code> function, when created, it gets an (empty) scope object called <code>scopeOfInner</code>, which is linked via its <code>[[Prototype]]</code> to the <code>scopeOfOuter</code> object, sorta like this:</p>
+<pre><code class="lang-js">scopeOfInner = {};
+<span class="hljs-built_in">Object</span>.setPrototypeOf( scopeOfInner, scopeOfOuter );
+</code></pre>
+<p>Then, inside <code>inner()</code>, when it makes reference to the lexical variable <code>x</code>, it&apos;s actually more like:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">return</span> scopeOfInner.x;
+</code></pre>
+<p><code>scopeOfInner</code> doesn&apos;t have an <code>x</code> property, but it&apos;s <code>[[Prototype]]</code>-linked to <code>scopeOfOuter</code>, which does have an <code>x</code> property. Accessing <code>scopeOfOuter.x</code> via prototype delegation results in the <code>1</code> value being returned.</p>
+<p>In this way, we can sorta see why the scope of <code>outer()</code> is preserved (via closure) even after it finishes: because the <code>scopeOfInner</code> object is linked to the <code>scopeOfOuter</code> object, thereby keeping that object and its properties alive and well.</p>
+<p>Now, this is all conceptual. I&apos;m not literally saying the JS engine uses objects and prototypes. But it&apos;s entirely plausible that it <em>could</em> work similarly.</p>
+<p>Many languages do in fact implement closures via objects. And other languages implement objects in terms of closures. But we&apos;ll let the reader use their imagination on how that would work.</p>
+<h2 id="two-roads-diverged-in-a-wood">Two Roads Diverged In A Wood...</h2>
+<p>So closures and objects are equivalent, right? Not quite. I bet they&apos;re more similar than you thought before you started this chapter, but they still have important differences.</p>
+<p>These differences should not be viewed as weaknesses or arguments against usage; that&apos;s the wrong perspective. They should be viewed as features and advantages that make one or the other more suitable (and readable!) for a given task.</p>
+<h3 id="structural-mutability">Structural Mutability</h3>
+<p>Conceptually, the structure of a closure is not mutable.</p>
+<p>In other words, you can never add to or remove state from a closure. Closure is a characteristic of where variables are declared (fixed at author/compile time), and is not sensitive to any runtime conditions -- assuming you use strict mode and/or avoid using cheats like <code>eval(..)</code>, of course!</p>
+<p><strong>Note:</strong> The JS engine could technically cull a closure to weed out any variables in its scope that are no longer going to be used, but this is an advanced optimization that&apos;s transparent to the developer. Whether the engine actually does these kinds of optimizations, I think it&apos;s safest for the developer to assume that closure is per-scope rather than per-variable. If you don&apos;t want it to stay around, don&apos;t close over it!</p>
+<p>However, objects by default are quite mutable. You can freely add or remove (<code>delete</code>) properties/indices from an object, as long as that object hasn&apos;t been frozen (<code>Object.freeze(..)</code>).</p>
+<p>It may be an advantage of the code to be able to track more (or less!) state depending on the runtime conditions in the program.</p>
+<p>For example, let&apos;s imagine tracking the keypress events in a game. Almost certainly, you&apos;ll think about using an array to do this:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">trackEvent</span>(<span class="hljs-params">evt,keypresses = []</span>) </span>{
+    <span class="hljs-keyword">return</span> keypresses.concat( evt );
+}
+
+<span class="hljs-keyword">var</span> keypresses = trackEvent( newEvent1 );
+
+keypresses = trackEvent( newEvent2, keypresses );
+</code></pre>
+<p><strong>Note:</strong> Did you spot why I used <code>concat(..)</code> instead of <code>push(..)</code>ing directly to <code>keypresses</code>? Because in FP, we typically want to treat arrays as immutable data structures that can be recreated and added to, but not directly changed. We trade out the evil of side-effects for an explicit reassignment (more on that later).</p>
+<p>Though we&apos;re not changing the structure of the array, we could if we wanted to. More on this in a moment.</p>
+<p>But an array is not the only way to track this growing &quot;list&quot; of <code>evt</code> objects. We could use closure:</p>
+<pre><code class="lang-js">function trackEvent(evt,keypresses = () =&gt; []) {
+    return function newKeypresses() {
+        return [ ...keypresses(), evt ];
+    };
+}
+
+var keypresses = trackEvent( newEvent1 );
+
+keypresses = trackEvent( newEvent2, keypresses );
+</code></pre>
+<p>Do you spot what&apos;s happening here?</p>
+<p>Each time we add a new event to the &quot;list&quot;, we create a new closure wrapped around the existing <code>keypresses()</code> function (closure), which captures the current <code>evt</code>. When we call the <code>keypresses()</code> function, it will successively call all the nested functions, building up an intermediate array of all the individually closed-over <code>evt</code> objects. Again, closure is the mechanism that&apos;s tracking all the state; the array you see is only an implementation detail of needing a way to return multiple values from a function.</p>
+<p>So which one is better suited for our task? No surprise here, the array approach is probably a lot more appropriate. The structural immutability of a closure means our only option is to wrap more closure around it. Objects are by default extensible, so we can just grow the array as needed.</p>
+<p>By the way, even though I&apos;m presenting this structural (im)mutability as a clear difference between closure and object, the way we&apos;re using the object as an immutable value is actually more similar than dislike.</p>
+<p>Creating a new array (via <code>concat(..)</code>) for each addition to the array is treating the array as structurally immutable, which is conceptually symmetrical to closure being structurally immutable by its very design.</p>
+<h3 id="privacy">Privacy</h3>
+<p>Probably one of the first differences you think of when analyzing closure vs object is that closure offers &quot;privacy&quot; of state through nested lexical scoping, whereas objects expose everything as public properties. Such privacy has a fancy name: information hiding.</p>
+<p>Consider lexical closure hiding:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">outer</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">var</span> x = <span class="hljs-number">1</span>;
+
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">inner</span>(<span class="hljs-params"></span>)</span>{
+        <span class="hljs-keyword">return</span> x;
+    };
+}
+
+<span class="hljs-keyword">var</span> xHidden = outer();
+
+xHidden();            <span class="hljs-comment">// 1</span>
+</code></pre>
+<p>Now the same state in public:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> xPublic = {
+    x: <span class="hljs-number">1</span>
+};
+
+xPublic.x;            <span class="hljs-comment">// 1</span>
+</code></pre>
+<p>There&apos;s some obvious differences around general software engineering principles -- consider abstraction, the module pattern with public and private APIs, etc -- but let&apos;s try to constrain our discussion to the perspective of FP; this is, after all, a book about functional programming!</p>
+<h4 id="visibility">Visibility</h4>
+<p>It may seem that the ability to hide information is a desired characteristic of state tracking, but I believe the FPer might argue the opposite.</p>
+<p>One of the advantages of managing state as public properties on an object is that it&apos;s easier to enumerate (and iterate!) all the data in your state. Imagine you wanted to process each keypress event (from the earlier example) to save it to a database, using a utility like:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">recordKeypress</span>(<span class="hljs-params">keypressEvt</span>) </span>{
+    <span class="hljs-comment">// database utility</span>
+    DB.store( <span class="hljs-string">&quot;keypress-events&quot;</span>, keypressEvt );
+}
+</code></pre>
+<p>If you already have an array -- just an object with public numerically-named properties -- this is very straightforward using a built-in JS array utility <code>forEach(..)</code>:</p>
+<pre><code class="lang-js">keypresses.forEach( recordKeypress );
+</code></pre>
+<p>But, if the list of keypresses is hidden inside closure, you&apos;ll have to expose a utility on the public API of the closure with privileged access to the hidden data.</p>
+<p>For example, we can give our closure-<code>keypresses</code> example its own <code>forEach</code>,  like built-in arrays have:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">trackEvent</span>(<span class="hljs-params">
+    evt,
+    keypresses = {
+        list(</span>) </span>{ <span class="hljs-keyword">return</span> []; },
+        forEach() {}
+    }
+) {
+    <span class="hljs-keyword">return</span> {
+        list() {
+            <span class="hljs-keyword">return</span> [ ...keypresses.list(), evt ];
+        },
+        forEach(fn) {
+            keypresses.forEach( fn );
+            fn( evt );
+        }
+    };
+}
+
+<span class="hljs-comment">// ..</span>
+
+keypresses.list();        <span class="hljs-comment">// [ evt, evt, .. ]</span>
+
+keypresses.forEach( recordKeypress );
+</code></pre>
+<p>The visibility of an object&apos;s state data makes using it more straightforward, whereas closure obscures the state making us work harder to process it.</p>
+<h4 id="change-control">Change Control</h4>
+<p>If the lexical variable <code>x</code> is hidden inside a closure, the only code that has the freedom to reassign it is also inside that closure; it&apos;s impossible to modify <code>x</code> from the outside.</p>
+<p>As we saw in Chapter 6, that fact alone improves the readability of code by reducing the surface area that the reader must consider to predict the behavior of any given variable.</p>
+<p>The local proximity of lexical reassignment is a big reason why I don&apos;t find <code>const</code> as a feature that helpful. Scopes (and thus closures) should in general be pretty small, and that means there will only be a few lines of code that can affect reassignment. In <code>outer()</code> above, we can quickly inspect to see that no line of code reassigns <code>x</code>, so for all intents and purposes it&apos;s acting as a constant.</p>
+<p>This kind of guarantee is a powerful contributor to our confidence in the purity of a function, for example.</p>
+<p>On the other hand, <code>xPublic.x</code> is a public property, and any part of the program that gets a reference to <code>xPublic</code> has the ability, by default, to reassign <code>xPublic.x</code> to some other value. That&apos;s a lot more lines of code to consider!</p>
+<p>That&apos;s why in Chapter 6, we looked at <code>Object.freeze(..)</code> as a quick-n-dirty means of making all of an object&apos;s properties read-only (<code>writable: false</code>), so that they can&apos;t be reassigned unpredictably.</p>
+<p>Unfortunately, <code>Object.freeze(..)</code> is both all-or-nothing and irreversible.</p>
+<p>With closure, you have some code with the privilege to change, and the rest of the program is restricted. When you freeze an object, no part of the code will be able to reassign. Moreover, once an object is frozen, it can&apos;t be thawed out, so the properties will remain read-only for the duration of the program.</p>
+<p>In places where I want to allow reassignment but restrict its surface area, closures are a more convenient and flexible form than objects. In places where I want no reassignment, a frozen object is a lot more convenient than repeating <code>const</code> declarations all over my function.</p>
+<p>Many FPers take a hard-line stance on reassignment: it shouldn&apos;t be used. They will tend to use <code>const</code> to make all closure variables read-only, and they&apos;ll use <code>Object.freeze(..)</code> or full immutable data structures to prevent property reassignment. Moreover, they&apos;ll try to reduce the amount of explicitly declared/tracked variables and properties wherever possible, perferring value transfer -- function chains, <code>return</code> value passed as argument, etc -- instead of intermediate value storage.</p>
+<p>This book is about &quot;functional light&quot; programming in JavaScript, and this is one of those cases where I diverge from the core FP crowd.</p>
+<p>I think variable reassignment can be quite useful and, when used approriately, quite readable in its explicitness. It&apos;s certainly been by experience that debugging is a lot easier when you can insert a <code>debugger</code> or breakpoint, or track a watch expression.</p>
+<h3 id="cloning-state">Cloning State</h3>
+<p>As we learned in Chapter 6, one of the best ways we prevent side effects from eroding the predictability of our code is to make sure we treat all state values as immutable, regardless of whether they are actually immutable (frozen) or not.</p>
+<p>If you&apos;re not using a purpose-built library to provide sophisticated immutable data structures, the simplest approach will suffice: duplicate your objects/arrays each time before making a change.</p>
+<p>Arrays are easy to clone shallowly: just use the <code>slice()</code> method:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> a = [ <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span> ];
+
+<span class="hljs-keyword">var</span> b = a.slice();
+b.push( <span class="hljs-number">4</span> );
+
+a;            <span class="hljs-comment">// [1,2,3]</span>
+b;            <span class="hljs-comment">// [1,2,3,4]</span>
+</code></pre>
+<p>Objects can be shallow-cloned relatively easily too:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> o = {
+    x: <span class="hljs-number">1</span>,
+    y: <span class="hljs-number">2</span>
+};
+
+<span class="hljs-comment">// in ES2017+, using object spread:</span>
+<span class="hljs-keyword">var</span> p = { ...o };
+p.y = <span class="hljs-number">3</span>;
+
+<span class="hljs-comment">// in ES2015+:</span>
+<span class="hljs-keyword">var</span> p = <span class="hljs-built_in">Object</span>.assign( {}, o );
+p.y = <span class="hljs-number">3</span>;
+</code></pre>
+<p>If the values in an object/array are themselves non-primitives (objects/arrays), to get deep cloning you&apos;ll have to walk each layer manually to clone each nested object. Otherwise, you&apos;ll have copies of shared references to those sub-objects, and that&apos;s likely to create havoc in your program logic.</p>
+<p>Did you notice that this cloning is possible only because all these state values are visible and can thus be easily copied? What about a set of state wrapped up in a closure; how would you clone that state?</p>
+<p>That&apos;s much more tedious. Essentially, you&apos;d have to do something similar to our custom <code>forEach</code> API method earlier: provide a function inside each layer of the closure with the privilege to extract/copy the hidden values, creating new equivalent closures along the way.</p>
+<p>Even though that&apos;s theoretically possible -- another exercise for the reader! -- it&apos;s far less practical to implement than you&apos;re likely to justify for any real program.</p>
+<p>Objects have a clear advantage when it comes to representing state that we need to be able to clone.</p>
+<h3 id="performance">Performance</h3>
+<p>One reason objects may be favored over closures, from an implementation perspective, is that in JavaScript objects are often lighter-weight in terms of memory and even computation.</p>
+<p>But be careful with that as a general assertion: there are plenty of things you can do with objects that will erase any performance gains you may get from ignoring closure and moving to object-based state tracking.</p>
+<p>Let&apos;s consider a scenario with both implementations. First, the closure-style implementation:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">StudentRecord</span>(<span class="hljs-params">name,major,gpa</span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">printStudent</span>(<span class="hljs-params"></span>)</span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-string">`<span class="hljs-subst">${name}</span>, Major: <span class="hljs-subst">${major}</span>, GPA: <span class="hljs-subst">${gpa.toFixed(1)}</span>`</span>;
+    };
+}
+
+<span class="hljs-keyword">var</span> student = StudentRecord( <span class="hljs-string">&quot;Kyle Simpson&quot;</span>, <span class="hljs-string">&quot;kyle@some.tld&quot;</span>, <span class="hljs-string">&quot;CS&quot;</span>, <span class="hljs-number">4</span> );
+
+<span class="hljs-comment">// later</span>
+
+student();
+<span class="hljs-comment">// Kyle Simpson, Major: CS, GPA: 4.0</span>
+</code></pre>
+<p>The inner function <code>printStudent()</code> closes over three variables: <code>name</code>, <code>major</code>, and <code>gpa</code>. It maintains this state wherever we transfer a reference to that function -- we call it <code>student()</code> in this example.</p>
+<p>Now for the object (and <code>this</code>) approach:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">StudentRecord</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-string">`<span class="hljs-subst">${this.name}</span>, Major: <span class="hljs-subst">${this.major}</span>, GPA: <span class="hljs-subst">${this.gpa.toFixed(1)}</span>`</span>;
+}
+
+<span class="hljs-keyword">var</span> student = StudentRecord.bind( {
+    name: <span class="hljs-string">&quot;Kyle Simpson&quot;</span>,
+    major: <span class="hljs-string">&quot;CS&quot;</span>,
+    gpa: <span class="hljs-number">4</span>
+} );
+
+<span class="hljs-comment">// later</span>
+
+student();
+<span class="hljs-comment">// Kyle Simpson, Major: CS, GPA: 4.0</span>
+</code></pre>
+<p>The <code>student()</code> function -- technically referred to as a &quot;bound function&quot; -- has a hard-bound <code>this</code> reference to the object literal we passed in, such that any later call to <code>student()</code> will use that object for it <code>this</code>, and thus be able to access its encapsulated state.</p>
+<p>Both implemenations have the same outcome: a function with preserved state. But what about the performance; what differences will there be?</p>
+<p><strong>Note:</strong> Accurately and actionably judging performance of a snippet of JS code is a very dodgy affair. We won&apos;t get into all the details here, but I urge you to read the &quot;You Don&apos;t Know JS: Async &amp; Performance&quot; book, specifically Chapter 6 &quot;Benchmarking &amp; Tuning&quot;, for more details.</p>
+<p>If you were writing a library that created a pairing of state with its function -- either the call to <code>StudentRecord(..)</code> in the first snippet or the call to <code>StudentRecord.bind(..)</code> in the second snippet -- you&apos;re likely to care most about how those two perform. Inspecting the code, we can see that the former has to create a new function expression each time. The second one uses <code>bind(..)</code>, which is not as obvious in its implications.</p>
+<p>One way to think about what <code>bind(..)</code> does under the covers is that it creates a closure over a function, like this:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">bind</span>(<span class="hljs-params">orinFn,thisObj</span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">boundFn</span>(<span class="hljs-params">...args</span>) </span>{
+        <span class="hljs-keyword">return</span> origFn.apply( thisObj, args );
+    };
+}
+
+<span class="hljs-keyword">var</span> student = bind( StudentRecord, { name: <span class="hljs-string">&quot;Kyle..&quot;</span> } );
+</code></pre>
+<p>In this way, it looks like both implementations of our scenario create a closure, so the performance is likely to be about the same.</p>
+<p>However, the built-in <code>bind(..)</code> utility doesn&apos;t really have to create a closure to accomplish the task. It simply creates a function and manually sets its internal <code>this</code> to the specified object. That&apos;s potentially a more efficient operation than if we did the closure ourselves.</p>
+<p>The kind of performance savings we&apos;re talking about here is miniscule on an individual operation. But if your library&apos;s critical path is doing this hundreds or thousands of times or more, that savings can add up quickly. Many libraries -- Bluebird being one such example -- have ended up optimizing by removing closures and going with objects, in exactly this means.</p>
+<p>Outside of the library use-case, the pairing of the state with its function usually only happens relatively few times in the critical path of an application. By contrast, typically the usage of the function+state -- calling <code>student()</code> in either snippet -- is more common.</p>
+<p>If that&apos;s the case for some given situation in your code, you should probably care more about the performance of the latter versus the former.</p>
+<p>Bound functions have historically had pretty lousy performance in general, but have recently been much more highly optimized by JS engines. If you benchmarked these variations a couple of years ago, it&apos;s entirely possible you&apos;d get different results repeating the same test with the latest engines.</p>
+<p>A bound function is now likely to perform at least as good if not better as the equivalent closed-over function. So that&apos;s another tick in favor of objects over closures.</p>
+<p>I just want to reiterate: these performance observations are not absolutes, and the determination of what&apos;s best for a given scenario is very complex. Do not just casually apply what you&apos;ve heard from others or even what you&apos;ve seen on some other earlier project. Carefully examine whether objects or closures are appropriately efficient for the task.</p>
+<h2 id="summary">Summary</h2>
+<p>The truth of this chapter cannot be written out. One must read this chapter to find its truth.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ch6.html" class="navigation navigation-prev " aria-label="Previous page: Chapter 6: Value Immutability">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="ch8.html" class="navigation navigation-next " aria-label="Next page: Chapter 8: List Operations">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Chapter 7: Closure vs Object","level":"1.10","depth":1,"next":{"title":"Chapter 8: List Operations","level":"1.11","depth":1,"path":"ch8.md","ref":"ch8.md","articles":[]},"previous":{"title":"Chapter 6: Value Immutability","level":"1.9","depth":1,"path":"ch6.md","ref":"ch6.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ch7.md","mtime":"2017-03-13T18:38:58.766Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-13T19:03:34.902Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

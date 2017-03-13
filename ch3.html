@@ -1,0 +1,1196 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Chapter 3: Managing Function Inputs · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ch4.html" />
+    
+    
+    <link rel="prev" href="ch2.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Foreword (TBA)
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="preface.html">
+            
+                <a href="preface.html">
+            
+                    
+                    Preface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="ch1.html">
+            
+                <a href="ch1.html">
+            
+                    
+                    Chapter 1: Why Functional Programming?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="ch2.html">
+            
+                <a href="ch2.html">
+            
+                    
+                    Chapter 2: Foundations of Functional Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6" data-path="ch3.html">
+            
+                <a href="ch3.html">
+            
+                    
+                    Chapter 3: Managing Function Inputs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="ch4.html">
+            
+                <a href="ch4.html">
+            
+                    
+                    Chapter 4: Composing Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="ch5.html">
+            
+                <a href="ch5.html">
+            
+                    
+                    Chapter 5: Reducing Side Effects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="ch6.html">
+            
+                <a href="ch6.html">
+            
+                    
+                    Chapter 6: Value Immutability
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="ch7.html">
+            
+                <a href="ch7.html">
+            
+                    
+                    Chapter 7: Closure vs Object
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="ch8.html">
+            
+                <a href="ch8.html">
+            
+                    
+                    Chapter 8: List Operations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="ch9.html">
+            
+                <a href="ch9.html">
+            
+                    
+                    Chapter 9: Recursion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="ch10.html">
+            
+                <a href="ch10.html">
+            
+                    
+                    Chapter 10: Functional Async
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="ch11.html">
+            
+                <a href="ch11.html">
+            
+                    
+                    Chapter 11: Putting It All together
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="apA.html">
+            
+                <a href="apA.html">
+            
+                    
+                    Appendix A: Transducing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="apB.html">
+            
+                <a href="apB.html">
+            
+                    
+                    Appendix B: The Humble Monad
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="apC.html">
+            
+                <a href="apC.html">
+            
+                    
+                    Appendix C: FP Libraries
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Chapter 3: Managing Function Inputs</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="functional-light-javascript">Functional-Light JavaScript</h1>
+<h1 id="chapter-3-managing-function-inputs">Chapter 3: Managing Function Inputs</h1>
+<p>In &quot;Function Inputs&quot; in Chapter 2, we talked about the basics of function parameters and arguments. We even looked at some syntactic tricks for easing their use such as the <code>...</code> operator and destructuring.</p>
+<p>I recommended in that discussion that you try to design functions with a single parameter if at all possible. The fact is, this won&apos;t always be possible, and you won&apos;t always be in control of function signatures that you need to work with.</p>
+<p>We now want to turn our attention to more sophisticated and powerful patterns for wrangling function inputs in these scenarios.</p>
+<h2 id="some-now-some-later">Some Now, Some Later</h2>
+<p>If a function takes multiple arguments, you may want to specify some of those upfront and leave the rest to be specified later.</p>
+<p>Consider this function:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">ajax</span>(<span class="hljs-params">url,data,callback</span>) </span>{
+    <span class="hljs-comment">// ..</span>
+}
+</code></pre>
+<p>Let&apos;s imagine you&apos;d like to set up several API calls where the URLs are known upfront, but the data and the callback to handle the response won&apos;t be known until later.</p>
+<p>Of course, you can just defer making the <code>ajax(..)</code> call until all the bits are known, and refer to some global constant for the URL at that time. But another way is to create a function reference that already has the <code>url</code> argument preset.</p>
+<p>What we&apos;re going to do is make a new function that still calls <code>ajax(..)</code> under the covers, and it manually sets the first argument to the API URL you care about, while waiting to accept the other two arguments later.</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getPerson</span>(<span class="hljs-params">data,cb</span>) </span>{
+    ajax( <span class="hljs-string">&quot;http://some.api/person&quot;</span>, data, cb );
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getOrder</span>(<span class="hljs-params">data,cb</span>) </span>{
+    ajax( <span class="hljs-string">&quot;http://some.api/order&quot;</span>, data, cb );
+}
+</code></pre>
+<p>Manually specifying these function call wrappers is certainly possible, but it may get quite tedious, especially if there will also be variations with different arguments preset, like:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getCurrentUser</span>(<span class="hljs-params">cb</span>) </span>{
+    getPerson( { user: CURRENT_USER_ID }, cb );
+}
+</code></pre>
+<p>One practice an FPer gets very used to is looking for patterns where we do the same sorts of things repeatedly, and trying to turn those actions into generic reusable utilities. As a matter of fact, I&apos;m sure that&apos;s already the instinct for many of you readers, so that&apos;s not uniquely an FP thing. But it&apos;s unquestionably important for FP.</p>
+<p>To conceive such a utility for argument presetting, let&apos;s examine conceptually what&apos;s going on, not just looking at the manual implementations above.</p>
+<p>One way to articulate what&apos;s going on is that the <code>getOrder(data,cb)</code> function is a <em>partial application</em> of the <code>ajax(url,data,cb)</code> function. This terminology comes from the notion that arguments are <em>applied</em> to parameters at the function call-site. And as you can see, we&apos;re only applying some of the arguments upfront -- specifically the argument for the <code>url</code> parameter -- while leaving the rest to be applied later.</p>
+<p>To be a tiny bit more formal about this pattern, partial application is strictly a reduction in a function&apos;s arity; remember, that&apos;s the number of expected parameter inputs. We reduced the original <code>ajax(..)</code> function&apos;s arity from 3 to 2 for the <code>getOrder(..)</code> function.</p>
+<p>Let&apos;s define a <code>partial(..)</code> utility:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">partial</span>(<span class="hljs-params">fn,...presetArgs</span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">partiallyApplied</span>(<span class="hljs-params">...laterArgs</span>)</span>{
+        <span class="hljs-keyword">return</span> fn( ...presetArgs, ...laterArgs );
+    };
+}
+</code></pre>
+<p><strong>Tip:</strong> Don&apos;t just take this snippet at face value. Take a few moments to digest what&apos;s going on with this utility. Make sure you really <em>get it</em>. The pattern here is actually going to come up over and over again throughout the rest of the text, so it&apos;s a really good idea to get comfortable with it now.</p>
+<p>The <code>partial(..)</code> function takes an <code>fn</code> for which function we are partially applying. Then, any subsequent arguments passed in are gathered into the <code>presetArgs</code> array and saved for later.</p>
+<p>A new inner function (called <code>partiallyApplied(..)</code> just for clarity) is created and <code>return</code>ed, whose own arguments are gathered into an array called <code>laterArgs</code>.</p>
+<p>Notice the references to <code>fn</code> and <code>presetArgs</code> inside this inner function? How does that work? After <code>partial(..)</code> finishes running, how does the inner function keep being able to access <code>fn</code> and <code>presetArgs</code>? If you answered <strong>closure</strong>, you&apos;re right on track! The inner function <code>partiallyApplied(..)</code> closes over both the <code>fn</code> and <code>presetArgs</code> variable so it can keep accessing them later, no matter where the function runs. See how important understanding closure is?</p>
+<p>When the <code>partiallyApplied(..)</code> function is later executed somewhere else in your program, it uses the closed over <code>fn</code> to execute the original function, first providing any of the (closed over) <code>presetArgs</code> partial application arguments, then any further <code>laterArgs</code> arguments.</p>
+<p>If any of that was confusing, stop and go re-read it. Trust me, you&apos;ll be glad you did as we get further into the text.</p>
+<p>As a side note, the FPer will often prefer the shorter <code>=&gt;</code> arrow function syntax for such code (see Chapter 1 &quot;Syntax&quot;), such as:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> partial =
+    (fn, ...presetArgs) =&gt;
+        (...laterArgs) =&gt;
+            fn( ...presetArgs, ...laterArgs );
+</code></pre>
+<p>No question this is more terse, sparse even. But I personally feel that whatever it may gain in symmetry with the mathematical notation, it loses more in overall readability with the functions all being anonymous, and by obscuring the scope boundaries making deciphering closure a little more cryptic.</p>
+<p>Whichever syntax approach tickles your fancy, let&apos;s now use the <code>partial(..)</code> utility to make those earlier partially-applied functions:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> getPerson = partial( ajax, <span class="hljs-string">&quot;http://some.api/person&quot;</span> );
+
+<span class="hljs-keyword">var</span> getOrder = partial( ajax, <span class="hljs-string">&quot;http://some.api/order&quot;</span> );
+</code></pre>
+<p>Stop and think about the shape/internals of <code>getPerson(..)</code>. It will look sorta like this:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> getPerson = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">partiallyApplied</span>(<span class="hljs-params">...laterArgs</span>) </span>{
+    <span class="hljs-keyword">return</span> ajax( <span class="hljs-string">&quot;http://some.api/person&quot;</span>, ...laterArgs );
+};
+</code></pre>
+<p>The same will be true of <code>getOrder(..)</code>. But what about <code>getCurrentUser(..)</code>?</p>
+<pre><code class="lang-js"><span class="hljs-comment">// version 1</span>
+<span class="hljs-keyword">var</span> getCurrentUser = partial(
+    ajax,
+    <span class="hljs-string">&quot;http://some.api/person&quot;</span>,
+    { user: CURRENT_USER_ID }
+);
+
+<span class="hljs-comment">// version 2</span>
+<span class="hljs-keyword">var</span> getCurrentUser = partial( getPerson, { user: CURRENT_USER_ID } );
+</code></pre>
+<p>We can either (version 1) define <code>getCurrentUser(..)</code> with both the <code>url</code> and <code>data</code> arguments specified directly, or (version 2) we can define <code>getCurrentUser(..)</code> as a partial application of the <code>getPerson(..)</code> partial application, specifying only the additional <code>data</code> argument.</p>
+<p>Version 2 is a little cleaner to express because it reuses something already defined. As such, I think it fits a little closer to the spirit of FP.</p>
+<p>Just to make sure we understand how these two versions will work under the covers, they look respectively kinda like:</p>
+<pre><code class="lang-js"><span class="hljs-comment">// version 1</span>
+<span class="hljs-keyword">var</span> getCurrentUser = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">partiallyApplied</span>(<span class="hljs-params">...laterArgs</span>) </span>{
+    <span class="hljs-keyword">return</span> ajax(
+        <span class="hljs-string">&quot;http://some.api/person&quot;</span>,
+        { user: CURRENT_USER_ID },
+        ...laterArgs
+    );
+};
+
+<span class="hljs-comment">// version 2</span>
+<span class="hljs-keyword">var</span> getCurrentUser = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">outerPartiallyApplied</span>(<span class="hljs-params">...outerLaterArgs</span>) </span>{
+    <span class="hljs-keyword">var</span> getPerson = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">innerPartiallyApplied</span>(<span class="hljs-params">...innerLaterArgs</span>)</span>{
+        <span class="hljs-keyword">return</span> ajax( <span class="hljs-string">&quot;http://some.api/person&quot;</span>, ...innerLaterArgs );
+    };
+
+    <span class="hljs-keyword">return</span> getPerson( { user: CURRENT_USER_ID }, ...outerLaterArgs );
+}
+</code></pre>
+<p>Again, stop and re-read those code snippets to make sure you understand what&apos;s going on there.</p>
+<p><strong>Note:</strong> The second version has an extra layer of function wrapping involved. That may smell strange and unnecessary, but this is just one of those things in FP that you&apos;ll want to get really comfortable with. We&apos;ll be wrapping many layers of functions onto each other as we progress through the text. Remember, this is <em>function</em>al programming!</p>
+<p>Let&apos;s take a look at another example of the usefulness of partial application. Consider an <code>add(..)</code> function which takes two arguments and adds them together:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">add</span>(<span class="hljs-params">x,y</span>) </span>{
+    <span class="hljs-keyword">return</span> x + y;
+}
+</code></pre>
+<p>Now, imagine we&apos;d like take a list of numbers and add a certain number to each of them. We&apos;ll use the <code>map(..)</code> utility built into JS arrays.</p>
+<pre><code class="lang-js">[<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>].map( <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">adder</span>(<span class="hljs-params">val</span>)</span>{
+    <span class="hljs-keyword">return</span> add( <span class="hljs-number">3</span>, val );
+} );
+<span class="hljs-comment">// [4,5,6,7,8]</span>
+</code></pre>
+<p><strong>Note:</strong> Don&apos;t worry if you haven&apos;t seen <code>map(..)</code> before; we&apos;ll cover it in much more detail later in the book. For now, just know that it loops over an array calling a function to produce new values for a new array.</p>
+<p>The reason we can&apos;t pass <code>add(..)</code> directly to <code>map(..)</code> is because the signature of <code>add(..)</code> doesn&apos;t match the mapping function that <code>map(..)</code> expects. That&apos;s where partial application can help us: we can adapt the signature of <code>add(..)</code> to something that will match.</p>
+<pre><code class="lang-js">[<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>].map( partial( add, <span class="hljs-number">3</span> ) );
+<span class="hljs-comment">// [4,5,6,7,8]</span>
+</code></pre>
+<h3 id="bind"><code>bind(..)</code></h3>
+<p>JavaScript has a built-in utility called <code>bind(..)</code>, which is available on all functions. It has two capabilities: presetting the <code>this</code> context and partially applying arguments.</p>
+<p>I think this is incredibly unfortunate to conflate these two capabilities in one utility. Sometimes you&apos;ll want to hard-bind the <code>this</code> context and not partially apply arguments. Other times you&apos;ll want to partially apply arguments but not care about <code>this</code> binding at all. I personally have almost never needed both at the same time.</p>
+<p>The latter scenario is awkward because you have to pass an ignorable placeholder for the <code>this</code>-binding argument (the first one), usually <code>null</code>.</p>
+<p>Consider:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> getPerson = ajax.bind( <span class="hljs-literal">null</span>, <span class="hljs-string">&quot;http://some.api/person&quot;</span> );
+</code></pre>
+<p>That <code>null</code> just bugs me to no end.</p>
+<h3 id="reversing-arguments">Reversing Arguments</h3>
+<p>Recall that the signature for our Ajax function is: <code>ajax( url, data, cb )</code>. What if we wanted to partially apply the <code>cb</code> but wait to specify <code>data</code> and <code>url</code> later? We could create a utility that wraps a function to reverse its argument order:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">reverseArgs</span>(<span class="hljs-params">fn</span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">argsReversed</span>(<span class="hljs-params">...args</span>)</span>{
+        <span class="hljs-keyword">return</span> fn( ...args.reverse() );
+    };
+}
+
+<span class="hljs-comment">// or the ES6 =&gt; arrow form</span>
+<span class="hljs-keyword">var</span> reverseArgs =
+    fn =&gt;
+        (...args) =&gt;
+            fn( ...args.reverse() );
+</code></pre>
+<p>Now we can reverse the order of the <code>ajax(..)</code> arguments, so that we can then partially apply from the right rather than the left. To restore the expected order, we&apos;ll then reverse the partially applied function:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> cache = {};
+
+<span class="hljs-keyword">var</span> cacheResult = reverseArgs(
+    partial( reverseArgs( ajax ), <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onResult</span>(<span class="hljs-params">obj</span>)</span>{
+        cache[obj.id] = obj;
+    } )
+);
+
+<span class="hljs-comment">// later:</span>
+cacheResult( <span class="hljs-string">&quot;http://some.api/person&quot;</span>, { user: CURRENT_USER_ID } );
+</code></pre>
+<p>Now, we can define a <code>partialRight(..)</code> which partially applies from the right, using this same reverse-partial apply-reverse trick:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">partialRight</span>(<span class="hljs-params"> fn, ...presetArgs </span>) </span>{
+    <span class="hljs-keyword">return</span> reverseArgs(
+        partial( reverseArgs( fn ), ...presetArgs.reverse() )
+    );
+}
+
+<span class="hljs-keyword">var</span> cacheResult = partialRight( ajax, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onResult</span>(<span class="hljs-params">obj</span>)</span>{
+    cache[obj.id] = obj;
+});
+
+<span class="hljs-comment">// later:</span>
+cacheResult( <span class="hljs-string">&quot;http://some.api/person&quot;</span>, { user: CURRENT_USER_ID } );
+</code></pre>
+<p>This implementation of <code>partialRight(..)</code> does not guarantee that a specific parameter will receive a specific partially-applied value; it only ensures that the right-partially applied value(s) appear as the right-most argument(s) passed to the original function.</p>
+<p>For example:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foo</span>(<span class="hljs-params">x,y,z</span>) </span>{
+    <span class="hljs-keyword">var</span> rest = [].slice.call( <span class="hljs-built_in">arguments</span>, <span class="hljs-number">3</span> );
+    <span class="hljs-built_in">console</span>.log( x, y, z, rest );
+}
+
+<span class="hljs-keyword">var</span> f = partialRight( foo, <span class="hljs-string">&quot;z:last&quot;</span> );
+
+f( <span class="hljs-number">1</span>, <span class="hljs-number">2</span> );            <span class="hljs-comment">// 1 2 &quot;z:last&quot; []</span>
+
+f( <span class="hljs-number">1</span> );                <span class="hljs-comment">// 1 &quot;z:last&quot; undefined []</span>
+
+f( <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span> );        <span class="hljs-comment">// 1 2 3 [&quot;z:last&quot;]</span>
+
+f( <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span> );    <span class="hljs-comment">// 1 2 3 [4,&quot;z:last&quot;]</span>
+</code></pre>
+<p>The value <code>&quot;z:last&quot;</code> is only applied to the <code>z</code> parameter in the case where <code>f(..)</code> is called with exactly two arguments (matching <code>x</code> and <code>y</code> parameters). In all other cases, the <code>&quot;z:last&quot;</code> will just be the right-most argument, however many arguments precede it.</p>
+<h2 id="one-at-a-time">One At A Time</h2>
+<p>Let&apos;s examine a technique similar to partial application, where a function that expects multiple arguments is broken down into successive chained functions that each take a single argument (arity: 1) and return another function to accept the next argument.</p>
+<p>This technique is called currying.</p>
+<p>To first illustrate, let&apos;s imagine we had a curried version of <code>ajax(..)</code> already created. This is how we&apos;d use it:</p>
+<pre><code class="lang-js">curriedAjax( <span class="hljs-string">&quot;http://some.api/person&quot;</span> )
+    ( { user: CURRENT_USER_ID } )
+        ( <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foundUser</span>(<span class="hljs-params">user</span>)</span>{ <span class="hljs-comment">/* .. */</span> } );
+</code></pre>
+<p>Perhaps splitting out each of the three calls helps understand what&apos;s going on better:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> personFetcher = curriedAjax( <span class="hljs-string">&quot;http://some.api/person&quot;</span> );
+
+<span class="hljs-keyword">var</span> getCurrentUser = personFetcher( { user: CURRENT_USER_ID } );
+
+getCurrentUser( <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foundUser</span>(<span class="hljs-params">user</span>)</span>{ <span class="hljs-comment">/* .. */</span> } );
+</code></pre>
+<p>Instead of taking all the arguments at once (like <code>ajax(..)</code>), or some of the arguments up-front and the rest later (via <code>partial(..)</code>), this <code>curriedAjax(..)</code> function receives one argument at a time, each in a separate function call.</p>
+<p>Currying is similar to partial application in that each successive curried call kind of partially applies another argument to the original function, until all arguments have been passed.</p>
+<p>The main difference is that <code>curriedAjax(..)</code> will explicitly return a function (we call <code>curriedGetPerson(..)</code>) that expects <strong>only the next argument</strong> <code>data</code>, not one that (like the earlier <code>getPerson(..)</code>) can receive all the rest of the arguments.</p>
+<p>If an original function expected 5 arguments, the curried form of that function would take just the first argument, and return a function to accept the second. That one would take just the second argument, and return a function to accept the third. And so on.</p>
+<p>So currying unwinds a higher-arity function into a series of chained unary functions.</p>
+<p>How might we define a utility to do this currying? We&apos;re going to use some tricks from Chapter 2.</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">curry</span>(<span class="hljs-params">fn,arity = fn.length</span>) </span>{
+    <span class="hljs-keyword">return</span> (<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">nextCurried</span>(<span class="hljs-params">prevArgs</span>)</span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">curried</span>(<span class="hljs-params">nextArg</span>)</span>{
+            <span class="hljs-keyword">var</span> args = prevArgs.concat( [nextArg] );
+
+            <span class="hljs-keyword">if</span> (args.length &gt;= arity) {
+                <span class="hljs-keyword">return</span> fn( ...args );
+            }
+            <span class="hljs-keyword">else</span> {
+                <span class="hljs-keyword">return</span> nextCurried( args );
+            }
+        };
+    })( [] );
+}
+</code></pre>
+<p>And for the ES6 <code>=&gt;</code> fans:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> curry =
+    (fn, arity = fn.length, nextCurried) =&gt;
+        (nextCurried = prevArgs =&gt;
+            nextArg =&gt; {
+                <span class="hljs-keyword">var</span> args = prevArgs.concat( [nextArg] );
+
+                <span class="hljs-keyword">if</span> (args.length &gt;= arity) {
+                    <span class="hljs-keyword">return</span> fn( ...args );
+                }
+                <span class="hljs-keyword">else</span> {
+                    <span class="hljs-keyword">return</span> nextCurried( args );
+                }
+            }
+        )( [] );
+</code></pre>
+<p>The approach here is to start a collection of arguments in <code>prevArgs</code> as an empty <code>[]</code> array, and add each received <code>nextArg</code> to that, calling the concatenation <code>args</code>. While <code>args.length</code> is less than <code>arity</code> (the number of declared/expected parameters of the original <code>fn(..)</code> function), make and return another <code>curried(..)</code> function to collect the next <code>nextArg</code> argument, passing the running <code>args</code> collection along as <code>prevArgs</code>. Once we have enough <code>args</code>, execute the original <code>fn(..)</code> function with them.</p>
+<p>By default, this implementation relies on being able to inspect the <code>length</code> property of the to-be-curried function to know how many iterations of currying we&apos;ll need before we&apos;ve collected all its expected arguments.</p>
+<p>If you use this implementation of <code>curry(..)</code> with a function that doesn&apos;t have an accurate <code>length</code> property -- if the function&apos;s parameter signature includes default parameter values, parameter destructuring, or it&apos;s variadic with <code>...args</code>; see Chapter 2 -- you&apos;ll need to pass the <code>arity</code> (the second parameter of <code>curry(..)</code>) to ensure <code>curry(..)</code> works correctly.</p>
+<p>Here&apos;s how we would use <code>curry(..)</code> for our earlier <code>ajax(..)</code> example:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> curriedAjax = curry( ajax );
+
+<span class="hljs-keyword">var</span> personFetcher = curriedAjax( <span class="hljs-string">&quot;http://some.api/person&quot;</span> );
+
+<span class="hljs-keyword">var</span> getCurrentUser = personFetcher( { user: CURRENT_USER_ID } );
+
+getCurrentUser( <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foundUser</span>(<span class="hljs-params">user</span>)</span>{ <span class="hljs-comment">/* .. */</span> } );
+</code></pre>
+<p>Each call adds one more argument to the original <code>ajax(..)</code> call, until all three have been provided and <code>ajax(..)</code> is executed.</p>
+<p>Remember our example from earlier about adding <code>3</code> to a each value in a list of numbers? Recall that currying is similar to partial application, so we could do that task with currying in almost the same way:</p>
+<pre><code class="lang-js">[<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>].map( curry( add )( <span class="hljs-number">3</span> ) );
+<span class="hljs-comment">// [4,5,6,7,8]</span>
+</code></pre>
+<p>The difference between the two? <code>partial(add,3)</code> vs <code>curry(add)(3)</code>. Why might you choose <code>curry(..)</code> over partial? It might be helpful in the case where you know ahead of time that <code>add(..)</code> is the function to be adapted, but the value <code>3</code> isn&apos;t known yet:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> adder = curry( add );
+
+<span class="hljs-comment">// later</span>
+[<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>].map( adder( <span class="hljs-number">3</span> ) );
+<span class="hljs-comment">// [4,5,6,7,8]</span>
+</code></pre>
+<p>How about another numbers example, this time adding a list of them together:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sum</span>(<span class="hljs-params">...args</span>) </span>{
+    <span class="hljs-keyword">var</span> sum = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; args.length; i++) {
+        sum += args[i];
+    }
+    <span class="hljs-keyword">return</span> sum;
+}
+
+sum( <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span> );                        <span class="hljs-comment">// 15</span>
+
+<span class="hljs-comment">// now with currying:</span>
+<span class="hljs-comment">// (5 to indicate how many we should wait for)</span>
+<span class="hljs-keyword">var</span> curriedSum = curry( sum, <span class="hljs-number">5</span> );
+
+curriedSum( <span class="hljs-number">1</span> )( <span class="hljs-number">2</span> )( <span class="hljs-number">3</span> )( <span class="hljs-number">4</span> )( <span class="hljs-number">5</span> );        <span class="hljs-comment">// 15</span>
+</code></pre>
+<p>The advantage of currying here is that each call to pass in an argument produces another function that&apos;s more specialized, and we can capture and use <em>that</em> new function later in the program. Partial application specifies all the partially applied arguments up front, producing a function that&apos;s waiting for all the rest of the arguments.</p>
+<p>If you wanted to use partial application to specify one parameter at a time, you&apos;d have to keep calling <code>partialApply(..)</code> on each successive function. Curried functions do this automatically, making working with individual arguments one-at-a-time more ergonomic.</p>
+<p>In JavaScript, both currying and partial application use closure to remember the arguments over time until all have been received, and then the original operation can be performed.</p>
+<h3 id="why-currying-and-partial-application">Why Currying And Partial Application?</h3>
+<p>With either currying style (<code>sum(1)(2)(3)</code>) or partial application style (<code>partial(sum,1,2)(3)</code>), the call-site unquestionably looks stranger than a more common one like <code>sum(1,2,3)</code>. So <strong>why would we go this direction</strong> when adopting FP? There are multiple layers to answering that question.</p>
+<p>The first and most obvious reason is that both currying and partial application allow you to separate in time/space (throughout your code base) when and where separate arguments are specified, whereas traditional function calls require all the arguments to be present up front. If you have a place in your code where you&apos;ll know some of the arguments and another place where the other arguments are determined, currying or partial application are very useful.</p>
+<p>Another layer to this answer, which applies most specifically to currying, is that composition of functions is much easier when there&apos;s only one argument. So a function that ultimately needs 3 arguments, if curried, becomes a function that needs just one, three times over. That kind of unary function will be a lot easier to work with when we start composing them. We&apos;ll tackle this topic later in the text.</p>
+<h3 id="currying-more-than-one-argument">Currying More Than One Argument?</h3>
+<p>The definition and implementation I&apos;ve given of currying thus far is, I believe, as true to the spirit as we can likely get in JavaScript.</p>
+<p>Specifically, if we look briefly at how currying works in Haskell, we can observe that multiple arguments always go in to a function one at a time, one per curried call -- other than tuples (analogus to arrays for our purposes) that transport multiple values in a single argument.</p>
+<p>For example, in Haskell:</p>
+<pre><code>foo 1 2 3
+</code></pre><p>This calls the <code>foo</code> function, and has the result of passing in three values <code>1</code>, <code>2</code>, and <code>3</code>. But functions are automatically curried in Haskell, which means each value goes in as a separate curried-call. The JS equivalent of that would look like <code>foo(1)(2)(3)</code>, which is the same style as the <code>curry(..)</code> I presented above.</p>
+<p><strong>Note:</strong> In Haskell, <code>foo (1,2,3)</code> is not passing in those 3 values at once as three separate arguments, but a tuple (kinda like a JS array) as a single argument. To work, <code>foo</code> would need to be altered to handle a tuple in that argument position. As far as I can tell, there&apos;s no way in Haskell to pass all three arguments separately with just one function call; each argument gets its own curried-call. Of course, the presence of multiple calls is transparent to the Haskell developer, but it&apos;s a lot more syntactically obvious to the JS developer.</p>
+<p>For these reasons, I think the earlier <code>curry(..)</code> that I demonstrated is a faithful adaptation, or what I might call &quot;strict currying&quot;.</p>
+<p>However, it&apos;s important to note that there&apos;s a looser definition used in most popular JavaScript FP libraries.</p>
+<p>Specifically, JS currying utilities typically allow you to specify multiple arguments for each curried-call. Revisiting our <code>sum(..)</code> example from before, this would look like:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> curriedSum = looseCurry( sum, <span class="hljs-number">5</span> );
+
+curriedSum( <span class="hljs-number">1</span> )( <span class="hljs-number">2</span>, <span class="hljs-number">3</span> )( <span class="hljs-number">4</span>, <span class="hljs-number">5</span> );            <span class="hljs-comment">// 15</span>
+</code></pre>
+<p>We see a slight syntax savings of fewer <code>( )</code>, and an implied performance benefit of now having three function calls instead of five. But other than that, using <code>looseCurry(..)</code> is identical in end result to the narrower <code>curry(..)</code> definition from earlier. I would guess the convenience/performance factor is probably why frameworks allow multiple arguments. This seems mostly like a matter of taste.</p>
+<p><strong>Note:</strong> The loose currying <em>does</em> give you the ability to send in more arguments than the arity (detected or specified). If you designed your function with optional/variadic arguments, that could be a benefit. For example, if you curry five arguments, looser currying still allows more than five arguments (<code>curriedSum(1)(2,3,4)(5,6)</code>), but strict currying wouldn&apos;t support <code>curriedSum(1)(2)(3)(4)(5)(6)</code>.</p>
+<p>We can adapt our previous currying implementation to this common looser definition:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">looseCurry</span>(<span class="hljs-params">fn,arity = fn.length</span>) </span>{
+    <span class="hljs-keyword">return</span> (<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">nextCurried</span>(<span class="hljs-params">prevArgs</span>)</span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">curried</span>(<span class="hljs-params">...nextArgs</span>)</span>{
+            <span class="hljs-keyword">var</span> args = prevArgs.concat( nextArgs );
+
+            <span class="hljs-keyword">if</span> (args.length &gt;= arity) {
+                <span class="hljs-keyword">return</span> fn( ...args );
+            }
+            <span class="hljs-keyword">else</span> {
+                <span class="hljs-keyword">return</span> nextCurried( args );
+            }
+        };
+    })( [] );
+}
+</code></pre>
+<p>Now each curried-call accepts one or more arguments (as <code>nextArgs</code>). We&apos;ll leave it as an exercise for the interested reader to define the ES6 <code>=&gt;</code> version of <code>looseCurry(..)</code> similar to how we did it for <code>curry(..)</code> earlier.</p>
+<h3 id="no-curry-for-me-please">No Curry For Me, Please</h3>
+<p>It may also be the case that you have a curried function that you&apos;d like to sort of un-curry -- basically, to turn a function like <code>f(1)(2)(3)</code> back into a function like <code>g(1,2,3)</code>.</p>
+<p>The standard utility for this is (un)shockingly typically called <code>uncurry(..)</code>. Here&apos;s a simple naive implementation:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">uncurry</span>(<span class="hljs-params">fn</span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">uncurried</span>(<span class="hljs-params">...args</span>)</span>{
+        <span class="hljs-keyword">var</span> ret = fn;
+
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; args.length; i++) {
+            ret = ret( args[i] );
+        }
+
+        <span class="hljs-keyword">return</span> ret;
+    };
+}
+
+<span class="hljs-comment">// or the ES6 =&gt; arrow form</span>
+<span class="hljs-keyword">var</span> uncurry =
+    fn =&gt;
+        (...args) =&gt; {
+            <span class="hljs-keyword">var</span> ret = fn;
+
+            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; args.length; i++) {
+                ret = ret( args[i] );
+            }
+
+            <span class="hljs-keyword">return</span> ret;
+        };
+</code></pre>
+<p><strong>Warning:</strong> Don&apos;t just assume that <code>uncurry(curry(f))</code> has the same behavior as <code>f</code>. In some libs the uncurrying would result in a function like the original, but not all of them; certainly our example here does not. The uncurried function acts (mostly) the same as the original function if you pass as many arguments to it as the original function expected. However, if you pass fewer arguments, you still get back a partially curried function waiting for more arguments; this quirk is illustrated in the next snippet.</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sum</span>(<span class="hljs-params">...args</span>) </span>{
+    <span class="hljs-keyword">var</span> sum = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; args.length; i++) {
+        sum += args[i];
+    }
+    <span class="hljs-keyword">return</span> sum;
+}
+
+<span class="hljs-keyword">var</span> curriedSum = curry( sum, <span class="hljs-number">5</span> );
+<span class="hljs-keyword">var</span> uncurriedSum = uncurry( curriedSum );
+
+curriedSum( <span class="hljs-number">1</span> )( <span class="hljs-number">2</span> )( <span class="hljs-number">3</span> )( <span class="hljs-number">4</span> )( <span class="hljs-number">5</span> );        <span class="hljs-comment">// 15</span>
+
+uncurriedSum( <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span> );                <span class="hljs-comment">// 15</span>
+uncurriedSum( <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span> )( <span class="hljs-number">4</span> )( <span class="hljs-number">5</span> );            <span class="hljs-comment">// 15</span>
+</code></pre>
+<p>Probably the more common case of using <code>uncurry(..)</code> is not with a manually curried function as just shown, but with a function that comes out curried as a result of some other set of operations. We&apos;ll illustrate that scenario later in this chapter in the &quot;No Points&quot; discussion.</p>
+<h2 id="all-for-one">All For One</h2>
+<p>Imagine you&apos;re passing a function to a utility where it will send multiple arguments to your function. But you may only want to receive a single argument. This is especially true if you have a loosely curried function like we discussed previously that <em>can</em> accept more arguments that you wouldn&apos;t want.</p>
+<p>We can design a simple utility that wraps a function call to ensure only one argument will pass through. Since this is effectively enforcing that a function is treated as unary, let&apos;s name it as such:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">unary</span>(<span class="hljs-params">fn</span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onlyOneArg</span>(<span class="hljs-params">arg</span>)</span>{
+        <span class="hljs-keyword">return</span> fn( arg );
+    };
+}
+
+<span class="hljs-comment">// or the ES6 =&gt; arrow form</span>
+<span class="hljs-keyword">var</span> unary =
+    fn =&gt;
+        arg =&gt;
+            fn( arg );
+</code></pre>
+<p>We saw the <code>map(..)</code> utility eariler. It calls the provided mapping function with three arguments: <code>value</code>, <code>index</code>, and <code>list</code>. If you want your mapping function to only receive one of these, like <code>value</code>, use the <code>unary(..)</code> operation:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">unary</span>(<span class="hljs-params">fn</span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onlyOneArg</span>(<span class="hljs-params">arg</span>)</span>{
+        <span class="hljs-keyword">return</span> fn( arg );
+    };
+}
+
+<span class="hljs-keyword">var</span> adder = looseCurry( sum, <span class="hljs-number">2</span> );
+
+<span class="hljs-comment">// oops:</span>
+[<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>].map( adder( <span class="hljs-number">3</span> ) );
+<span class="hljs-comment">// [&quot;41,2,3,4,5&quot;, &quot;61,2,3,4,5&quot;, &quot;81,2,3,4,5&quot;, &quot;101, ...</span>
+
+<span class="hljs-comment">// fixed with `unary(..)`:</span>
+[<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>].map( unary( adder( <span class="hljs-number">3</span> ) ) );
+<span class="hljs-comment">// [4,5,6,7,8]</span>
+</code></pre>
+<p>Another commonly cited example using <code>unary(..)</code> is:</p>
+<pre><code class="lang-js">[<span class="hljs-string">&quot;1&quot;</span>,<span class="hljs-string">&quot;2&quot;</span>,<span class="hljs-string">&quot;3&quot;</span>].map( <span class="hljs-built_in">parseFloat</span> );
+<span class="hljs-comment">// [1,2,3]</span>
+
+[<span class="hljs-string">&quot;1&quot;</span>,<span class="hljs-string">&quot;2&quot;</span>,<span class="hljs-string">&quot;3&quot;</span>].map( <span class="hljs-built_in">parseInt</span> );
+<span class="hljs-comment">// [1,NaN,NaN]</span>
+
+[<span class="hljs-string">&quot;1&quot;</span>,<span class="hljs-string">&quot;2&quot;</span>,<span class="hljs-string">&quot;3&quot;</span>].map( unary( <span class="hljs-built_in">parseInt</span> ) );
+<span class="hljs-comment">// [1,2,3]</span>
+</code></pre>
+<p>For the signature <code>parseInt(str,radix)</code>, it&apos;s clear that if <code>map(..)</code> passes an <code>index</code> in the second argument position, it will be interpreted by <code>parseInt(..)</code> as the <code>radix</code>, which we don&apos;t want. <code>unary(..)</code> creates a function that will ignore all but the first argument passed to it, meaning the passed in <code>index</code> is not mistaken as the <code>radix</code>.</p>
+<h3 id="one-on-one">One On One</h3>
+<p>Speaking of functions with only one argument, another common base operation in the FP toolbelt is a function that takes one argument and does nothing but return the value untouched:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">identity</span>(<span class="hljs-params">v</span>) </span>{
+    <span class="hljs-keyword">return</span> v;
+}
+
+<span class="hljs-comment">// or the ES6 =&gt; arrow form</span>
+<span class="hljs-keyword">var</span> identity =
+    v =&gt;
+        v;
+</code></pre>
+<p>This utility looks so simple as to hardly be useful. But even simple functions can be helpful in the world of FP. Like they say in acting: there are no small parts, only small actors.</p>
+<p>For example, imagine you&apos;d like split up a string using a regular expression, but the resulting array may have some empty values in it. To discard those, we can use JS&apos;s <code>filter(..)</code> array operation (covered in detail later in the text) with <code>identity(..)</code> as the predicate:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> words = <span class="hljs-string">&quot;   Now is the time for all...  &quot;</span>.split( <span class="hljs-regexp">/\s|\b/</span> );
+words;
+<span class="hljs-comment">// [&quot;&quot;,&quot;Now&quot;,&quot;is&quot;,&quot;the&quot;,&quot;time&quot;,&quot;for&quot;,&quot;all&quot;,&quot;...&quot;,&quot;&quot;]</span>
+
+words.filter( identity );
+<span class="hljs-comment">// [&quot;Now&quot;,&quot;is&quot;,&quot;the&quot;,&quot;time&quot;,&quot;for&quot;,&quot;all&quot;,&quot;...&quot;]</span>
+</code></pre>
+<p>Since <code>identity(..)</code> simply returns the value passed to it, JS coerces each value into either <code>true</code> or <code>false</code>, and that decides to keep or exclude each value in the final array.</p>
+<p><strong>Tip:</strong> Another unary function that can be used as the predicate in the previous example is JS&apos;s own <code>Boolean(..)</code> function, which explicitly coerces the values to <code>true</code> or <code>false</code>.</p>
+<p>Another example of using <code>identity(..)</code> is as a default function in place of a transformation:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">output</span>(<span class="hljs-params">msg,formatFn = identity</span>) </span>{
+    msg = formatFn( msg );
+    <span class="hljs-built_in">console</span>.log( msg );
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">upper</span>(<span class="hljs-params">txt</span>) </span>{
+    <span class="hljs-keyword">return</span> txt.toUpperCase();
+}
+
+output( <span class="hljs-string">&quot;Hello World&quot;</span>, upper );        <span class="hljs-comment">// HELLO WORLD</span>
+output( <span class="hljs-string">&quot;Hello World&quot;</span> );            <span class="hljs-comment">// Hello World</span>
+</code></pre>
+<p>If <code>output(..)</code> didn&apos;t have a default for <code>formatFn</code>, we could bring our earlier friend <code>partialRight(..)</code>:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> specialOutput = partialRight( output, upper );
+<span class="hljs-keyword">var</span> simpleOutput = partialRight( output, identity );
+
+specialOutput( <span class="hljs-string">&quot;Hello World&quot;</span> );        <span class="hljs-comment">// HELLO WORLD</span>
+simpleOutput( <span class="hljs-string">&quot;Hello World&quot;</span> );        <span class="hljs-comment">// Hello World</span>
+</code></pre>
+<p>You also may see <code>identity(..)</code> used as a default transformation function for <code>map(..)</code> calls or as the initial value in a <code>reduce(..)</code> of a list of functions; both of these utilities will be covered in Chapter 8.</p>
+<h3 id="unchanging-one">Unchanging One</h3>
+<p>Certain APIs don&apos;t let you pass a value directly into a method, but require you to pass in a function, even if that function just returns the value. One such API is the <code>then(..)</code> method on JS Promises. Many claim that ES6 <code>=&gt;</code> arrow functions are the &quot;solution&quot;. But there&apos;s an FP utility that&apos;s perfectly suited for the task:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">constant</span>(<span class="hljs-params">v</span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">value</span>(<span class="hljs-params"></span>)</span>{
+        <span class="hljs-keyword">return</span> v;
+    };
+}
+
+<span class="hljs-comment">// or the ES6 =&gt; form</span>
+<span class="hljs-keyword">var</span> constant =
+    v =&gt;
+        () =&gt;
+            v;
+</code></pre>
+<p>With this tidy little utility, we can solve our <code>then(..)</code> annoyance:</p>
+<pre><code class="lang-js">p1.then( foo ).then( () =&gt; p2 ).then( bar );
+
+<span class="hljs-comment">// vs</span>
+
+p1.then( foo ).then( constant( p2 ) ).then( bar );
+</code></pre>
+<p><strong>Warning:</strong> Although the <code>() =&gt; p2</code> arrow function version is shorter than <code>constant(p2)</code>, I would encourage you to resist the temptation to use it. The arrow function is returning a value from outside of itself, which is a bit worse from the FP perspective. We&apos;ll cover the pitfalls of such actions later in the text, Chapter 5 &quot;Reducing Side Effects&quot;.</p>
+<h2 id="spread-em-out">Spread &apos;Em Out</h2>
+<p>In Chapter 2, we briefly looked at parameter array destructuring. Recall this example:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foo</span>(<span class="hljs-params"> [x,y,...args] </span>) </span>{
+    <span class="hljs-comment">// ..</span>
+}
+
+foo( [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>] );
+</code></pre>
+<p>In the parameter list of <code>foo(..)</code>, we declare that we&apos;re expecting a single array argument that we want to break down -- or in effect, spread out -- into individually named parameters <code>x</code> and <code>y</code>. Any other values in the array beyond those first two positions are gathered into an <code>args</code> array with the <code>...</code> operator.</p>
+<p>This trick is handy if an array must be passed in but you want to treat its contents as individual parameters.</p>
+<p>However, sometimes you won&apos;t have the ability to change the declaration of the function to use parameter array destructuring. For example, imagine these functions:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foo</span>(<span class="hljs-params">x,y</span>) </span>{
+    <span class="hljs-built_in">console</span>.log( x + y );
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">bar</span>(<span class="hljs-params">fn</span>) </span>{
+    fn( [ <span class="hljs-number">3</span>, <span class="hljs-number">9</span> ] );
+}
+
+bar( foo );            <span class="hljs-comment">// fails</span>
+</code></pre>
+<p>Do you spot why <code>bar(foo)</code> fails?</p>
+<p>The array <code>[3,9]</code> is sent in as a single value to <code>fn(..)</code>, but <code>foo(..)</code> expects <code>x</code> and <code>y</code> separately. If we could change the declaration of <code>foo(..)</code> to be <code>function foo([x,y]) { ..</code>, we&apos;d be fine. Or, if we could change the behavior of <code>bar(..)</code> to make the call as <code>fn(...[3,9])</code>, the values <code>3</code> and <code>9</code> would be passed in individually.</p>
+<p>There will be occasions when you have two functions that are imcompatible in this way, and you won&apos;t be able to change their declarations/definitions for various external reasons. So, how do you use them together?</p>
+<p>We can define a helper to adapt a function so that it spreads out a single received array as its individual arguments:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">spreadArgs</span>(<span class="hljs-params">fn</span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">spreadFn</span>(<span class="hljs-params">argsArr</span>) </span>{
+        <span class="hljs-keyword">return</span> fn( ...argsArr );
+    };
+}
+
+<span class="hljs-comment">// or the ES6 =&gt; arrow form</span>
+<span class="hljs-keyword">var</span> spreadArgs =
+    fn =&gt;
+        argsArr =&gt;
+            fn( ...argsArr );
+</code></pre>
+<p><strong>Note:</strong> I called this helper <code>spreadArgs(..)</code>, but in libraries like Ramda it&apos;s often called <code>apply(..)</code>.</p>
+<p>Now we can use <code>spreadArgs(..)</code> to adapt <code>foo(..)</code> to work as the proper input to <code>bar(..)</code>:</p>
+<pre><code class="lang-js">bar( spreadArgs( foo ) );            <span class="hljs-comment">// 12</span>
+</code></pre>
+<p>It won&apos;t seem clear yet why these occassions will arise, but trust me, they do. Essentially, <code>spreadArgs(..)</code> will allow us to define functions that <code>return</code> multiple values via an array, but still have those multiple values treated independently as inputs to another function.</p>
+<p>When function output becomes input to another function, this is called composition; we&apos;ll cover this topic in detail in Chapter 4.</p>
+<p>While we&apos;re talking about a <code>spreadArgs(..)</code> utility, let&apos;s also define a utility to handle the opposite action:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">gatherArgs</span>(<span class="hljs-params">fn</span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">gatheredFn</span>(<span class="hljs-params">...argsArr</span>) </span>{
+        <span class="hljs-keyword">return</span> fn( argsArr );
+    };
+}
+
+<span class="hljs-comment">// or the ES6 =&gt; arrow form</span>
+<span class="hljs-keyword">var</span> gatherArgs =
+    fn =&gt;
+        (...argsArr) =&gt;
+            fn( argsArr );
+</code></pre>
+<p><strong>Note:</strong> In Ramda, this utility is referred to as <code>unapply(..)</code>, being that it&apos;s the opposite of <code>apply(..)</code>. I think the &quot;spread&quot; / &quot;gather&quot; terminology is a little more descriptive for what&apos;s going on.</p>
+<p>We can use this utility to gather individual arguments into a single array, perhaps because we want to adapt a function with array parameter destructuring to another utility that passes arguments separately. We will cover <code>reduce(..)</code> in Chapter 8, but briefly: it repeatedly calls its reducer function with two individual parameters, which we can now <em>gather</em> together:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">combineFirstTwo</span>(<span class="hljs-params">[ v1, v2 ]</span>) </span>{
+    <span class="hljs-keyword">return</span> v1 + v2;
+}
+
+[<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>].reduce( gatherArgs( combineFirstTwo ) );
+<span class="hljs-comment">// 15</span>
+</code></pre>
+<h2 id="order-matters">Order Matters</h2>
+<p>One of the frustrating things about currying and partial application of functions with multiple parameters is all the juggling we have to do with our arguments to get them into the right order. Sometimes we define a function with parameters in the order that we would want to curry them, but other times that order is incompatible and we have to jump through hoops to reorder.</p>
+<p>The frustration is not merely that we need to use some utility to juggle the properties, but the fact that the usage of it clutters up our code a little bit with some extra noise. These kinds of things are like little paper cuts; one here or there isn&apos;t a showstopper, but the pain can certainly add up.</p>
+<p>Is there anything we can do to free ourselves from this argument ordering tyranny!?</p>
+<p>In Chapter 2, we looked at the named-argument destructuring pattern. Recall:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foo</span>(<span class="hljs-params"> {x,y} = {} </span>) </span>{
+    <span class="hljs-built_in">console</span>.log( x, y );
+}
+
+foo( {
+    y: <span class="hljs-number">3</span>
+} );                    <span class="hljs-comment">// undefined 3</span>
+</code></pre>
+<p>We destructure the first parameter of the <code>foo(..)</code> function -- it&apos;s expected to be an object -- into individual parameters <code>x</code> and <code>y</code>. Then, at the call-site, we pass in that single object argument, and provide properties as desired, &quot;named arguments&quot; to map to parameters.</p>
+<p>The primary advantage of named arguments is not needing to juggle argument ordering, thereby improving readability. We can exploit this to improve currying/partial application if we invent alternate utilities that work with object properties:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">partialProps</span>(<span class="hljs-params">fn,presetArgsObj</span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">partiallyApplied</span>(<span class="hljs-params">laterArgsObj</span>)</span>{
+        <span class="hljs-keyword">return</span> fn( <span class="hljs-built_in">Object</span>.assign( {}, presetArgsObj, laterArgsObj ) );
+    };
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">curryProps</span>(<span class="hljs-params">fn,arity = 1</span>) </span>{
+    <span class="hljs-keyword">return</span> (<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">nextCurried</span>(<span class="hljs-params">prevArgsObj</span>)</span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">curried</span>(<span class="hljs-params">nextArgObj = {}</span>)</span>{
+            <span class="hljs-keyword">var</span> [key] = <span class="hljs-built_in">Object</span>.keys( nextArgObj );
+            <span class="hljs-keyword">var</span> allArgsObj = <span class="hljs-built_in">Object</span>.assign( {}, prevArgsObj, { [key]: nextArgObj[key] } );
+
+            <span class="hljs-keyword">if</span> (<span class="hljs-built_in">Object</span>.keys( allArgsObj ).length &gt;= arity) {
+                <span class="hljs-keyword">return</span> fn( allArgsObj );
+            }
+            <span class="hljs-keyword">else</span> {
+                <span class="hljs-keyword">return</span> nextCurried( allArgsObj );
+            }
+        };
+    })( {} );
+}
+</code></pre>
+<p>We don&apos;t even need a <code>partialPropsRight(..)</code> because we don&apos;t need care about what order properties are being mapped; the name mappings make that ordering concern moot!</p>
+<p>Here&apos;s how we use those utilities:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foo</span>(<span class="hljs-params">{ x, y, z } = {}</span>) </span>{
+    <span class="hljs-built_in">console</span>.log( <span class="hljs-string">`x:<span class="hljs-subst">${x}</span> y:<span class="hljs-subst">${y}</span> z:<span class="hljs-subst">${z}</span>`</span> );
+}
+
+<span class="hljs-keyword">var</span> f1 = curryProps( foo, <span class="hljs-number">3</span> );
+<span class="hljs-keyword">var</span> f2 = partialProps( foo, { y: <span class="hljs-number">2</span> } );
+
+f1( {y: <span class="hljs-number">2</span>} )( {x: <span class="hljs-number">1</span>} )( {z: <span class="hljs-number">3</span>} );
+<span class="hljs-comment">// x:1 y:2 z:3</span>
+
+f2( { z: <span class="hljs-number">3</span>, x: <span class="hljs-number">1</span> } );
+<span class="hljs-comment">// x:1 y:2 z:3</span>
+</code></pre>
+<p>Order doesn&apos;t matter anymore! We can now specify which arguments we want in whatever sequence makes sense. No more <code>reverseArgs(..)</code> or other nuisances. Cool!</p>
+<h3 id="spreading-properties">Spreading Properties</h3>
+<p>Unfortunately, this only works because we have control over the signature of <code>foo(..)</code> and defined it to destructure its first parameter. What if we wanted to use this technique with a function that had its parameters indivdually listed (no parameter destructuring!), and we couldn&apos;t change that function signature?</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">bar</span>(<span class="hljs-params">x,y,z</span>) </span>{
+    <span class="hljs-built_in">console</span>.log( <span class="hljs-string">`x:<span class="hljs-subst">${x}</span> y:<span class="hljs-subst">${y}</span> z:<span class="hljs-subst">${z}</span>`</span> );
+}
+</code></pre>
+<p>Just like the <code>spreadArgs(..)</code> utility earlier, we could define a <code>spreadArgProps(..)</code> helper that takes the <code>key: value</code> pairs out of an object argument and &quot;spreads&quot; the values out as individual arguments.</p>
+<p>There are some quirks to be aware of, though. With <code>spreadArgs(..)</code>, we were dealing with arrays, where ordering is well defined and obvious. However, with objects, property order is less clear and not necessarily reliable. Depending on how an object is created and properties set, we cannot be absolutely certain what enumeration order properties would come out.</p>
+<p>Such a utility needs a way to let you define what order the function in question expects its arguments (e.g., property enumeration order). We can pass an array like <code>[&quot;x&quot;,&quot;y&quot;,&quot;z&quot;]</code> to tell the utility to pull the properties off the object argument in exactly that order.</p>
+<p>That&apos;s decent, but it&apos;s also unfortunate that we kinda <em>have</em> to do add that property-name array even for the simplest of functions. Is there any kind of trick we could use to detect what order the parameters are listed for a function, in at least the common simple cases? Fortunately, yes!</p>
+<p>JavaScript functions have a <code>.toString()</code> method that gives a string representation of the function&apos;s code, including the function declaration signature. Dusting off our regular expression parsing skills, we can parse the string representation of the function, and pull out the individually named parameters. The code looks a bit gnarly, but it&apos;s good enough to get the job done:</p>
+<pre><code class="lang-js">function spreadArgProps(
+    fn,
+    propOrder =
+        fn.toString()
+        .replace( /^(?:(?:function.*\(([^]*?)\))|(?:([^\(\)]+?)\s*=&gt;)|(?:\(([^]*?)\)\s*=&gt;))[^]+$/, &quot;$1$2$3&quot; )
+        .split( /\s*,\s*/ )
+        .map( v =&gt; v.replace( /[=\s].*$/, &quot;&quot; ) )
+) {
+    return function spreadFn(argsObj) {
+        return fn( ...propOrder.map( k =&gt; argsObj[k] ) );
+    };
+}
+</code></pre>
+<p><strong>Note:</strong> This utility&apos;s parameter parsing logic is far from bullet-proof; we&apos;re using regular expressions to parse code, which is already a faulty premise! But our only goal here is to handle the common cases, which this does reasonably well. We only need a sensible default detection of parameter order for functions with simple parameters (as well as those with default parameter values). We don&apos;t, for example, need to be able to parse out a complex destructured parameter, because we wouldn&apos;t likely be using this utility with such a function, anyway. So, this logic gets the 80% job done; it lets us override the <code>propOrder</code> array for any other more complex function signature that wouldn&apos;t otherwise be correctly parsed. That&apos;s the kind of pragmatic balance this book seeks to find wherever possible.</p>
+<p>Let&apos;s illustrate using our <code>spreadArgProps(..)</code> utility:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">bar</span>(<span class="hljs-params">x,y,z</span>) </span>{
+    <span class="hljs-built_in">console</span>.log( <span class="hljs-string">`x:<span class="hljs-subst">${x}</span> y:<span class="hljs-subst">${y}</span> z:<span class="hljs-subst">${z}</span>`</span> );
+}
+
+<span class="hljs-keyword">var</span> f3 = curryProps( spreadArgProps( bar ), <span class="hljs-number">3</span> );
+<span class="hljs-keyword">var</span> f4 = partialProps( spreadArgProps( bar ), { y: <span class="hljs-number">2</span> } );
+
+f3( {y: <span class="hljs-number">2</span>} )( {x: <span class="hljs-number">1</span>} )( {z: <span class="hljs-number">3</span>} );
+<span class="hljs-comment">// x:1 y:2 z:3</span>
+
+f4( { z: <span class="hljs-number">3</span>, x: <span class="hljs-number">1</span> } );
+<span class="hljs-comment">// x:1 y:2 z:3</span>
+</code></pre>
+<p>A word of caution: the object parameters/named arguments pattern I&apos;m showing here clearly improves readability by reducing the clutter of argument order juggling, but to my knowledge, no mainstream FP libraries are using this approach. It comes at the expense of being far less familiar than how most JavaScript FP is done.</p>
+<p>Also, usage of functions defined in this style requires you to know what each argument&apos;s name is. You can&apos;t just remember, &quot;oh, the function goes in as the first argument&quot; anymore. Instead you have to remember, &quot;the function parameter is called &apos;fn&apos;.&quot;</p>
+<p>Weigh these tradeoffs carefully.</p>
+<h2 id="no-points">No Points</h2>
+<p>A popular style of coding in the FP world aims to reduce some of the visual clutter by removing unnecessary parameter-argument mapping. This style is formally called tacit programming, or more commonly: point-free style. The term &quot;point&quot; here is referring to a function&apos;s parameter.</p>
+<p><strong>Warning:</strong> Stop for a moment. Let&apos;s make sure we&apos;re careful not to take this discussion as an unbounded suggestion that you go overboard trying to be point-free in your FP code at all costs. This should be a technique for improving readability, when used in moderation. But as with most things in software development, you can definitely abuse it. If your code gets harder to understand because of the hoops you have to jump through to be point-free, stop. You won&apos;t win a blue ribbon just because you found some clever but esoteric way to remove another &quot;point&quot; from your code.</p>
+<p>Let&apos;s start with a simple example:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">double</span>(<span class="hljs-params">x</span>) </span>{
+    <span class="hljs-keyword">return</span> x * <span class="hljs-number">2</span>;
+}
+
+[<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>].map( <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">mapper</span>(<span class="hljs-params">v</span>)</span>{
+    <span class="hljs-keyword">return</span> double( v );
+} );
+<span class="hljs-comment">// [2,4,6,8,10]</span>
+</code></pre>
+<p>Can you see that <code>mapper(..)</code> and <code>double(..)</code> have the same (or compatible, anyway) signatures? The parameter (&quot;point&quot;) <code>v</code> can directly map to the corresponding argument in the <code>double(..)</code> call. As such, the <code>mapper(..)</code> function wrapper is unnecessary. Let&apos;s simplify with point-free style:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">double</span>(<span class="hljs-params">x</span>) </span>{
+    <span class="hljs-keyword">return</span> x * <span class="hljs-number">2</span>;
+}
+
+[<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>].map( double );
+<span class="hljs-comment">// [2,4,6,8,10]</span>
+</code></pre>
+<p>Let&apos;s revisit an example from earlier:</p>
+<pre><code class="lang-js">[<span class="hljs-string">&quot;1&quot;</span>,<span class="hljs-string">&quot;2&quot;</span>,<span class="hljs-string">&quot;3&quot;</span>].map( <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">mapper</span>(<span class="hljs-params">v</span>)</span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">parseInt</span>( v );
+} );
+<span class="hljs-comment">// [1,2,3]</span>
+</code></pre>
+<p>In this example, <code>mapper(..)</code> is actually serving an important purpose, which is to discard the <code>index</code> argument that <code>map(..)</code> would pass in, because <code>parseInt(..)</code> would incorrectly interpret that value as a <code>radix</code> for the parsing. This was an example where <code>unary(..)</code> helps us out:</p>
+<pre><code class="lang-js">[<span class="hljs-string">&quot;1&quot;</span>,<span class="hljs-string">&quot;2&quot;</span>,<span class="hljs-string">&quot;3&quot;</span>].map( unary( <span class="hljs-built_in">parseInt</span> ) );
+<span class="hljs-comment">// [1,2,3]</span>
+</code></pre>
+<p>The key thing to look for is if you have a function with parameter(s) that is/are directly passed to an inner function call. In both the above examples, <code>mapper(..)</code> had the <code>v</code> parameter that was passed along to another function call. We were able to replace that layer of abstraction with a point-free expression using <code>unary(..)</code>.</p>
+<p><strong>Warning:</strong> You might have been tempted, as I was, to try <code>map(partialRight(parseInt,10))</code> to right-partially apply the <code>10</code> value as the <code>radix</code>. However, as we saw earlier, <code>partialRight(..)</code> only guarantees that <code>10</code> will be the last argument passed in, not that it will be specifically the second argument. Since <code>map(..)</code> itself passes three arguments (<code>value</code>, <code>index</code>, <code>arr</code>) to its mapping function, the <code>10</code> value would just be the fourth argument to <code>parseInt(..)</code>; it only pays attention to the first two.</p>
+<p>Here&apos;s another example:</p>
+<pre><code class="lang-js"><span class="hljs-comment">// convenience to avoid any potential binding issue</span>
+<span class="hljs-comment">// with trying to use `console.log` as a function</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">output</span>(<span class="hljs-params">txt</span>) </span>{
+    <span class="hljs-built_in">console</span>.log( txt );
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">printIf</span>(<span class="hljs-params"> predicate, msg </span>) </span>{
+    <span class="hljs-keyword">if</span> (predicate( msg )) {
+        output( msg );
+    }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isShortEnough</span>(<span class="hljs-params">str</span>) </span>{
+    <span class="hljs-keyword">return</span> str.length &lt;= <span class="hljs-number">5</span>;
+}
+
+<span class="hljs-keyword">var</span> msg1 = <span class="hljs-string">&quot;Hello&quot;</span>;
+<span class="hljs-keyword">var</span> msg2 = msg1 + <span class="hljs-string">&quot; World&quot;</span>;
+
+printIf( isShortEnough, msg1 );            <span class="hljs-comment">// Hello</span>
+printIf( isShortEnough, msg2 );
+</code></pre>
+<p>Now let&apos;s say you want to print a message only if it&apos;s long enough; in other words, if it&apos;s <code>!isShortEnough(..)</code>. Your first thought is probably this:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isLongEnough</span>(<span class="hljs-params">str</span>) </span>{
+    <span class="hljs-keyword">return</span> !isShortEnough( str );
+}
+
+printIf( isLongEnough, msg1 );
+printIf( isLongEnough, msg2 );            <span class="hljs-comment">// Hello World</span>
+</code></pre>
+<p>Easy enough... but &quot;points&quot; now! See how <code>str</code> is passed through? Without re-implementing the <code>str.length</code> check, can we refactor this code to point-free style?</p>
+<p>Let&apos;s define a <code>not(..)</code> negation helper (often referred to as <code>complement(..)</code> in FP libraries):</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">not</span>(<span class="hljs-params">predicate</span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">negated</span>(<span class="hljs-params">...args</span>)</span>{
+        <span class="hljs-keyword">return</span> !predicate( ...args );
+    };
+}
+
+<span class="hljs-comment">// or the ES6 =&gt; arrow form</span>
+<span class="hljs-keyword">var</span> not =
+    predicate =&gt;
+        (...args) =&gt;
+            !predicate( ...args );
+</code></pre>
+<p>Next, let&apos;s use <code>not(..)</code> to alternately define <code>isLongEnough(..)</code> without &quot;points&quot;:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> isLongEnough = not( isShortEnough );
+
+printIf( isLongEnough, msg2 );            <span class="hljs-comment">// Hello World</span>
+</code></pre>
+<p>That&apos;s pretty good, isn&apos;t it? But we <em>could</em> keep going. The definition of the <code>printIf(..)</code> function can actually be refactored to be point-free itself.</p>
+<p>We can express the <code>if</code> conditional part with a <code>when(..)</code> utility:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">when</span>(<span class="hljs-params">predicate,fn</span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">conditional</span>(<span class="hljs-params">...args</span>)</span>{
+        <span class="hljs-keyword">if</span> (predicate( ...args )) {
+            <span class="hljs-keyword">return</span> fn( ...args );
+        }
+    };
+}
+
+<span class="hljs-comment">// or the ES6 =&gt; form</span>
+<span class="hljs-keyword">var</span> when =
+    (predicate,fn) =&gt;
+        (...args) =&gt;
+            predicate( ...args ) ? fn( ...args ) : <span class="hljs-literal">undefined</span>;
+</code></pre>
+<p>Let&apos;s mix <code>when(..)</code> with a few other helper utilities we&apos;ve seen earlier in this chapter, to make the point-free <code>printIf(..)</code>:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> printIf = uncurry( rightPartial( when, output ) );
+</code></pre>
+<p>Here&apos;s how we did it: we right-partially applied the <code>output</code> method as the second (<code>fn</code>) argument for <code>when(..)</code>, which leaves us with a function still expecting the first argument (<code>predicate</code>). <em>That</em> function when called produces another function expecting the message string; it would look like this: <code>fn(predicate)(str)</code>.</p>
+<p>A chain of multiple (two) function calls like that looks an awful lot like a curried function, so we <code>uncurry(..)</code> this result to produce a single function that expects the two <code>str</code> and <code>predicate</code> arguments together, which matches the original <code>printIf(predicate,str)</code> signature.</p>
+<p>Here&apos;s the whole example put back together (assuming various utilities we&apos;ve already detailed in this chapter are present):</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">output</span>(<span class="hljs-params">msg</span>) </span>{
+    <span class="hljs-built_in">console</span>.log( msg );
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isShortEnough</span>(<span class="hljs-params">str</span>) </span>{
+    <span class="hljs-keyword">return</span> str.length &lt;= <span class="hljs-number">5</span>;
+}
+
+<span class="hljs-keyword">var</span> isLongEnough = not( isShortEnough );
+
+<span class="hljs-keyword">var</span> printIf = uncurry( partialRight( when, output ) );
+
+<span class="hljs-keyword">var</span> msg1 = <span class="hljs-string">&quot;Hello&quot;</span>;
+<span class="hljs-keyword">var</span> msg2 = msg1 + <span class="hljs-string">&quot; World&quot;</span>;
+
+printIf( isShortEnough, msg1 );            <span class="hljs-comment">// Hello</span>
+printIf( isShortEnough, msg2 );
+
+printIf( isLongEnough, msg1 );
+printIf( isLongEnough, msg2 );            <span class="hljs-comment">// Hello World</span>
+</code></pre>
+<p>Hopefully the FP practice of point-free style coding is starting to make a little more sense. It&apos;ll still take a lot of practice to train yourself to think this way naturally. <strong>And you&apos;ll still have to make judgement calls</strong> as to whether point-free coding is worth it, as well as what extent will benefit your code&apos;s readability.</p>
+<p>What do you think? Points or no points for you?</p>
+<p><strong>Note:</strong> Want more practice with point-free style coding? We&apos;ll revisit this technique in &quot;Revisiting Points&quot; in Chapter 4, based on new-found knowledge of function composition.</p>
+<h2 id="summary">Summary</h2>
+<p>Partial Application is a technique for reducing the arity -- expected number of arguments to a function -- by creating a new function where some of the arguments are preset.</p>
+<p>Currying is a special form of partial application where the arity is reduced to 1, with a chain of successive chained function calls, each which takes one argument. Once all arguments have been specified by these function calls, the original function is executed with all the collected arguments. You can also undo a currying.</p>
+<p>Other important operations like <code>unary(..)</code>, <code>identity(..)</code>, and <code>constant(..)</code> are part of the base toolbox for FP.</p>
+<p>Point-free is a style of writing code that eliminates unnecessary verbosity of mapping parameters (&quot;points&quot;) to arguments, with the goal of making easier to read/understand code.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ch2.html" class="navigation navigation-prev " aria-label="Previous page: Chapter 2: Foundations of Functional Functions">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="ch4.html" class="navigation navigation-next " aria-label="Next page: Chapter 4: Composing Functions">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Chapter 3: Managing Function Inputs","level":"1.6","depth":1,"next":{"title":"Chapter 4: Composing Functions","level":"1.7","depth":1,"path":"ch4.md","ref":"ch4.md","articles":[]},"previous":{"title":"Chapter 2: Foundations of Functional Functions","level":"1.5","depth":1,"path":"ch2.md","ref":"ch2.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ch3.md","mtime":"2017-03-13T18:38:58.762Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-13T19:03:34.902Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
